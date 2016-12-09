@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\ic_launcher.png",
+        "source": "C:\\JAVA\\Chelpogoda\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi\\wind.png",
+        "source": "C:\\JAVA\\Chelpogoda\\app\\src\\main\\res\\mipmap-xxhdpi\\wind.png"
+    }
+]

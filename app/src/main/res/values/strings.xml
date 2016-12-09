@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Службы Челябинска</string>
+    <string name="realmeteo_ru">realmeteo.ru\nРеальная погода в Челябинске</string>
+    <string name="edds74_ru">edds74.ru\nЕдиная дежурно-диспетчерская служба города Челябинска:</string>
+    <string name="metallurgichesky">МЕТАЛЛУРГИЧЕСКИЙ</string>
+    <string name="leninsky">ЛЕНИНСКИЙ</string>
+    <string name="traktorozavodskoy">ТРАКТОРОЗАВОДСКОЙ</string>
+    <string name="kurchatovsky">КУРЧАТОВСКИЙ</string>
+    <string name="kalininsky">КАЛИНИНСКИЙ</string>
+    <string name="centralny">ЦЕНТРАЛЬНЫЙ</string>
+    <string name="sovetsky">СОВЕТСКИЙ</string>
+</resources>
