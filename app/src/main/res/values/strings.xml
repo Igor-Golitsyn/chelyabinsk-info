@@ -10,4 +10,7 @@
     <string name="centralny">ЦЕНТРАЛЬНЫЙ</string>
     <string name="sovetsky">СОВЕТСКИЙ</string>
     <string name="prognoz_text">Прогноз на ближайшие дни:</string>
+    <string name="button_north">СЕВЕР\nгорода</string>
+    <string name="button_centr">ЦЕНТР\nгорода</string>
+    <string name="button_south">ЮГ\nгорода</string>
 </resources>

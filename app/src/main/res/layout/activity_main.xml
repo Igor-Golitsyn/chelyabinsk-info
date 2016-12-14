@@ -31,21 +31,21 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3"
-                android:text="СЕВЕР"/>
+                android:text="@string/button_north"/>
 
             <Button
                 android:id="@+id/button_center"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3"
-                android:text="ЦЕНТР"/>
+                android:text="@string/button_centr"/>
 
             <Button
                 android:id="@+id/button_south"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3"
-                android:text="ЮГ"/>
+                android:text="@string/button_south"/>
         </LinearLayout>
 
         <WebView
@@ -78,7 +78,8 @@
             android:gravity="center"
             android:text="ЖКХ"
             android:textColor="@color/black"
-            android:textSize="@dimen/font_large_18"/>
+            android:textSize="@dimen/font_large_18"
+            android:textStyle="bold"/>
 
 
 
@@ -168,7 +169,8 @@
             android:gravity="center"
             android:textColor="@color/black"
             android:textSize="@dimen/font_large_18"
-            android:padding="@dimen/padding_small_16"/>
+            android:padding="@dimen/padding_small_16"
+            android:textStyle="bold"/>
         <WebView
             android:id="@+id/prognoz"
             android:layout_width="wrap_content"

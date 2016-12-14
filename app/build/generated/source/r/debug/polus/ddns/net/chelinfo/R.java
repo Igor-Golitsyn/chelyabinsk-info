@@ -2930,18 +2930,22 @@ containing a value of this type.
         public static final int app_name=0x7f060021;
         public static final int appbar_scrolling_view_behavior=0x7f060022;
         public static final int bottom_sheet_behavior=0x7f060023;
-        public static final int centralny=0x7f060024;
-        public static final int character_counter_pattern=0x7f060025;
-        public static final int edds74_ru=0x7f060026;
-        public static final int kalininsky=0x7f060027;
-        public static final int kurchatovsky=0x7f060028;
-        public static final int leninsky=0x7f060029;
-        public static final int metallurgichesky=0x7f06002a;
-        public static final int realmeteo_ru=0x7f06002b;
+        public static final int button_centr=0x7f060024;
+        public static final int button_north=0x7f060025;
+        public static final int button_south=0x7f060026;
+        public static final int centralny=0x7f060027;
+        public static final int character_counter_pattern=0x7f060028;
+        public static final int edds74_ru=0x7f060029;
+        public static final int kalininsky=0x7f06002a;
+        public static final int kurchatovsky=0x7f06002b;
+        public static final int leninsky=0x7f06002c;
+        public static final int metallurgichesky=0x7f06002d;
+        public static final int prognoz_text=0x7f06002e;
+        public static final int realmeteo_ru=0x7f06002f;
         public static final int search_menu_title=0x7f060013;
-        public static final int sovetsky=0x7f06002c;
+        public static final int sovetsky=0x7f060030;
         public static final int status_bar_notification_info_overflow=0x7f060014;
-        public static final int traktorozavodskoy=0x7f06002d;
+        public static final int traktorozavodskoy=0x7f060031;
     }
     public static final class style {
         public static final int AlertDialog_AppCompat=0x7f08009a;
