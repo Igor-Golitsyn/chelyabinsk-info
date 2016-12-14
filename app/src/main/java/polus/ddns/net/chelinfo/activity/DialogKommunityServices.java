@@ -20,6 +20,7 @@ public class DialogKommunityServices extends DialogFragment {
         strings = getArguments().getStringArray(ConstantManager.DIALOG_ARRAY);
         builder.setTitle(strings[0])
                 .setMessage(strings[1])
+                .setIcon(Integer.parseInt(strings[2]))
                 .setPositiveButton("ОК", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 dialog.cancel();

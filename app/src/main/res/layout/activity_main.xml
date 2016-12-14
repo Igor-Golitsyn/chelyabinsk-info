@@ -20,6 +20,29 @@
             android:gravity="center"
             android:text="@string/realmeteo_ru"
             android:textColor="@color/black"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/button_north"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="СЕВЕР"/>
+            <Button
+                android:id="@+id/button_center"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="ЦЕНТР"/>
+            <Button
+                android:id="@+id/button_south"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:text="ЮГ"/>
+        </LinearLayout>
 
         <WebView
             android:id="@+id/pogoda"

@@ -13,13 +13,14 @@ public interface ConstantManager {
     String EDDS74RU_SOVETSKY = "http://edds74.ru/Upload/files/Svodka_5.htm";
     String EDDS74RU_TRAKTOROZAVODSKY = "http://edds74.ru/Upload/files/Svodka_6.htm";
     String EDDS74RU_CENTRALNY = "http://edds74.ru/Upload/files/Svodka_7.htm";
-    String OTKLUCHENIY_NET = "Отключений нет";
+    String DOWNLOAD_FAIL = "Не удалось загрузить данные";
     String DIALOG_ARRAY = "DIALOG_ARRAY";
-    String KALININSKY = "КАЛИНИНСКИЙ р-он";
-    String KURCHATOVSKY = "КУРЧАТОВСКИЙ р-он";
-    String LENINSKY = "ЛЕНИНСКИЙ р-он";
-    String METALLURGICHESKY = "МЕТАЛЛУРГИЧЕСКИЙ р-он";
-    String SOVETSKY = "СОВЕТСКИЙ р-он";
-    String TRAKTOROZAVODSKY = "ТРАКТОРОЗАВОДСКОЙ р-он";
-    String CENTRALNY = "ЦЕНТРАЛЬНЫЙ р-он";
+    String KALININSKY = "КАЛИНИНСКИЙ район";
+    String KURCHATOVSKY = "КУРЧАТОВСКИЙ район";
+    String LENINSKY = "ЛЕНИНСКИЙ район";
+    String METALLURGICHESKY = "МЕТАЛЛУРГИЧЕСКИЙ район";
+    String SOVETSKY = "СОВЕТСКИЙ район";
+    String TRAKTOROZAVODSKY = "ТРАКТОРОЗАВОДСКОЙ район";
+    String CENTRALNY = "ЦЕНТРАЛЬНЫЙ район";
+    String INTERNET_OUT = "Отсутствует интернет соединение";
 }

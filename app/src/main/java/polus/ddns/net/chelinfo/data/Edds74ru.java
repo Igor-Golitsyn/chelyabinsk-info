@@ -7,6 +7,7 @@ import org.jsoup.nodes.Document;
 
 import java.io.IOException;
 
+import polus.ddns.net.chelinfo.R;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
 
 /**
@@ -20,16 +21,42 @@ public class Edds74ru {
         Log.d(TAG, "getSchool");
         try {
             Document document = Jsoup.connect(ConstantManager.EDDS74RU_SCHOOL).userAgent("Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36").referrer("http://www.google.com").get();
-            return document.text().replace("!","!\n");
+            return document.text().replace("!", "!\n");
         } catch (IOException e) {
-            return "";
+            return ConstantManager.DOWNLOAD_FAIL;
         }
     }
 
     public static String[] getKommunityServices(String districtName, String link) {
         Log.d(TAG, "getKommunityServices");
         String situation = getSituation(link);
-        return new String[]{districtName,situation};
+        int icon;
+        switch (districtName) {
+            case ConstantManager.CENTRALNY:
+                icon = R.drawable.centr;
+                break;
+            case ConstantManager.KALININSKY:
+                icon = R.drawable.kalinin;
+                break;
+            case ConstantManager.KURCHATOVSKY:
+                icon = R.drawable.kurchatov;
+                break;
+            case ConstantManager.LENINSKY:
+                icon = R.drawable.lenin;
+                break;
+            case ConstantManager.METALLURGICHESKY:
+                icon = R.drawable.metall;
+                break;
+            case ConstantManager.SOVETSKY:
+                icon = R.drawable.sovet;
+                break;
+            case ConstantManager.TRAKTOROZAVODSKY:
+                icon = R.drawable.traktor;
+                break;
+            default:
+                icon = R.drawable.def;
+        }
+        return new String[]{districtName, situation, String.valueOf(icon)};
     }
 
     private static String getSituation(String link) {
@@ -39,11 +66,11 @@ public class Edds74ru {
             String rezult = document.text();
             rezult = rezult.replaceAll(":", ":\n");
             rezult = rezult.replaceAll(";", ";\n");
-            rezult = rezult.replaceAll("Отключен", "\nОтключен");
-            rezult = rezult.replaceAll("Оператив", "\nОператив");
+            rezult = rezult.replaceAll("Отключен", "\n\nОтключен");
+            rezult = rezult.replaceAll("Оператив", "\n\nОператив");
             return rezult;
         } catch (IOException e) {
-            return ConstantManager.OTKLUCHENIY_NET;
+            return ConstantManager.DOWNLOAD_FAIL;
         }
     }
 }
