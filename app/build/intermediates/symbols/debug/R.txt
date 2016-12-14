@@ -738,13 +738,13 @@ int id buttonPanel 0x7f0c0049
 int id button_center 0x7f0c0071
 int id button_centralny 0x7f0c0076
 int id button_kalininsky 0x7f0c0077
-int id button_kurchatovsky 0x7f0c0078
+int id button_kurchatovsky 0x7f0c007b
 int id button_leninsky 0x7f0c0079
 int id button_metallurgichesky 0x7f0c007a
 int id button_north 0x7f0c0070
 int id button_south 0x7f0c0072
 int id button_sovetsky 0x7f0c0075
-int id button_traktorozavodsky 0x7f0c007b
+int id button_traktorozavodsky 0x7f0c0078
 int id cancel_action 0x7f0c008d
 int id center 0x7f0c0025
 int id center_horizontal 0x7f0c0026

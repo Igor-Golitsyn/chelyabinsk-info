@@ -20,7 +20,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
 
   private View view2131492983;
 
-  private View view2131492984;
+  private View view2131492987;
 
   private View view2131492985;
 
@@ -28,7 +28,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
 
   private View view2131492981;
 
-  private View view2131492987;
+  private View view2131492984;
 
   private View view2131492977;
 
@@ -61,7 +61,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_kurchatovsky, "method 'showKurchatovsky'");
-    view2131492984 = view;
+    view2131492987 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -93,7 +93,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_traktorozavodsky, "method 'showTraktorozavodsky'");
-    view2131492987 = view;
+    view2131492984 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -140,16 +140,16 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
     view2131492982 = null;
     view2131492983.setOnClickListener(null);
     view2131492983 = null;
-    view2131492984.setOnClickListener(null);
-    view2131492984 = null;
+    view2131492987.setOnClickListener(null);
+    view2131492987 = null;
     view2131492985.setOnClickListener(null);
     view2131492985 = null;
     view2131492986.setOnClickListener(null);
     view2131492986 = null;
     view2131492981.setOnClickListener(null);
     view2131492981 = null;
-    view2131492987.setOnClickListener(null);
-    view2131492987 = null;
+    view2131492984.setOnClickListener(null);
+    view2131492984 = null;
     view2131492977.setOnClickListener(null);
     view2131492977 = null;
     view2131492976.setOnClickListener(null);

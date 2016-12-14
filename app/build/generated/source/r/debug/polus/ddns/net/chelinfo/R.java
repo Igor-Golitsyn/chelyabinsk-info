@@ -2689,13 +2689,13 @@ containing a value of this type.
         public static final int button_center=0x7f0c0071;
         public static final int button_centralny=0x7f0c0076;
         public static final int button_kalininsky=0x7f0c0077;
-        public static final int button_kurchatovsky=0x7f0c0078;
+        public static final int button_kurchatovsky=0x7f0c007b;
         public static final int button_leninsky=0x7f0c0079;
         public static final int button_metallurgichesky=0x7f0c007a;
         public static final int button_north=0x7f0c0070;
         public static final int button_south=0x7f0c0072;
         public static final int button_sovetsky=0x7f0c0075;
-        public static final int button_traktorozavodsky=0x7f0c007b;
+        public static final int button_traktorozavodsky=0x7f0c0078;
         public static final int cancel_action=0x7f0c008d;
         public static final int center=0x7f0c0025;
         public static final int center_horizontal=0x7f0c0026;

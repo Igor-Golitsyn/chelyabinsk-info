@@ -9,4 +9,5 @@
     <string name="kalininsky">КАЛИНИНСКИЙ</string>
     <string name="centralny">ЦЕНТРАЛЬНЫЙ</string>
     <string name="sovetsky">СОВЕТСКИЙ</string>
+    <string name="prognoz_text">Прогноз на ближайшие дни:</string>
 </resources>

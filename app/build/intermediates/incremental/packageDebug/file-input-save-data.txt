@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Dec 14 14:02:54 YEKT 2016
+#Wed Dec 14 15:03:05 YEKT 2016
 210.set=ANDROID_RESOURCE
 14.set=ANDROID_RESOURCE
 180.file=C\:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\assets\\debug\\chelpogoda.html
