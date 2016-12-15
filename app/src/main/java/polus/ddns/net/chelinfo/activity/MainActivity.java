@@ -1,5 +1,7 @@
 package polus.ddns.net.chelinfo.activity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
@@ -15,8 +17,6 @@ import polus.ddns.net.chelinfo.R;
 import polus.ddns.net.chelinfo.data.Edds74ru;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
 import polus.ddns.net.chelinfo.utils.NetworkUtils;
-
-import static android.R.attr.data;
 
 public class MainActivity extends BaseActivity {
     static final String TAG = ConstantManager.TAG_PREFIX + "MainActivity";
@@ -35,19 +35,29 @@ public class MainActivity extends BaseActivity {
         StrictMode.setThreadPolicy(policy);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        if (NetworkUtils.isNetworkAvailable(this)) {
-            pogoda.loadUrl("file:///android_asset/chelpogoda_center.html");
-            prognoz.loadUrl("file:///android_asset/prognoz_center.html");
-            schoolText.setText(Edds74ru.getSchool());
+        if (savedInstanceState == null) {
+            if (NetworkUtils.isNetworkAvailable(this)) {
+                pogoda.loadUrl("file:///android_asset/chelpogoda_center.html");
+                prognoz.loadUrl("file:///android_asset/prognoz_center.html");
+                schoolText.setText(Edds74ru.getSchool());
+            } else {
+                showToast(ConstantManager.INTERNET_OUT);
+                Handler handler = new Handler();
+                handler.postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        finish();
+                    }
+                }, 5000);
+            }
         } else {
-            showToast(ConstantManager.INTERNET_OUT);
-            Handler handler=new Handler();
-            handler.postDelayed(new Runnable() {
-                @Override
-                public void run() {
-                    finish();
-                }
-            },5000);
+            if (NetworkUtils.isNetworkAvailable(this)) {
+                pogoda.loadUrl("file:///android_asset/chelpogoda_center.html");
+                prognoz.loadUrl("file:///android_asset/prognoz_center.html");
+                schoolText.setText(Edds74ru.getSchool());
+            } else {
+                showToast(ConstantManager.INTERNET_OUT);
+            }
         }
     }
 
@@ -92,30 +102,41 @@ public class MainActivity extends BaseActivity {
         Log.d(TAG, "showCentralny");
         createDialog(ConstantManager.TRAKTOROZAVODSKY, ConstantManager.EDDS74RU_TRAKTOROZAVODSKY);
     }
+
     @OnClick(R.id.button_center)
-    public void loadCenterPrognoz(){
+    public void loadCenterPrognoz() {
         pogoda.loadUrl("file:///android_asset/chelpogoda_center.html");
         prognoz.loadUrl("file:///android_asset/prognoz_center.html");
     }
+
     @OnClick(R.id.button_north)
-    public void loadNorthPrognoz(){
+    public void loadNorthPrognoz() {
         pogoda.loadUrl("file:///android_asset/chelpogoda_north.html");
         prognoz.loadUrl("file:///android_asset/prognoz_north.html");
     }
+
     @OnClick(R.id.button_south)
-    public void loadSouthPrognoz(){
+    public void loadSouthPrognoz() {
         pogoda.loadUrl("file:///android_asset/chelpogoda_south.html");
         prognoz.loadUrl("file:///android_asset/prognoz_south.html");
+    }
+
+    @OnClick(R.id.button_request)
+    public void request() {
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse("market://details?id=polus.ddns.net.chelinfo"));
+        startActivity(intent);
     }
 
     private void createDialog(String district, String link) {
         Log.d(TAG, "createDialog");
         if (!NetworkUtils.isNetworkAvailable(this)) {
-            showError(ConstantManager.INTERNET_OUT,new Exception(""));
+            showError(ConstantManager.INTERNET_OUT, new Exception(""));
             return;
         }
         String[] data = Edds74ru.getKommunityServices(district, link);
         FragmentManager fragmentManager = getSupportFragmentManager();
+        //DialogKommunityServices
         DialogKommunityServices kommunityServices = new DialogKommunityServices();
         Bundle bundle = new Bundle();
         bundle.putStringArray(ConstantManager.DIALOG_ARRAY, data);

@@ -82,36 +82,29 @@
             android:textStyle="bold"/>
 
 
-
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:gravity="center">
+            <TableRow android:gravity="center">
 
-                <Button
-                    android:id="@+id/button_sovetsky"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="1"
-                    android:background="@drawable/sovet"/>
+                    <Button
+                        android:id="@+id/button_centralny"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/centr"/>
 
-                <Button
-                    android:id="@+id/button_centralny"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="2"
-                    android:background="@drawable/centr"/>
+                    <Button
+                        android:id="@+id/button_sovetsky"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/sovet"/>
 
-                <Button
-                    android:id="@+id/button_kalininsky"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_column="3"
-                    android:background="@drawable/kalinin"/>
+                    <Button
+                        android:id="@+id/button_kalininsky"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/kalinin"/>
             </TableRow>
 
             <TableRow android:gravity="center">
@@ -120,21 +113,18 @@
                     android:id="@+id/button_traktorozavodsky"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_column="1"
                     android:background="@drawable/traktor"/>
 
                 <Button
                     android:id="@+id/button_leninsky"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_column="2"
                     android:background="@drawable/lenin"/>
 
                 <Button
                     android:id="@+id/button_metallurgichesky"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_column="3"
                     android:background="@drawable/metall"/>
             </TableRow>
 
@@ -143,7 +133,6 @@
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_column="1"
                     android:background="@drawable/traktor"
                     android:visibility="invisible"/>
 
@@ -151,30 +140,40 @@
                     android:id="@+id/button_kurchatovsky"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_column="2"
                     android:background="@drawable/kurchatov"/>
 
                 <Button
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_column="3"
                     android:background="@drawable/traktor"
                     android:visibility="invisible"/>
             </TableRow>
         </TableLayout>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/prognoz_text"
             android:gravity="center"
+            android:padding="@dimen/padding_small_16"
+            android:text="@string/prognoz_text"
             android:textColor="@color/black"
             android:textSize="@dimen/font_large_18"
-            android:padding="@dimen/padding_small_16"
             android:textStyle="bold"/>
+
         <WebView
             android:id="@+id/prognoz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/button_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:padding="@dimen/padding_small_16"
+            android:text="@string/button_request_text"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
     </LinearLayout>
 </ScrollView>

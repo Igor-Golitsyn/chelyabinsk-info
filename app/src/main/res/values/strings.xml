@@ -4,7 +4,7 @@
     <string name="edds74_ru">edds74.ru\nЕдиная дежурно-диспетчерская служба города Челябинска:</string>
     <string name="metallurgichesky">МЕТАЛЛУРГИЧЕСКИЙ</string>
     <string name="leninsky">ЛЕНИНСКИЙ</string>
-    <string name="traktorozavodskoy">ТРАКТОРОЗАВОДСКОЙ</string>
+    <string name="traktorozavodskoy">ТРАКТОРОЗАВОДСКИЙ</string>
     <string name="kurchatovsky">КУРЧАТОВСКИЙ</string>
     <string name="kalininsky">КАЛИНИНСКИЙ</string>
     <string name="centralny">ЦЕНТРАЛЬНЫЙ</string>
@@ -13,4 +13,5 @@
     <string name="button_north">СЕВЕР\nгорода</string>
     <string name="button_centr">ЦЕНТР\nгорода</string>
     <string name="button_south">ЮГ\nгорода</string>
+    <string name="button_request_text">ОЦЕНИТЬ ПРИЛОЖЕНИЕ</string>
 </resources>

@@ -20,7 +20,7 @@ public interface ConstantManager {
     String LENINSKY = "ЛЕНИНСКИЙ район";
     String METALLURGICHESKY = "МЕТАЛЛУРГИЧЕСКИЙ район";
     String SOVETSKY = "СОВЕТСКИЙ район";
-    String TRAKTOROZAVODSKY = "ТРАКТОРОЗАВОДСКОЙ район";
+    String TRAKTOROZAVODSKY = "ТРАКТОРОЗАВОДСКИЙ район";
     String CENTRALNY = "ЦЕНТРАЛЬНЫЙ район";
     String INTERNET_OUT = "Отсутствует интернет соединение";
 }

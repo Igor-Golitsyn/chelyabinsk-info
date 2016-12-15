@@ -16,7 +16,7 @@ import polus.ddns.net.chelinfo.R;
 public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinder {
   protected T target;
 
-  private View view2131492982;
+  private View view2131492981;
 
   private View view2131492983;
 
@@ -26,7 +26,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
 
   private View view2131492986;
 
-  private View view2131492981;
+  private View view2131492982;
 
   private View view2131492984;
 
@@ -35,6 +35,8 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
   private View view2131492976;
 
   private View view2131492978;
+
+  private View view2131492989;
 
   @UiThread
   public MainActivity_ViewBinding(final T target, View source) {
@@ -45,7 +47,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
     target.prognoz = Utils.findRequiredViewAsType(source, R.id.prognoz, "field 'prognoz'", WebView.class);
     target.schoolText = Utils.findRequiredViewAsType(source, R.id.school_text, "field 'schoolText'", TextView.class);
     view = Utils.findRequiredView(source, R.id.button_centralny, "method 'showCentralny'");
-    view2131492982 = view;
+    view2131492981 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -85,7 +87,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_sovetsky, "method 'showSovetsky'");
-    view2131492981 = view;
+    view2131492982 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -124,6 +126,14 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
         target.loadSouthPrognoz();
       }
     });
+    view = Utils.findRequiredView(source, R.id.button_request, "method 'request'");
+    view2131492989 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.request();
+      }
+    });
   }
 
   @Override
@@ -136,8 +146,8 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
     target.prognoz = null;
     target.schoolText = null;
 
-    view2131492982.setOnClickListener(null);
-    view2131492982 = null;
+    view2131492981.setOnClickListener(null);
+    view2131492981 = null;
     view2131492983.setOnClickListener(null);
     view2131492983 = null;
     view2131492987.setOnClickListener(null);
@@ -146,8 +156,8 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
     view2131492985 = null;
     view2131492986.setOnClickListener(null);
     view2131492986 = null;
-    view2131492981.setOnClickListener(null);
-    view2131492981 = null;
+    view2131492982.setOnClickListener(null);
+    view2131492982 = null;
     view2131492984.setOnClickListener(null);
     view2131492984 = null;
     view2131492977.setOnClickListener(null);
@@ -156,6 +166,8 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
     view2131492976 = null;
     view2131492978.setOnClickListener(null);
     view2131492978 = null;
+    view2131492989.setOnClickListener(null);
+    view2131492989 = null;
 
     this.target = null;
   }
