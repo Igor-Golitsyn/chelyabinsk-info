@@ -136,7 +136,6 @@ public class MainActivity extends BaseActivity {
         }
         String[] data = Edds74ru.getKommunityServices(district, link);
         FragmentManager fragmentManager = getSupportFragmentManager();
-        //DialogKommunityServices
         DialogKommunityServices kommunityServices = new DialogKommunityServices();
         Bundle bundle = new Bundle();
         bundle.putStringArray(ConstantManager.DIALOG_ARRAY, data);
