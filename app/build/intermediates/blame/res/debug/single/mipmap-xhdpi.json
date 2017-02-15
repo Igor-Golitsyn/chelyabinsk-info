@@ -1,5 +1,21 @@
 [
     {
+        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\JAVA\\ChelInfo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\wind.png",
+        "source": "C:\\JAVA\\ChelInfo\\app\\src\\main\\res\\mipmap-xhdpi\\wind.png"
+    },
+    {
+        "merged": "C:\\JAVA\\ChelInfo\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
+        "source": "C:\\JAVA\\ChelInfo\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\wind.png",
+        "source": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\mipmap-xhdpi\\wind.png"
+    },
+    {
         "merged": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi\\ic_launcher.png",
         "source": "C:\\JAVA\\Chelpogoda\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
