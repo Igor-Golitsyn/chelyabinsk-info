@@ -1,14 +1,6 @@
 [
     {
-        "merged": "C:\\JAVA\\ChelInfo\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
-        "source": "C:\\JAVA\\ChelInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
-    },
-    {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
-        "source": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
-    },
-    {
-        "merged": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\res\\merged\\debug\\layout-sw600dp-v13\\design_layout_snackbar.xml",
-        "source": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\25.0.1\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
+        "source": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\layout-sw600dp-v13\\design_layout_snackbar.xml"
     }
 ]

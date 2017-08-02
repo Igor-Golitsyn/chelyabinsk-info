@@ -7,16 +7,28 @@ import android.os.Handler;
 import android.os.StrictMode;
 import android.support.v4.app.FragmentManager;
 import android.util.Log;
+import android.view.View;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.TextView;
+
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import polus.ddns.net.chelinfo.R;
+import polus.ddns.net.chelinfo.bians.GetBiansFromRest;
+import polus.ddns.net.chelinfo.bians.NewsItem;
+import polus.ddns.net.chelinfo.bians.NewsListItem;
 import polus.ddns.net.chelinfo.data.Edds74ru;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
 import polus.ddns.net.chelinfo.utils.NetworkUtils;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends BaseActivity {
     static final String TAG = ConstantManager.TAG_PREFIX + "MainActivity";
@@ -26,6 +38,9 @@ public class MainActivity extends BaseActivity {
     WebView prognoz;
     @BindView(R.id.school_text)
     TextView schoolText;
+    @BindView(R.id.button_news)
+    Button buttonNews;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +50,7 @@ public class MainActivity extends BaseActivity {
         StrictMode.setThreadPolicy(policy);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+        getNews();
         if (savedInstanceState == null) {
             if (NetworkUtils.isNetworkAvailable(this)) {
                 pogoda.loadUrl("file:///android_asset/chelpogoda_center.html");
@@ -59,6 +75,26 @@ public class MainActivity extends BaseActivity {
                 showToast(ConstantManager.INTERNET_OUT);
             }
         }
+    }
+    private void getNews(){
+        Log.d(TAG, "getNews");
+        showProgress();
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
+        GetBiansFromRest service = retrofit.create(GetBiansFromRest.class);
+        service.getNewsList().enqueue(new Callback<NewsListItem[]>() {
+            @Override
+            public void onResponse(Call<NewsListItem[]> call, Response<NewsListItem[]> response) {
+                if (response.code() == 200) {
+                    NewsListItem[] newsItems = response.body();
+                    hideProgress();
+                    buttonNews.setVisibility(View.VISIBLE);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<NewsListItem[]> call, Throwable t) {
+            }
+        });
     }
 
     @OnClick(R.id.button_centralny)
@@ -126,6 +162,10 @@ public class MainActivity extends BaseActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("market://details?id=polus.ddns.net.chelinfo"));
         startActivity(intent);
+    }
+    @OnClick(R.id.button_news)
+    public void showNews(){
+        showToast("НОВОСТИ");
     }
 
     private void createDialog(String district, String link) {

@@ -1,50 +1,18 @@
 [
     {
-        "merged": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_template_icon_group.xml"
-    },
-    {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_action_tombstone.xml"
+        "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_template_custom_big.xml"
+        "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_template_custom_big.xml"
-    },
-    {
-        "merged": "C:\\JAVA\\ChelInfo\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\JAVA\\ChelInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_action_tombstone.xml"
+        "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_action.xml"
-    },
-    {
-        "merged": "C:\\JAVA\\ChelInfo\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\JAVA\\ChelInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "C:\\JAVA\\ChelInfo\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "C:\\JAVA\\ChelInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_action.xml"
-    },
-    {
-        "merged": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_action.xml"
-    },
-    {
-        "merged": "C:\\JAVA\\ChelInfo\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\JAVA\\ChelInfo\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_template_custom_big.xml"
-    },
-    {
-        "merged": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\JAVA\\Chelpogoda\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\25.0.1\\res\\layout-v21\\notification_action_tombstone.xml"
+        "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout-v21\\notification_action.xml"
     }
 ]

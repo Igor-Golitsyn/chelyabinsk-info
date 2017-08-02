@@ -14,4 +14,5 @@
     <string name="button_centr">ЦЕНТР\nгорода</string>
     <string name="button_south">ЮГ\nгорода</string>
     <string name="button_request_text">ОЦЕНИТЬ ПРИЛОЖЕНИЕ</string>
+    <string name="button_news_text">НОВОСТИ</string>
 </resources>

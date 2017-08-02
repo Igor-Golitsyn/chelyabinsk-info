@@ -5,6 +5,7 @@ import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
 import android.view.View;
 import android.webkit.WebView;
+import android.widget.Button;
 import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
@@ -16,27 +17,29 @@ import polus.ddns.net.chelinfo.R;
 public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinder {
   protected T target;
 
-  private View view2131492981;
+  private View view2131558529;
 
-  private View view2131492983;
+  private View view2131558521;
 
-  private View view2131492987;
+  private View view2131558523;
 
-  private View view2131492985;
+  private View view2131558527;
 
-  private View view2131492986;
+  private View view2131558525;
 
-  private View view2131492982;
+  private View view2131558526;
 
-  private View view2131492984;
+  private View view2131558522;
 
-  private View view2131492977;
+  private View view2131558524;
 
-  private View view2131492976;
+  private View view2131558517;
 
-  private View view2131492978;
+  private View view2131558516;
 
-  private View view2131492989;
+  private View view2131558518;
+
+  private View view2131558530;
 
   @UiThread
   public MainActivity_ViewBinding(final T target, View source) {
@@ -46,8 +49,17 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
     target.pogoda = Utils.findRequiredViewAsType(source, R.id.pogoda, "field 'pogoda'", WebView.class);
     target.prognoz = Utils.findRequiredViewAsType(source, R.id.prognoz, "field 'prognoz'", WebView.class);
     target.schoolText = Utils.findRequiredViewAsType(source, R.id.school_text, "field 'schoolText'", TextView.class);
+    view = Utils.findRequiredView(source, R.id.button_news, "field 'buttonNews' and method 'showNews'");
+    target.buttonNews = Utils.castView(view, R.id.button_news, "field 'buttonNews'", Button.class);
+    view2131558529 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.showNews();
+      }
+    });
     view = Utils.findRequiredView(source, R.id.button_centralny, "method 'showCentralny'");
-    view2131492981 = view;
+    view2131558521 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -55,7 +67,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_kalininsky, "method 'showKalininsky'");
-    view2131492983 = view;
+    view2131558523 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -63,7 +75,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_kurchatovsky, "method 'showKurchatovsky'");
-    view2131492987 = view;
+    view2131558527 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -71,7 +83,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_leninsky, "method 'showLeninsky'");
-    view2131492985 = view;
+    view2131558525 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -79,7 +91,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_metallurgichesky, "method 'showMetallurgichesky'");
-    view2131492986 = view;
+    view2131558526 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -87,7 +99,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_sovetsky, "method 'showSovetsky'");
-    view2131492982 = view;
+    view2131558522 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -95,7 +107,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_traktorozavodsky, "method 'showTraktorozavodsky'");
-    view2131492984 = view;
+    view2131558524 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -103,7 +115,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_center, "method 'loadCenterPrognoz'");
-    view2131492977 = view;
+    view2131558517 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -111,7 +123,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_north, "method 'loadNorthPrognoz'");
-    view2131492976 = view;
+    view2131558516 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -119,7 +131,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_south, "method 'loadSouthPrognoz'");
-    view2131492978 = view;
+    view2131558518 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -127,7 +139,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_request, "method 'request'");
-    view2131492989 = view;
+    view2131558530 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -145,29 +157,32 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
     target.pogoda = null;
     target.prognoz = null;
     target.schoolText = null;
+    target.buttonNews = null;
 
-    view2131492981.setOnClickListener(null);
-    view2131492981 = null;
-    view2131492983.setOnClickListener(null);
-    view2131492983 = null;
-    view2131492987.setOnClickListener(null);
-    view2131492987 = null;
-    view2131492985.setOnClickListener(null);
-    view2131492985 = null;
-    view2131492986.setOnClickListener(null);
-    view2131492986 = null;
-    view2131492982.setOnClickListener(null);
-    view2131492982 = null;
-    view2131492984.setOnClickListener(null);
-    view2131492984 = null;
-    view2131492977.setOnClickListener(null);
-    view2131492977 = null;
-    view2131492976.setOnClickListener(null);
-    view2131492976 = null;
-    view2131492978.setOnClickListener(null);
-    view2131492978 = null;
-    view2131492989.setOnClickListener(null);
-    view2131492989 = null;
+    view2131558529.setOnClickListener(null);
+    view2131558529 = null;
+    view2131558521.setOnClickListener(null);
+    view2131558521 = null;
+    view2131558523.setOnClickListener(null);
+    view2131558523 = null;
+    view2131558527.setOnClickListener(null);
+    view2131558527 = null;
+    view2131558525.setOnClickListener(null);
+    view2131558525 = null;
+    view2131558526.setOnClickListener(null);
+    view2131558526 = null;
+    view2131558522.setOnClickListener(null);
+    view2131558522 = null;
+    view2131558524.setOnClickListener(null);
+    view2131558524 = null;
+    view2131558517.setOnClickListener(null);
+    view2131558517 = null;
+    view2131558516.setOnClickListener(null);
+    view2131558516 = null;
+    view2131558518.setOnClickListener(null);
+    view2131558518 = null;
+    view2131558530.setOnClickListener(null);
+    view2131558530 = null;
 
     this.target = null;
   }
