@@ -12,15 +12,12 @@ import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
 
-import java.util.List;
-
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import polus.ddns.net.chelinfo.R;
-import polus.ddns.net.chelinfo.bians.GetBiansFromRest;
-import polus.ddns.net.chelinfo.bians.NewsItem;
-import polus.ddns.net.chelinfo.bians.NewsListItem;
+import polus.ddns.net.chelinfo.beans.GetBeansFromRest;
+import polus.ddns.net.chelinfo.beans.NewsListItem;
 import polus.ddns.net.chelinfo.data.Edds74ru;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
 import polus.ddns.net.chelinfo.utils.NetworkUtils;
@@ -80,7 +77,7 @@ public class MainActivity extends BaseActivity {
         Log.d(TAG, "getNews");
         showProgress();
         Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
-        GetBiansFromRest service = retrofit.create(GetBiansFromRest.class);
+        GetBeansFromRest service = retrofit.create(GetBeansFromRest.class);
         service.getNewsList().enqueue(new Callback<NewsListItem[]>() {
             @Override
             public void onResponse(Call<NewsListItem[]> call, Response<NewsListItem[]> response) {
@@ -90,7 +87,6 @@ public class MainActivity extends BaseActivity {
                     buttonNews.setVisibility(View.VISIBLE);
                 }
             }
-
             @Override
             public void onFailure(Call<NewsListItem[]> call, Throwable t) {
             }

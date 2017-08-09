@@ -1,4 +1,4 @@
-package polus.ddns.net.chelinfo.bians;
+package polus.ddns.net.chelinfo.beans;
 
 import android.os.Parcel;
 import android.os.Parcelable;
