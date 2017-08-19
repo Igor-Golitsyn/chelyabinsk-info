@@ -28,6 +28,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="polus.ddns.net.chelinfo.activity.NewsActivity"
+            android:parentActivityName="polus.ddns.net.chelinfo.activity.MainActivity" >
+            <meta-data
+                android:name="android:support.PARENT_ACTIVITY"
+                android:value=".activity.MainActivity" />
+        </activity>
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"
