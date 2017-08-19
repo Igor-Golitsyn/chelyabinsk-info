@@ -27,8 +27,10 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+
 public class MainActivity extends BaseActivity {
     static final String TAG = ConstantManager.TAG_PREFIX + "MainActivity";
+    NewsListItem[] newsListItems;
     @BindView(R.id.pogoda)
     WebView pogoda;
     @BindView(R.id.prognoz)
@@ -82,7 +84,7 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onResponse(Call<NewsListItem[]> call, Response<NewsListItem[]> response) {
                 if (response.code() == 200) {
-                    NewsListItem[] newsItems = response.body();
+                    newsListItems = response.body();
                     hideProgress();
                     buttonNews.setVisibility(View.VISIBLE);
                 }
@@ -161,7 +163,9 @@ public class MainActivity extends BaseActivity {
     }
     @OnClick(R.id.button_news)
     public void showNews(){
-        showToast("НОВОСТИ");
+        Intent intent = new Intent(MainActivity.this, NewsActivity.class);
+        intent.putExtra(ConstantManager.NEWS_LINK, newsListItems);
+        startActivity(intent);
     }
 
     private void createDialog(String district, String link) {

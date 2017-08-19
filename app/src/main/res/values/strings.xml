@@ -15,4 +15,9 @@
     <string name="button_south">ЮГ\nгорода</string>
     <string name="button_request_text">ОЦЕНИТЬ ПРИЛОЖЕНИЕ</string>
     <string name="button_news_text">НОВОСТИ</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
 </resources>
