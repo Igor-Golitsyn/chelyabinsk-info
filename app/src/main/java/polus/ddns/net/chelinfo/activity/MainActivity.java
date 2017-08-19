@@ -77,7 +77,7 @@ public class MainActivity extends BaseActivity {
     }
     private void getNews(){
         Log.d(TAG, "getNews");
-        showProgress();
+        //showProgress();
         Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
         GetBeansFromRest service = retrofit.create(GetBeansFromRest.class);
         service.getNewsList().enqueue(new Callback<NewsListItem[]>() {
