@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:6:5-79
 	android:name
 		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:6:22-76
 application
-ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:8:5-29:19
+ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:8:5-30:19
 MERGED from [com.android.support:design:25.3.1] C:\Users\golit\.android\build-cache\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\golit\.android\build-cache\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\golit\.android\build-cache\30159cb43d395409523991bec3b13e6f41566174\output\AndroidManifest.xml:26:5-20
@@ -60,17 +60,19 @@ ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
 		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:19:27-74
 activity#polus.ddns.net.chelinfo.activity.NewsActivity
-ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:22:9-28:20
+ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:22:9-29:20
 	android:parentActivityName
 		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:24:13-64
+	android:theme
+		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:25:13-45
 	android:name
 		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:23:13-50
 meta-data#android:support.PARENT_ACTIVITY
-ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:25:13-27:58
+ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:26:13-28:58
 	android:value
-		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:27:17-55
+		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:28:17-55
 	android:name
-		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:26:17-63
+		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:27:17-63
 uses-sdk
 INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:design:25.3.1] C:\Users\golit\.android\build-cache\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\output\AndroidManifest.xml:21:5-23:62
