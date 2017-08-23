@@ -6096,7 +6096,7 @@
                     "startOffset": 120266,
                     "endLine": 1713,
                     "endColumn": 12,
-                    "endOffset": 120850
+                    "endOffset": 120837
                 },
                 "from": {
                     "file": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\values\\styles.xml",
@@ -6106,7 +6106,7 @@
                         "startOffset": 429,
                         "endLine": 16,
                         "endColumn": 12,
-                        "endOffset": 1020
+                        "endOffset": 1013
                     }
                 }
             },
@@ -6114,10 +6114,10 @@
                 "to": {
                     "startLine": 1714,
                     "startColumn": 4,
-                    "startOffset": 120855,
+                    "startOffset": 120842,
                     "endLine": 1755,
                     "endColumn": 12,
-                    "endOffset": 123974
+                    "endOffset": 123961
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6127,10 +6127,10 @@
                 "to": {
                     "startLine": 1756,
                     "startColumn": 4,
-                    "startOffset": 123979,
+                    "startOffset": 123966,
                     "endLine": 1798,
                     "endColumn": 12,
-                    "endOffset": 127241
+                    "endOffset": 127228
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6140,9 +6140,9 @@
                 "to": {
                     "startLine": 1799,
                     "startColumn": 4,
-                    "startOffset": 127246,
+                    "startOffset": 127233,
                     "endColumn": 61,
-                    "endOffset": 127303
+                    "endOffset": 127290
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6152,10 +6152,10 @@
                 "to": {
                     "startLine": 1800,
                     "startColumn": 4,
-                    "startOffset": 127308,
+                    "startOffset": 127295,
                     "endLine": 1809,
                     "endColumn": 12,
-                    "endOffset": 127881
+                    "endOffset": 127868
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6165,10 +6165,10 @@
                 "to": {
                     "startLine": 1810,
                     "startColumn": 4,
-                    "startOffset": 127886,
+                    "startOffset": 127873,
                     "endLine": 1818,
                     "endColumn": 12,
-                    "endOffset": 128465
+                    "endOffset": 128452
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6178,9 +6178,9 @@
                 "to": {
                     "startLine": 1819,
                     "startColumn": 4,
-                    "startOffset": 128470,
+                    "startOffset": 128457,
                     "endColumn": 85,
-                    "endOffset": 128551
+                    "endOffset": 128538
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6190,10 +6190,10 @@
                 "to": {
                     "startLine": 1820,
                     "startColumn": 4,
-                    "startOffset": 128556,
+                    "startOffset": 128543,
                     "endLine": 1821,
                     "endColumn": 12,
-                    "endOffset": 128664
+                    "endOffset": 128651
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6203,10 +6203,10 @@
                 "to": {
                     "startLine": 1822,
                     "startColumn": 4,
-                    "startOffset": 128669,
+                    "startOffset": 128656,
                     "endLine": 1825,
                     "endColumn": 12,
-                    "endOffset": 128893
+                    "endOffset": 128880
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6216,10 +6216,10 @@
                 "to": {
                     "startLine": 1826,
                     "startColumn": 4,
-                    "startOffset": 128898,
+                    "startOffset": 128885,
                     "endLine": 1828,
                     "endColumn": 12,
-                    "endOffset": 129053
+                    "endOffset": 129040
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6229,10 +6229,10 @@
                 "to": {
                     "startLine": 1829,
                     "startColumn": 4,
-                    "startOffset": 129058,
+                    "startOffset": 129045,
                     "endLine": 1831,
                     "endColumn": 12,
-                    "endOffset": 129205
+                    "endOffset": 129192
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6242,10 +6242,10 @@
                 "to": {
                     "startLine": 1832,
                     "startColumn": 4,
-                    "startOffset": 129210,
+                    "startOffset": 129197,
                     "endLine": 1834,
                     "endColumn": 12,
-                    "endOffset": 129376
+                    "endOffset": 129363
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6255,10 +6255,10 @@
                 "to": {
                     "startLine": 1835,
                     "startColumn": 4,
-                    "startOffset": 129381,
+                    "startOffset": 129368,
                     "endLine": 1837,
                     "endColumn": 12,
-                    "endOffset": 129543
+                    "endOffset": 129530
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6268,10 +6268,10 @@
                 "to": {
                     "startLine": 1838,
                     "startColumn": 4,
-                    "startOffset": 129548,
+                    "startOffset": 129535,
                     "endLine": 1841,
                     "endColumn": 12,
-                    "endOffset": 129786
+                    "endOffset": 129773
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6281,10 +6281,10 @@
                 "to": {
                     "startLine": 1842,
                     "startColumn": 4,
-                    "startOffset": 129791,
+                    "startOffset": 129778,
                     "endLine": 1844,
                     "endColumn": 12,
-                    "endOffset": 129956
+                    "endOffset": 129943
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6294,10 +6294,10 @@
                 "to": {
                     "startLine": 1845,
                     "startColumn": 4,
-                    "startOffset": 129961,
+                    "startOffset": 129948,
                     "endLine": 1847,
                     "endColumn": 12,
-                    "endOffset": 130129
+                    "endOffset": 130116
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6307,10 +6307,10 @@
                 "to": {
                     "startLine": 1848,
                     "startColumn": 4,
-                    "startOffset": 130134,
+                    "startOffset": 130121,
                     "endLine": 1850,
                     "endColumn": 12,
-                    "endOffset": 130300
+                    "endOffset": 130287
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6320,10 +6320,10 @@
                 "to": {
                     "startLine": 1851,
                     "startColumn": 4,
-                    "startOffset": 130305,
+                    "startOffset": 130292,
                     "endLine": 1854,
                     "endColumn": 12,
-                    "endOffset": 130574
+                    "endOffset": 130561
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6333,10 +6333,10 @@
                 "to": {
                     "startLine": 1855,
                     "startColumn": 4,
-                    "startOffset": 130579,
+                    "startOffset": 130566,
                     "endLine": 1857,
                     "endColumn": 12,
-                    "endOffset": 130773
+                    "endOffset": 130760
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6346,10 +6346,10 @@
                 "to": {
                     "startLine": 1858,
                     "startColumn": 4,
-                    "startOffset": 130778,
+                    "startOffset": 130765,
                     "endLine": 1861,
                     "endColumn": 12,
-                    "endOffset": 130978
+                    "endOffset": 130965
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6359,10 +6359,10 @@
                 "to": {
                     "startLine": 1862,
                     "startColumn": 4,
-                    "startOffset": 130983,
+                    "startOffset": 130970,
                     "endLine": 1865,
                     "endColumn": 12,
-                    "endOffset": 131308
+                    "endOffset": 131295
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6372,9 +6372,9 @@
                 "to": {
                     "startLine": 1866,
                     "startColumn": 4,
-                    "startOffset": 131313,
+                    "startOffset": 131300,
                     "endColumn": 83,
-                    "endOffset": 131392
+                    "endOffset": 131379
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6384,9 +6384,9 @@
                 "to": {
                     "startLine": 1867,
                     "startColumn": 4,
-                    "startOffset": 131397,
+                    "startOffset": 131384,
                     "endColumn": 95,
-                    "endOffset": 131488
+                    "endOffset": 131475
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6396,9 +6396,9 @@
                 "to": {
                     "startLine": 1868,
                     "startColumn": 4,
-                    "startOffset": 131493,
+                    "startOffset": 131480,
                     "endColumn": 95,
-                    "endOffset": 131584
+                    "endOffset": 131571
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6408,9 +6408,9 @@
                 "to": {
                     "startLine": 1869,
                     "startColumn": 4,
-                    "startOffset": 131589,
+                    "startOffset": 131576,
                     "endColumn": 97,
-                    "endOffset": 131682
+                    "endOffset": 131669
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6420,9 +6420,9 @@
                 "to": {
                     "startLine": 1870,
                     "startColumn": 4,
-                    "startOffset": 131687,
+                    "startOffset": 131674,
                     "endColumn": 99,
-                    "endOffset": 131782
+                    "endOffset": 131769
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6432,9 +6432,9 @@
                 "to": {
                     "startLine": 1871,
                     "startColumn": 4,
-                    "startOffset": 131787,
+                    "startOffset": 131774,
                     "endColumn": 101,
-                    "endOffset": 131884
+                    "endOffset": 131871
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6444,9 +6444,9 @@
                 "to": {
                     "startLine": 1872,
                     "startColumn": 4,
-                    "startOffset": 131889,
+                    "startOffset": 131876,
                     "endColumn": 101,
-                    "endOffset": 131986
+                    "endOffset": 131973
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6456,9 +6456,9 @@
                 "to": {
                     "startLine": 1873,
                     "startColumn": 4,
-                    "startOffset": 131991,
+                    "startOffset": 131978,
                     "endColumn": 101,
-                    "endOffset": 132088
+                    "endOffset": 132075
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6468,9 +6468,9 @@
                 "to": {
                     "startLine": 1874,
                     "startColumn": 4,
-                    "startOffset": 132093,
+                    "startOffset": 132080,
                     "endColumn": 101,
-                    "endOffset": 132190
+                    "endOffset": 132177
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6480,9 +6480,9 @@
                 "to": {
                     "startLine": 1875,
                     "startColumn": 4,
-                    "startOffset": 132195,
+                    "startOffset": 132182,
                     "endColumn": 101,
-                    "endOffset": 132292
+                    "endOffset": 132279
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6492,9 +6492,9 @@
                 "to": {
                     "startLine": 1876,
                     "startColumn": 4,
-                    "startOffset": 132297,
+                    "startOffset": 132284,
                     "endColumn": 99,
-                    "endOffset": 132392
+                    "endOffset": 132379
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6504,9 +6504,9 @@
                 "to": {
                     "startLine": 1877,
                     "startColumn": 4,
-                    "startOffset": 132397,
+                    "startOffset": 132384,
                     "endColumn": 95,
-                    "endOffset": 132488
+                    "endOffset": 132475
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6516,9 +6516,9 @@
                 "to": {
                     "startLine": 1878,
                     "startColumn": 4,
-                    "startOffset": 132493,
+                    "startOffset": 132480,
                     "endColumn": 111,
-                    "endOffset": 132600
+                    "endOffset": 132587
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6528,9 +6528,9 @@
                 "to": {
                     "startLine": 1879,
                     "startColumn": 4,
-                    "startOffset": 132605,
+                    "startOffset": 132592,
                     "endColumn": 128,
-                    "endOffset": 132729
+                    "endOffset": 132716
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6540,9 +6540,9 @@
                 "to": {
                     "startLine": 1880,
                     "startColumn": 4,
-                    "startOffset": 132734,
+                    "startOffset": 132721,
                     "endColumn": 122,
-                    "endOffset": 132852
+                    "endOffset": 132839
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6552,9 +6552,9 @@
                 "to": {
                     "startLine": 1881,
                     "startColumn": 4,
-                    "startOffset": 132857,
+                    "startOffset": 132844,
                     "endColumn": 130,
-                    "endOffset": 132983
+                    "endOffset": 132970
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6564,9 +6564,9 @@
                 "to": {
                     "startLine": 1882,
                     "startColumn": 4,
-                    "startOffset": 132988,
+                    "startOffset": 132975,
                     "endColumn": 130,
-                    "endOffset": 133114
+                    "endOffset": 133101
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6576,9 +6576,9 @@
                 "to": {
                     "startLine": 1883,
                     "startColumn": 4,
-                    "startOffset": 133119,
+                    "startOffset": 133106,
                     "endColumn": 97,
-                    "endOffset": 133212
+                    "endOffset": 133199
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6588,9 +6588,9 @@
                 "to": {
                     "startLine": 1884,
                     "startColumn": 4,
-                    "startOffset": 133217,
+                    "startOffset": 133204,
                     "endColumn": 113,
-                    "endOffset": 133326
+                    "endOffset": 133313
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6600,9 +6600,9 @@
                 "to": {
                     "startLine": 1885,
                     "startColumn": 4,
-                    "startOffset": 133331,
+                    "startOffset": 133318,
                     "endColumn": 93,
-                    "endOffset": 133420
+                    "endOffset": 133407
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6612,10 +6612,10 @@
                 "to": {
                     "startLine": 1886,
                     "startColumn": 4,
-                    "startOffset": 133425,
+                    "startOffset": 133412,
                     "endLine": 1889,
                     "endColumn": 12,
-                    "endOffset": 133619
+                    "endOffset": 133606
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6625,10 +6625,10 @@
                 "to": {
                     "startLine": 1890,
                     "startColumn": 4,
-                    "startOffset": 133624,
+                    "startOffset": 133611,
                     "endLine": 1893,
                     "endColumn": 12,
-                    "endOffset": 133823
+                    "endOffset": 133810
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6638,9 +6638,9 @@
                 "to": {
                     "startLine": 1894,
                     "startColumn": 4,
-                    "startOffset": 133828,
+                    "startOffset": 133815,
                     "endColumn": 68,
-                    "endOffset": 133892
+                    "endOffset": 133879
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6650,9 +6650,9 @@
                 "to": {
                     "startLine": 1895,
                     "startColumn": 4,
-                    "startOffset": 133897,
+                    "startOffset": 133884,
                     "endColumn": 115,
-                    "endOffset": 134008
+                    "endOffset": 133995
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6662,9 +6662,9 @@
                 "to": {
                     "startLine": 1896,
                     "startColumn": 4,
-                    "startOffset": 134013,
+                    "startOffset": 134000,
                     "endColumn": 127,
-                    "endOffset": 134136
+                    "endOffset": 134123
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6674,9 +6674,9 @@
                 "to": {
                     "startLine": 1897,
                     "startColumn": 4,
-                    "startOffset": 134141,
+                    "startOffset": 134128,
                     "endColumn": 63,
-                    "endOffset": 134200
+                    "endOffset": 134187
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6686,10 +6686,10 @@
                 "to": {
                     "startLine": 1898,
                     "startColumn": 4,
-                    "startOffset": 134205,
+                    "startOffset": 134192,
                     "endLine": 1901,
                     "endColumn": 12,
-                    "endOffset": 134404
+                    "endOffset": 134391
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6699,9 +6699,9 @@
                 "to": {
                     "startLine": 1902,
                     "startColumn": 4,
-                    "startOffset": 134409,
+                    "startOffset": 134396,
                     "endColumn": 68,
-                    "endOffset": 134473
+                    "endOffset": 134460
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6711,10 +6711,10 @@
                 "to": {
                     "startLine": 1903,
                     "startColumn": 4,
-                    "startOffset": 134478,
+                    "startOffset": 134465,
                     "endLine": 1906,
                     "endColumn": 12,
-                    "endOffset": 134676
+                    "endOffset": 134663
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6724,9 +6724,9 @@
                 "to": {
                     "startLine": 1907,
                     "startColumn": 4,
-                    "startOffset": 134681,
+                    "startOffset": 134668,
                     "endColumn": 69,
-                    "endOffset": 134746
+                    "endOffset": 134733
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6736,10 +6736,10 @@
                 "to": {
                     "startLine": 1908,
                     "startColumn": 4,
-                    "startOffset": 134751,
+                    "startOffset": 134738,
                     "endLine": 1909,
                     "endColumn": 12,
-                    "endOffset": 134886
+                    "endOffset": 134873
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6749,10 +6749,10 @@
                 "to": {
                     "startLine": 1910,
                     "startColumn": 4,
-                    "startOffset": 134891,
+                    "startOffset": 134878,
                     "endLine": 1911,
                     "endColumn": 12,
-                    "endOffset": 135020
+                    "endOffset": 135007
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6762,9 +6762,9 @@
                 "to": {
                     "startLine": 1912,
                     "startColumn": 4,
-                    "startOffset": 135025,
+                    "startOffset": 135012,
                     "endColumn": 95,
-                    "endOffset": 135116
+                    "endOffset": 135103
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6774,9 +6774,9 @@
                 "to": {
                     "startLine": 1913,
                     "startColumn": 4,
-                    "startOffset": 135121,
+                    "startOffset": 135108,
                     "endColumn": 111,
-                    "endOffset": 135228
+                    "endOffset": 135215
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6786,9 +6786,9 @@
                 "to": {
                     "startLine": 1914,
                     "startColumn": 4,
-                    "startOffset": 135233,
+                    "startOffset": 135220,
                     "endColumn": 99,
-                    "endOffset": 135328
+                    "endOffset": 135315
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6798,9 +6798,9 @@
                 "to": {
                     "startLine": 1915,
                     "startColumn": 4,
-                    "startOffset": 135333,
+                    "startOffset": 135320,
                     "endColumn": 115,
-                    "endOffset": 135444
+                    "endOffset": 135431
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6810,9 +6810,9 @@
                 "to": {
                     "startLine": 1916,
                     "startColumn": 4,
-                    "startOffset": 135449,
+                    "startOffset": 135436,
                     "endColumn": 95,
-                    "endOffset": 135540
+                    "endOffset": 135527
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6822,9 +6822,9 @@
                 "to": {
                     "startLine": 1917,
                     "startColumn": 4,
-                    "startOffset": 135545,
+                    "startOffset": 135532,
                     "endColumn": 111,
-                    "endOffset": 135652
+                    "endOffset": 135639
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6834,10 +6834,10 @@
                 "to": {
                     "startLine": 1918,
                     "startColumn": 4,
-                    "startOffset": 135657,
+                    "startOffset": 135644,
                     "endLine": 1919,
                     "endColumn": 12,
-                    "endOffset": 135792
+                    "endOffset": 135779
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6847,9 +6847,9 @@
                 "to": {
                     "startLine": 1920,
                     "startColumn": 4,
-                    "startOffset": 135797,
+                    "startOffset": 135784,
                     "endColumn": 135,
-                    "endOffset": 135928
+                    "endOffset": 135915
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6859,10 +6859,10 @@
                 "to": {
                     "startLine": 1921,
                     "startColumn": 4,
-                    "startOffset": 135933,
+                    "startOffset": 135920,
                     "endLine": 1922,
                     "endColumn": 12,
-                    "endOffset": 136092
+                    "endOffset": 136079
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6872,9 +6872,9 @@
                 "to": {
                     "startLine": 1923,
                     "startColumn": 4,
-                    "startOffset": 136097,
+                    "startOffset": 136084,
                     "endColumn": 129,
-                    "endOffset": 136222
+                    "endOffset": 136209
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6884,10 +6884,10 @@
                 "to": {
                     "startLine": 1924,
                     "startColumn": 4,
-                    "startOffset": 136227,
+                    "startOffset": 136214,
                     "endLine": 1925,
                     "endColumn": 12,
-                    "endOffset": 136380
+                    "endOffset": 136367
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6897,10 +6897,10 @@
                 "to": {
                     "startLine": 1926,
                     "startColumn": 4,
-                    "startOffset": 136385,
+                    "startOffset": 136372,
                     "endLine": 1927,
                     "endColumn": 12,
-                    "endOffset": 136530
+                    "endOffset": 136517
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6910,9 +6910,9 @@
                 "to": {
                     "startLine": 1928,
                     "startColumn": 4,
-                    "startOffset": 136535,
+                    "startOffset": 136522,
                     "endColumn": 140,
-                    "endOffset": 136671
+                    "endOffset": 136658
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6922,10 +6922,10 @@
                 "to": {
                     "startLine": 1929,
                     "startColumn": 4,
-                    "startOffset": 136676,
+                    "startOffset": 136663,
                     "endLine": 1930,
                     "endColumn": 12,
-                    "endOffset": 136815
+                    "endOffset": 136802
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6935,9 +6935,9 @@
                 "to": {
                     "startLine": 1931,
                     "startColumn": 4,
-                    "startOffset": 136820,
+                    "startOffset": 136807,
                     "endColumn": 134,
-                    "endOffset": 136950
+                    "endOffset": 136937
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6947,9 +6947,9 @@
                 "to": {
                     "startLine": 1932,
                     "startColumn": 4,
-                    "startOffset": 136955,
+                    "startOffset": 136942,
                     "endColumn": 111,
-                    "endOffset": 137062
+                    "endOffset": 137049
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6959,9 +6959,9 @@
                 "to": {
                     "startLine": 1933,
                     "startColumn": 4,
-                    "startOffset": 137067,
+                    "startOffset": 137054,
                     "endColumn": 149,
-                    "endOffset": 137212
+                    "endOffset": 137199
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6971,9 +6971,9 @@
                 "to": {
                     "startLine": 1934,
                     "startColumn": 4,
-                    "startOffset": 137217,
+                    "startOffset": 137204,
                     "endColumn": 127,
-                    "endOffset": 137340
+                    "endOffset": 137327
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6983,9 +6983,9 @@
                 "to": {
                     "startLine": 1935,
                     "startColumn": 4,
-                    "startOffset": 137345,
+                    "startOffset": 137332,
                     "endColumn": 127,
-                    "endOffset": 137468
+                    "endOffset": 137455
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -6995,10 +6995,10 @@
                 "to": {
                     "startLine": 1936,
                     "startColumn": 4,
-                    "startOffset": 137473,
+                    "startOffset": 137460,
                     "endLine": 1937,
                     "endColumn": 12,
-                    "endOffset": 137604
+                    "endOffset": 137591
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7008,9 +7008,9 @@
                 "to": {
                     "startLine": 1938,
                     "startColumn": 4,
-                    "startOffset": 137609,
+                    "startOffset": 137596,
                     "endColumn": 131,
-                    "endOffset": 137736
+                    "endOffset": 137723
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7020,9 +7020,9 @@
                 "to": {
                     "startLine": 1939,
                     "startColumn": 4,
-                    "startOffset": 137741,
+                    "startOffset": 137728,
                     "endColumn": 129,
-                    "endOffset": 137866
+                    "endOffset": 137853
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7032,9 +7032,9 @@
                 "to": {
                     "startLine": 1940,
                     "startColumn": 4,
-                    "startOffset": 137871,
+                    "startOffset": 137858,
                     "endColumn": 129,
-                    "endOffset": 137996
+                    "endOffset": 137983
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7044,9 +7044,9 @@
                 "to": {
                     "startLine": 1941,
                     "startColumn": 4,
-                    "startOffset": 138001,
+                    "startOffset": 137988,
                     "endColumn": 111,
-                    "endOffset": 138108
+                    "endOffset": 138095
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7056,9 +7056,9 @@
                 "to": {
                     "startLine": 1942,
                     "startColumn": 4,
-                    "startOffset": 138113,
+                    "startOffset": 138100,
                     "endColumn": 139,
-                    "endOffset": 138248
+                    "endOffset": 138235
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7068,10 +7068,10 @@
                 "to": {
                     "startLine": 1943,
                     "startColumn": 4,
-                    "startOffset": 138253,
+                    "startOffset": 138240,
                     "endLine": 1945,
                     "endColumn": 12,
-                    "endOffset": 138449
+                    "endOffset": 138436
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7081,9 +7081,9 @@
                 "to": {
                     "startLine": 1946,
                     "startColumn": 4,
-                    "startOffset": 138454,
+                    "startOffset": 138441,
                     "endColumn": 91,
-                    "endOffset": 138541
+                    "endOffset": 138528
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7093,10 +7093,10 @@
                 "to": {
                     "startLine": 1947,
                     "startColumn": 4,
-                    "startOffset": 138546,
+                    "startOffset": 138533,
                     "endLine": 1949,
                     "endColumn": 12,
-                    "endOffset": 138720
+                    "endOffset": 138707
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7106,10 +7106,10 @@
                 "to": {
                     "startLine": 1950,
                     "startColumn": 4,
-                    "startOffset": 138725,
+                    "startOffset": 138712,
                     "endLine": 1952,
                     "endColumn": 12,
-                    "endOffset": 138888
+                    "endOffset": 138875
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7119,10 +7119,10 @@
                 "to": {
                     "startLine": 1953,
                     "startColumn": 4,
-                    "startOffset": 138893,
+                    "startOffset": 138880,
                     "endLine": 1955,
                     "endColumn": 12,
-                    "endOffset": 139063
+                    "endOffset": 139050
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7132,10 +7132,10 @@
                 "to": {
                     "startLine": 1956,
                     "startColumn": 4,
-                    "startOffset": 139068,
+                    "startOffset": 139055,
                     "endLine": 1959,
                     "endColumn": 12,
-                    "endOffset": 139316
+                    "endOffset": 139303
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7145,10 +7145,10 @@
                 "to": {
                     "startLine": 1960,
                     "startColumn": 4,
-                    "startOffset": 139321,
+                    "startOffset": 139308,
                     "endLine": 1964,
                     "endColumn": 12,
-                    "endOffset": 139607
+                    "endOffset": 139594
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7158,9 +7158,9 @@
                 "to": {
                     "startLine": 1965,
                     "startColumn": 4,
-                    "startOffset": 139612,
+                    "startOffset": 139599,
                     "endColumn": 67,
-                    "endOffset": 139675
+                    "endOffset": 139662
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7170,9 +7170,9 @@
                 "to": {
                     "startLine": 1966,
                     "startColumn": 4,
-                    "startOffset": 139680,
+                    "startOffset": 139667,
                     "endColumn": 72,
-                    "endOffset": 139748
+                    "endOffset": 139735
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7182,9 +7182,9 @@
                 "to": {
                     "startLine": 1967,
                     "startColumn": 4,
-                    "startOffset": 139753,
+                    "startOffset": 139740,
                     "endColumn": 73,
-                    "endOffset": 139822
+                    "endOffset": 139809
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7194,9 +7194,9 @@
                 "to": {
                     "startLine": 1968,
                     "startColumn": 4,
-                    "startOffset": 139827,
+                    "startOffset": 139814,
                     "endColumn": 72,
-                    "endOffset": 139895
+                    "endOffset": 139882
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7206,9 +7206,9 @@
                 "to": {
                     "startLine": 1969,
                     "startColumn": 4,
-                    "startOffset": 139900,
+                    "startOffset": 139887,
                     "endColumn": 73,
-                    "endOffset": 139969
+                    "endOffset": 139956
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7218,10 +7218,10 @@
                 "to": {
                     "startLine": 1970,
                     "startColumn": 4,
-                    "startOffset": 139974,
+                    "startOffset": 139961,
                     "endLine": 1971,
                     "endColumn": 12,
-                    "endOffset": 140115
+                    "endOffset": 140102
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7231,10 +7231,10 @@
                 "to": {
                     "startLine": 1972,
                     "startColumn": 4,
-                    "startOffset": 140120,
+                    "startOffset": 140107,
                     "endLine": 1973,
                     "endColumn": 12,
-                    "endOffset": 140259
+                    "endOffset": 140246
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7244,10 +7244,10 @@
                 "to": {
                     "startLine": 1974,
                     "startColumn": 4,
-                    "startOffset": 140264,
+                    "startOffset": 140251,
                     "endLine": 1975,
                     "endColumn": 12,
-                    "endOffset": 140397
+                    "endOffset": 140384
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7257,9 +7257,9 @@
                 "to": {
                     "startLine": 1976,
                     "startColumn": 4,
-                    "startOffset": 140402,
+                    "startOffset": 140389,
                     "endColumn": 65,
-                    "endOffset": 140463
+                    "endOffset": 140450
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7269,9 +7269,9 @@
                 "to": {
                     "startLine": 1977,
                     "startColumn": 4,
-                    "startOffset": 140468,
+                    "startOffset": 140455,
                     "endColumn": 89,
-                    "endOffset": 140553
+                    "endOffset": 140540
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7281,9 +7281,9 @@
                 "to": {
                     "startLine": 1978,
                     "startColumn": 4,
-                    "startOffset": 140558,
+                    "startOffset": 140545,
                     "endColumn": 75,
-                    "endOffset": 140629
+                    "endOffset": 140616
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7293,9 +7293,9 @@
                 "to": {
                     "startLine": 1979,
                     "startColumn": 4,
-                    "startOffset": 140634,
+                    "startOffset": 140621,
                     "endColumn": 103,
-                    "endOffset": 140733
+                    "endOffset": 140720
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7305,9 +7305,9 @@
                 "to": {
                     "startLine": 1980,
                     "startColumn": 4,
-                    "startOffset": 140738,
+                    "startOffset": 140725,
                     "endColumn": 89,
-                    "endOffset": 140823
+                    "endOffset": 140810
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7317,9 +7317,9 @@
                 "to": {
                     "startLine": 1981,
                     "startColumn": 4,
-                    "startOffset": 140828,
+                    "startOffset": 140815,
                     "endColumn": 101,
-                    "endOffset": 140925
+                    "endOffset": 140912
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7329,9 +7329,9 @@
                 "to": {
                     "startLine": 1982,
                     "startColumn": 4,
-                    "startOffset": 140930,
+                    "startOffset": 140917,
                     "endColumn": 107,
-                    "endOffset": 141033
+                    "endOffset": 141020
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7341,9 +7341,9 @@
                 "to": {
                     "startLine": 1983,
                     "startColumn": 4,
-                    "startOffset": 141038,
+                    "startOffset": 141025,
                     "endColumn": 107,
-                    "endOffset": 141141
+                    "endOffset": 141128
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7353,9 +7353,9 @@
                 "to": {
                     "startLine": 1984,
                     "startColumn": 4,
-                    "startOffset": 141146,
+                    "startOffset": 141133,
                     "endColumn": 99,
-                    "endOffset": 141241
+                    "endOffset": 141228
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7365,9 +7365,9 @@
                 "to": {
                     "startLine": 1985,
                     "startColumn": 4,
-                    "startOffset": 141246,
+                    "startOffset": 141233,
                     "endColumn": 79,
-                    "endOffset": 141321
+                    "endOffset": 141308
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7377,9 +7377,9 @@
                 "to": {
                     "startLine": 1986,
                     "startColumn": 4,
-                    "startOffset": 141326,
+                    "startOffset": 141313,
                     "endColumn": 91,
-                    "endOffset": 141413
+                    "endOffset": 141400
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7389,9 +7389,9 @@
                 "to": {
                     "startLine": 1987,
                     "startColumn": 4,
-                    "startOffset": 141418,
+                    "startOffset": 141405,
                     "endColumn": 97,
-                    "endOffset": 141511
+                    "endOffset": 141498
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7401,10 +7401,10 @@
                 "to": {
                     "startLine": 1988,
                     "startColumn": 4,
-                    "startOffset": 141516,
+                    "startOffset": 141503,
                     "endLine": 1989,
                     "endColumn": 12,
-                    "endOffset": 141621
+                    "endOffset": 141608
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7414,9 +7414,9 @@
                 "to": {
                     "startLine": 1990,
                     "startColumn": 4,
-                    "startOffset": 141626,
+                    "startOffset": 141613,
                     "endColumn": 77,
-                    "endOffset": 141699
+                    "endOffset": 141686
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7426,9 +7426,9 @@
                 "to": {
                     "startLine": 1991,
                     "startColumn": 4,
-                    "startOffset": 141704,
+                    "startOffset": 141691,
                     "endColumn": 105,
-                    "endOffset": 141805
+                    "endOffset": 141792
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7438,9 +7438,9 @@
                 "to": {
                     "startLine": 1992,
                     "startColumn": 4,
-                    "startOffset": 141810,
+                    "startOffset": 141797,
                     "endColumn": 91,
-                    "endOffset": 141897
+                    "endOffset": 141884
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7450,9 +7450,9 @@
                 "to": {
                     "startLine": 1993,
                     "startColumn": 4,
-                    "startOffset": 141902,
+                    "startOffset": 141889,
                     "endColumn": 103,
-                    "endOffset": 142001
+                    "endOffset": 141988
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7462,9 +7462,9 @@
                 "to": {
                     "startLine": 1994,
                     "startColumn": 4,
-                    "startOffset": 142006,
+                    "startOffset": 141993,
                     "endColumn": 109,
-                    "endOffset": 142111
+                    "endOffset": 142098
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7474,10 +7474,10 @@
                 "to": {
                     "startLine": 1995,
                     "startColumn": 4,
-                    "startOffset": 142116,
+                    "startOffset": 142103,
                     "endLine": 1996,
                     "endColumn": 12,
-                    "endOffset": 142233
+                    "endOffset": 142220
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7487,10 +7487,10 @@
                 "to": {
                     "startLine": 1997,
                     "startColumn": 4,
-                    "startOffset": 142238,
+                    "startOffset": 142225,
                     "endLine": 2000,
                     "endColumn": 12,
-                    "endOffset": 142396
+                    "endOffset": 142383
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7500,10 +7500,10 @@
                 "to": {
                     "startLine": 2001,
                     "startColumn": 4,
-                    "startOffset": 142401,
+                    "startOffset": 142388,
                     "endLine": 2004,
                     "endColumn": 12,
-                    "endOffset": 142553
+                    "endOffset": 142540
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7513,10 +7513,10 @@
                 "to": {
                     "startLine": 2005,
                     "startColumn": 4,
-                    "startOffset": 142558,
+                    "startOffset": 142545,
                     "endLine": 2007,
                     "endColumn": 12,
-                    "endOffset": 142707
+                    "endOffset": 142694
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7526,10 +7526,10 @@
                 "to": {
                     "startLine": 2008,
                     "startColumn": 4,
-                    "startOffset": 142712,
+                    "startOffset": 142699,
                     "endLine": 2012,
                     "endColumn": 12,
-                    "endOffset": 143065
+                    "endOffset": 143052
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7539,10 +7539,10 @@
                 "to": {
                     "startLine": 2013,
                     "startColumn": 4,
-                    "startOffset": 143070,
+                    "startOffset": 143057,
                     "endLine": 2015,
                     "endColumn": 12,
-                    "endOffset": 143232
+                    "endOffset": 143219
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7552,10 +7552,10 @@
                 "to": {
                     "startLine": 2016,
                     "startColumn": 4,
-                    "startOffset": 143237,
+                    "startOffset": 143224,
                     "endLine": 2020,
                     "endColumn": 12,
-                    "endOffset": 143602
+                    "endOffset": 143589
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7565,10 +7565,10 @@
                 "to": {
                     "startLine": 2021,
                     "startColumn": 4,
-                    "startOffset": 143607,
+                    "startOffset": 143594,
                     "endLine": 2024,
                     "endColumn": 12,
-                    "endOffset": 143762
+                    "endOffset": 143749
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7578,10 +7578,10 @@
                 "to": {
                     "startLine": 2025,
                     "startColumn": 4,
-                    "startOffset": 143767,
+                    "startOffset": 143754,
                     "endLine": 2028,
                     "endColumn": 12,
-                    "endOffset": 143916
+                    "endOffset": 143903
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -7591,9 +7591,9 @@
                 "to": {
                     "startLine": 2029,
                     "startColumn": 4,
-                    "startOffset": 143921,
+                    "startOffset": 143908,
                     "endColumn": 79,
-                    "endOffset": 143996
+                    "endOffset": 143983
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7603,9 +7603,9 @@
                 "to": {
                     "startLine": 2030,
                     "startColumn": 4,
-                    "startOffset": 144001,
+                    "startOffset": 143988,
                     "endColumn": 99,
-                    "endOffset": 144096
+                    "endOffset": 144083
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7615,9 +7615,9 @@
                 "to": {
                     "startLine": 2031,
                     "startColumn": 4,
-                    "startOffset": 144101,
+                    "startOffset": 144088,
                     "endColumn": 89,
-                    "endOffset": 144186
+                    "endOffset": 144173
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7627,9 +7627,9 @@
                 "to": {
                     "startLine": 2032,
                     "startColumn": 4,
-                    "startOffset": 144191,
+                    "startOffset": 144178,
                     "endColumn": 109,
-                    "endOffset": 144296
+                    "endOffset": 144283
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7639,9 +7639,9 @@
                 "to": {
                     "startLine": 2033,
                     "startColumn": 4,
-                    "startOffset": 144301,
+                    "startOffset": 144288,
                     "endColumn": 93,
-                    "endOffset": 144390
+                    "endOffset": 144377
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7651,9 +7651,9 @@
                 "to": {
                     "startLine": 2034,
                     "startColumn": 4,
-                    "startOffset": 144395,
+                    "startOffset": 144382,
                     "endColumn": 105,
-                    "endOffset": 144496
+                    "endOffset": 144483
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7663,9 +7663,9 @@
                 "to": {
                     "startLine": 2035,
                     "startColumn": 4,
-                    "startOffset": 144501,
+                    "startOffset": 144488,
                     "endColumn": 91,
-                    "endOffset": 144588
+                    "endOffset": 144575
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7675,10 +7675,10 @@
                 "to": {
                     "startLine": 2036,
                     "startColumn": 4,
-                    "startOffset": 144593,
+                    "startOffset": 144580,
                     "endLine": 2037,
                     "endColumn": 12,
-                    "endOffset": 144688
+                    "endOffset": 144675
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7688,10 +7688,10 @@
                 "to": {
                     "startLine": 2038,
                     "startColumn": 4,
-                    "startOffset": 144693,
+                    "startOffset": 144680,
                     "endLine": 2039,
                     "endColumn": 12,
-                    "endOffset": 144800
+                    "endOffset": 144787
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7701,10 +7701,10 @@
                 "to": {
                     "startLine": 2040,
                     "startColumn": 4,
-                    "startOffset": 144805,
+                    "startOffset": 144792,
                     "endLine": 2041,
                     "endColumn": 12,
-                    "endOffset": 144914
+                    "endOffset": 144901
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7714,10 +7714,10 @@
                 "to": {
                     "startLine": 2042,
                     "startColumn": 4,
-                    "startOffset": 144919,
+                    "startOffset": 144906,
                     "endLine": 2043,
                     "endColumn": 12,
-                    "endOffset": 145030
+                    "endOffset": 145017
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7727,10 +7727,10 @@
                 "to": {
                     "startLine": 2044,
                     "startColumn": 4,
-                    "startOffset": 145035,
+                    "startOffset": 145022,
                     "endLine": 2045,
                     "endColumn": 12,
-                    "endOffset": 145146
+                    "endOffset": 145133
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7740,9 +7740,9 @@
                 "to": {
                     "startLine": 2046,
                     "startColumn": 4,
-                    "startOffset": 145151,
+                    "startOffset": 145138,
                     "endColumn": 93,
-                    "endOffset": 145240
+                    "endOffset": 145227
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7752,9 +7752,9 @@
                 "to": {
                     "startLine": 2047,
                     "startColumn": 4,
-                    "startOffset": 145245,
+                    "startOffset": 145232,
                     "endColumn": 113,
-                    "endOffset": 145354
+                    "endOffset": 145341
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7764,9 +7764,9 @@
                 "to": {
                     "startLine": 2048,
                     "startColumn": 4,
-                    "startOffset": 145359,
+                    "startOffset": 145346,
                     "endColumn": 111,
-                    "endOffset": 145466
+                    "endOffset": 145453
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7776,10 +7776,10 @@
                 "to": {
                     "startLine": 2049,
                     "startColumn": 4,
-                    "startOffset": 145471,
+                    "startOffset": 145458,
                     "endLine": 2050,
                     "endColumn": 12,
-                    "endOffset": 145568
+                    "endOffset": 145555
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7789,10 +7789,10 @@
                 "to": {
                     "startLine": 2051,
                     "startColumn": 4,
-                    "startOffset": 145573,
+                    "startOffset": 145560,
                     "endLine": 2052,
                     "endColumn": 12,
-                    "endOffset": 145688
+                    "endOffset": 145675
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7802,10 +7802,10 @@
                 "to": {
                     "startLine": 2053,
                     "startColumn": 4,
-                    "startOffset": 145693,
+                    "startOffset": 145680,
                     "endLine": 2054,
                     "endColumn": 12,
-                    "endOffset": 145810
+                    "endOffset": 145797
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7815,9 +7815,9 @@
                 "to": {
                     "startLine": 2055,
                     "startColumn": 4,
-                    "startOffset": 145815,
+                    "startOffset": 145802,
                     "endColumn": 81,
-                    "endOffset": 145892
+                    "endOffset": 145879
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7827,9 +7827,9 @@
                 "to": {
                     "startLine": 2056,
                     "startColumn": 4,
-                    "startOffset": 145897,
+                    "startOffset": 145884,
                     "endColumn": 103,
-                    "endOffset": 145996
+                    "endOffset": 145983
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7839,9 +7839,9 @@
                 "to": {
                     "startLine": 2057,
                     "startColumn": 4,
-                    "startOffset": 146001,
+                    "startOffset": 145988,
                     "endColumn": 119,
-                    "endOffset": 146116
+                    "endOffset": 146103
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7851,9 +7851,9 @@
                 "to": {
                     "startLine": 2058,
                     "startColumn": 4,
-                    "startOffset": 146121,
+                    "startOffset": 146108,
                     "endColumn": 125,
-                    "endOffset": 146242
+                    "endOffset": 146229
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7863,9 +7863,9 @@
                 "to": {
                     "startLine": 2059,
                     "startColumn": 4,
-                    "startOffset": 146247,
+                    "startOffset": 146234,
                     "endColumn": 97,
-                    "endOffset": 146340
+                    "endOffset": 146327
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7875,9 +7875,9 @@
                 "to": {
                     "startLine": 2060,
                     "startColumn": 4,
-                    "startOffset": 146345,
+                    "startOffset": 146332,
                     "endColumn": 93,
-                    "endOffset": 146434
+                    "endOffset": 146421
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7887,9 +7887,9 @@
                 "to": {
                     "startLine": 2061,
                     "startColumn": 4,
-                    "startOffset": 146439,
+                    "startOffset": 146426,
                     "endColumn": 87,
-                    "endOffset": 146522
+                    "endOffset": 146509
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7899,9 +7899,9 @@
                 "to": {
                     "startLine": 2062,
                     "startColumn": 4,
-                    "startOffset": 146527,
+                    "startOffset": 146514,
                     "endColumn": 111,
-                    "endOffset": 146634
+                    "endOffset": 146621
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7911,9 +7911,9 @@
                 "to": {
                     "startLine": 2063,
                     "startColumn": 4,
-                    "startOffset": 146639,
+                    "startOffset": 146626,
                     "endColumn": 115,
-                    "endOffset": 146750
+                    "endOffset": 146737
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7923,9 +7923,9 @@
                 "to": {
                     "startLine": 2064,
                     "startColumn": 4,
-                    "startOffset": 146755,
+                    "startOffset": 146742,
                     "endColumn": 121,
-                    "endOffset": 146872
+                    "endOffset": 146859
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7935,9 +7935,9 @@
                 "to": {
                     "startLine": 2065,
                     "startColumn": 4,
-                    "startOffset": 146877,
+                    "startOffset": 146864,
                     "endColumn": 111,
-                    "endOffset": 146984
+                    "endOffset": 146971
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7947,10 +7947,10 @@
                 "to": {
                     "startLine": 2066,
                     "startColumn": 4,
-                    "startOffset": 146989,
+                    "startOffset": 146976,
                     "endLine": 2068,
                     "endColumn": 12,
-                    "endOffset": 147159
+                    "endOffset": 147146
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7960,9 +7960,9 @@
                 "to": {
                     "startLine": 2069,
                     "startColumn": 4,
-                    "startOffset": 147164,
+                    "startOffset": 147151,
                     "endColumn": 115,
-                    "endOffset": 147275
+                    "endOffset": 147262
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7972,9 +7972,9 @@
                 "to": {
                     "startLine": 2070,
                     "startColumn": 4,
-                    "startOffset": 147280,
+                    "startOffset": 147267,
                     "endColumn": 85,
-                    "endOffset": 147361
+                    "endOffset": 147348
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7984,9 +7984,9 @@
                 "to": {
                     "startLine": 2071,
                     "startColumn": 4,
-                    "startOffset": 147366,
+                    "startOffset": 147353,
                     "endColumn": 91,
-                    "endOffset": 147453
+                    "endOffset": 147440
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -7996,10 +7996,10 @@
                 "to": {
                     "startLine": 2072,
                     "startColumn": 4,
-                    "startOffset": 147458,
+                    "startOffset": 147445,
                     "endLine": 2073,
                     "endColumn": 12,
-                    "endOffset": 147565
+                    "endOffset": 147552
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8009,10 +8009,10 @@
                 "to": {
                     "startLine": 2074,
                     "startColumn": 4,
-                    "startOffset": 147570,
+                    "startOffset": 147557,
                     "endLine": 2075,
                     "endColumn": 12,
-                    "endOffset": 147689
+                    "endOffset": 147676
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8022,9 +8022,9 @@
                 "to": {
                     "startLine": 2076,
                     "startColumn": 4,
-                    "startOffset": 147694,
+                    "startOffset": 147681,
                     "endColumn": 66,
-                    "endOffset": 147756
+                    "endOffset": 147743
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8034,10 +8034,10 @@
                 "to": {
                     "startLine": 2077,
                     "startColumn": 4,
-                    "startOffset": 147761,
+                    "startOffset": 147748,
                     "endLine": 2078,
                     "endColumn": 12,
-                    "endOffset": 147882
+                    "endOffset": 147869
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8047,9 +8047,9 @@
                 "to": {
                     "startLine": 2079,
                     "startColumn": 4,
-                    "startOffset": 147887,
+                    "startOffset": 147874,
                     "endColumn": 67,
-                    "endOffset": 147950
+                    "endOffset": 147937
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8059,10 +8059,10 @@
                 "to": {
                     "startLine": 2080,
                     "startColumn": 4,
-                    "startOffset": 147955,
+                    "startOffset": 147942,
                     "endLine": 2081,
                     "endColumn": 12,
-                    "endOffset": 148078
+                    "endOffset": 148065
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8072,10 +8072,10 @@
                 "to": {
                     "startLine": 2082,
                     "startColumn": 4,
-                    "startOffset": 148083,
+                    "startOffset": 148070,
                     "endLine": 2083,
                     "endColumn": 12,
-                    "endOffset": 148222
+                    "endOffset": 148209
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8085,10 +8085,10 @@
                 "to": {
                     "startLine": 2084,
                     "startColumn": 4,
-                    "startOffset": 148227,
+                    "startOffset": 148214,
                     "endLine": 2085,
                     "endColumn": 12,
-                    "endOffset": 148350
+                    "endOffset": 148337
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8098,9 +8098,9 @@
                 "to": {
                     "startLine": 2086,
                     "startColumn": 4,
-                    "startOffset": 148355,
+                    "startOffset": 148342,
                     "endColumn": 68,
-                    "endOffset": 148419
+                    "endOffset": 148406
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8110,9 +8110,9 @@
                 "to": {
                     "startLine": 2087,
                     "startColumn": 4,
-                    "startOffset": 148424,
+                    "startOffset": 148411,
                     "endColumn": 94,
-                    "endOffset": 148514
+                    "endOffset": 148501
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8122,9 +8122,9 @@
                 "to": {
                     "startLine": 2088,
                     "startColumn": 4,
-                    "startOffset": 148519,
+                    "startOffset": 148506,
                     "endColumn": 114,
-                    "endOffset": 148629
+                    "endOffset": 148616
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8134,9 +8134,9 @@
                 "to": {
                     "startLine": 2089,
                     "startColumn": 4,
-                    "startOffset": 148634,
+                    "startOffset": 148621,
                     "endColumn": 112,
-                    "endOffset": 148742
+                    "endOffset": 148729
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8146,9 +8146,9 @@
                 "to": {
                     "startLine": 2090,
                     "startColumn": 4,
-                    "startOffset": 148747,
+                    "startOffset": 148734,
                     "endColumn": 98,
-                    "endOffset": 148841
+                    "endOffset": 148828
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8158,9 +8158,9 @@
                 "to": {
                     "startLine": 2091,
                     "startColumn": 4,
-                    "startOffset": 148846,
+                    "startOffset": 148833,
                     "endColumn": 108,
-                    "endOffset": 148950
+                    "endOffset": 148937
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8170,9 +8170,9 @@
                 "to": {
                     "startLine": 2092,
                     "startColumn": 4,
-                    "startOffset": 148955,
+                    "startOffset": 148942,
                     "endColumn": 110,
-                    "endOffset": 149061
+                    "endOffset": 149048
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8182,9 +8182,9 @@
                 "to": {
                     "startLine": 2093,
                     "startColumn": 4,
-                    "startOffset": 149066,
+                    "startOffset": 149053,
                     "endColumn": 110,
-                    "endOffset": 149172
+                    "endOffset": 149159
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8194,9 +8194,9 @@
                 "to": {
                     "startLine": 2094,
                     "startColumn": 4,
-                    "startOffset": 149177,
+                    "startOffset": 149164,
                     "endColumn": 100,
-                    "endOffset": 149273
+                    "endOffset": 149260
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8206,9 +8206,9 @@
                 "to": {
                     "startLine": 2095,
                     "startColumn": 4,
-                    "startOffset": 149278,
+                    "startOffset": 149265,
                     "endColumn": 104,
-                    "endOffset": 149378
+                    "endOffset": 149365
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8218,9 +8218,9 @@
                 "to": {
                     "startLine": 2096,
                     "startColumn": 4,
-                    "startOffset": 149383,
+                    "startOffset": 149370,
                     "endColumn": 99,
-                    "endOffset": 149478
+                    "endOffset": 149465
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8230,10 +8230,10 @@
                 "to": {
                     "startLine": 2097,
                     "startColumn": 4,
-                    "startOffset": 149483,
+                    "startOffset": 149470,
                     "endLine": 2098,
                     "endColumn": 12,
-                    "endOffset": 149608
+                    "endOffset": 149595
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8243,9 +8243,9 @@
                 "to": {
                     "startLine": 2099,
                     "startColumn": 4,
-                    "startOffset": 149613,
+                    "startOffset": 149600,
                     "endColumn": 90,
-                    "endOffset": 149699
+                    "endOffset": 149686
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8255,9 +8255,9 @@
                 "to": {
                     "startLine": 2100,
                     "startColumn": 4,
-                    "startOffset": 149704,
+                    "startOffset": 149691,
                     "endColumn": 122,
-                    "endOffset": 149822
+                    "endOffset": 149809
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8267,9 +8267,9 @@
                 "to": {
                     "startLine": 2101,
                     "startColumn": 4,
-                    "startOffset": 149827,
+                    "startOffset": 149814,
                     "endColumn": 93,
-                    "endOffset": 149916
+                    "endOffset": 149903
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8279,10 +8279,10 @@
                 "to": {
                     "startLine": 2102,
                     "startColumn": 4,
-                    "startOffset": 149921,
+                    "startOffset": 149908,
                     "endLine": 2103,
                     "endColumn": 12,
-                    "endOffset": 150028
+                    "endOffset": 150015
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8292,9 +8292,9 @@
                 "to": {
                     "startLine": 2104,
                     "startColumn": 4,
-                    "startOffset": 150033,
+                    "startOffset": 150020,
                     "endColumn": 85,
-                    "endOffset": 150114
+                    "endOffset": 150101
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8304,9 +8304,9 @@
                 "to": {
                     "startLine": 2105,
                     "startColumn": 4,
-                    "startOffset": 150119,
+                    "startOffset": 150106,
                     "endColumn": 103,
-                    "endOffset": 150218
+                    "endOffset": 150205
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8316,9 +8316,9 @@
                 "to": {
                     "startLine": 2106,
                     "startColumn": 4,
-                    "startOffset": 150223,
+                    "startOffset": 150210,
                     "endColumn": 95,
-                    "endOffset": 150314
+                    "endOffset": 150301
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8328,9 +8328,9 @@
                 "to": {
                     "startLine": 2107,
                     "startColumn": 4,
-                    "startOffset": 150319,
+                    "startOffset": 150306,
                     "endColumn": 74,
-                    "endOffset": 150389
+                    "endOffset": 150376
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8340,9 +8340,9 @@
                 "to": {
                     "startLine": 2108,
                     "startColumn": 4,
-                    "startOffset": 150394,
+                    "startOffset": 150381,
                     "endColumn": 69,
-                    "endOffset": 150459
+                    "endOffset": 150446
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8352,9 +8352,9 @@
                 "to": {
                     "startLine": 2109,
                     "startColumn": 4,
-                    "startOffset": 150464,
+                    "startOffset": 150451,
                     "endColumn": 87,
-                    "endOffset": 150547
+                    "endOffset": 150534
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8364,10 +8364,10 @@
                 "to": {
                     "startLine": 2110,
                     "startColumn": 4,
-                    "startOffset": 150552,
+                    "startOffset": 150539,
                     "endLine": 2111,
                     "endColumn": 12,
-                    "endOffset": 150665
+                    "endOffset": 150652
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8377,10 +8377,10 @@
                 "to": {
                     "startLine": 2112,
                     "startColumn": 4,
-                    "startOffset": 150670,
+                    "startOffset": 150657,
                     "endLine": 2113,
                     "endColumn": 12,
-                    "endOffset": 150769
+                    "endOffset": 150756
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8390,10 +8390,10 @@
                 "to": {
                     "startLine": 2114,
                     "startColumn": 4,
-                    "startOffset": 150774,
+                    "startOffset": 150761,
                     "endLine": 2115,
                     "endColumn": 12,
-                    "endOffset": 150873
+                    "endOffset": 150860
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8403,10 +8403,10 @@
                 "to": {
                     "startLine": 2116,
                     "startColumn": 4,
-                    "startOffset": 150878,
+                    "startOffset": 150865,
                     "endLine": 2117,
                     "endColumn": 12,
-                    "endOffset": 150999
+                    "endOffset": 150986
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8416,9 +8416,9 @@
                 "to": {
                     "startLine": 2118,
                     "startColumn": 4,
-                    "startOffset": 151004,
+                    "startOffset": 150991,
                     "endColumn": 87,
-                    "endOffset": 151087
+                    "endOffset": 151074
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8428,9 +8428,9 @@
                 "to": {
                     "startLine": 2119,
                     "startColumn": 4,
-                    "startOffset": 151092,
+                    "startOffset": 151079,
                     "endColumn": 107,
-                    "endOffset": 151195
+                    "endOffset": 151182
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8440,9 +8440,9 @@
                 "to": {
                     "startLine": 2120,
                     "startColumn": 4,
-                    "startOffset": 151200,
+                    "startOffset": 151187,
                     "endColumn": 99,
-                    "endOffset": 151295
+                    "endOffset": 151282
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8452,9 +8452,9 @@
                 "to": {
                     "startLine": 2121,
                     "startColumn": 4,
-                    "startOffset": 151300,
+                    "startOffset": 151287,
                     "endColumn": 89,
-                    "endOffset": 151385
+                    "endOffset": 151372
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8464,9 +8464,9 @@
                 "to": {
                     "startLine": 2122,
                     "startColumn": 4,
-                    "startOffset": 151390,
+                    "startOffset": 151377,
                     "endColumn": 109,
-                    "endOffset": 151495
+                    "endOffset": 151482
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8476,9 +8476,9 @@
                 "to": {
                     "startLine": 2123,
                     "startColumn": 4,
-                    "startOffset": 151500,
+                    "startOffset": 151487,
                     "endColumn": 83,
-                    "endOffset": 151579
+                    "endOffset": 151566
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8488,9 +8488,9 @@
                 "to": {
                     "startLine": 2124,
                     "startColumn": 4,
-                    "startOffset": 151584,
+                    "startOffset": 151571,
                     "endColumn": 101,
-                    "endOffset": 151681
+                    "endOffset": 151668
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8500,9 +8500,9 @@
                 "to": {
                     "startLine": 2125,
                     "startColumn": 4,
-                    "startOffset": 151686,
+                    "startOffset": 151673,
                     "endColumn": 83,
-                    "endOffset": 151765
+                    "endOffset": 151752
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8512,9 +8512,9 @@
                 "to": {
                     "startLine": 2126,
                     "startColumn": 4,
-                    "startOffset": 151770,
+                    "startOffset": 151757,
                     "endColumn": 53,
-                    "endOffset": 151819
+                    "endOffset": 151806
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8524,9 +8524,9 @@
                 "to": {
                     "startLine": 2127,
                     "startColumn": 4,
-                    "startOffset": 151824,
+                    "startOffset": 151811,
                     "endColumn": 63,
-                    "endOffset": 151883
+                    "endOffset": 151870
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8536,9 +8536,9 @@
                 "to": {
                     "startLine": 2128,
                     "startColumn": 4,
-                    "startOffset": 151888,
+                    "startOffset": 151875,
                     "endColumn": 105,
-                    "endOffset": 151989
+                    "endOffset": 151976
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8548,9 +8548,9 @@
                 "to": {
                     "startLine": 2129,
                     "startColumn": 4,
-                    "startOffset": 151994,
+                    "startOffset": 151981,
                     "endColumn": 109,
-                    "endOffset": 152099
+                    "endOffset": 152086
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8560,9 +8560,9 @@
                 "to": {
                     "startLine": 2130,
                     "startColumn": 4,
-                    "startOffset": 152104,
+                    "startOffset": 152091,
                     "endColumn": 83,
-                    "endOffset": 152183
+                    "endOffset": 152170
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8572,9 +8572,9 @@
                 "to": {
                     "startLine": 2131,
                     "startColumn": 4,
-                    "startOffset": 152188,
+                    "startOffset": 152175,
                     "endColumn": 119,
-                    "endOffset": 152303
+                    "endOffset": 152290
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\values\\values.xml"
@@ -8584,10 +8584,10 @@
                 "to": {
                     "startLine": 2132,
                     "startColumn": 4,
-                    "startOffset": 152308,
+                    "startOffset": 152295,
                     "endLine": 2133,
                     "endColumn": 12,
-                    "endOffset": 152403
+                    "endOffset": 152390
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -8597,10 +8597,10 @@
                 "to": {
                     "startLine": 2134,
                     "startColumn": 4,
-                    "startOffset": 152408,
+                    "startOffset": 152395,
                     "endLine": 2137,
                     "endColumn": 12,
-                    "endOffset": 152644
+                    "endOffset": 152631
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -8610,10 +8610,10 @@
                 "to": {
                     "startLine": 2138,
                     "startColumn": 4,
-                    "startOffset": 152649,
+                    "startOffset": 152636,
                     "endLine": 2144,
                     "endColumn": 12,
-                    "endOffset": 153079
+                    "endOffset": 153066
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -8623,10 +8623,10 @@
                 "to": {
                     "startLine": 2145,
                     "startColumn": 4,
-                    "startOffset": 153084,
+                    "startOffset": 153071,
                     "endLine": 2148,
                     "endColumn": 12,
-                    "endOffset": 153286
+                    "endOffset": 153273
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -8636,10 +8636,10 @@
                 "to": {
                     "startLine": 2149,
                     "startColumn": 4,
-                    "startOffset": 153291,
+                    "startOffset": 153278,
                     "endLine": 2151,
                     "endColumn": 12,
-                    "endOffset": 153445
+                    "endOffset": 153432
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -8649,10 +8649,10 @@
                 "to": {
                     "startLine": 2152,
                     "startColumn": 4,
-                    "startOffset": 153450,
+                    "startOffset": 153437,
                     "endLine": 2160,
                     "endColumn": 12,
-                    "endOffset": 154010
+                    "endOffset": 153997
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -8662,10 +8662,10 @@
                 "to": {
                     "startLine": 2161,
                     "startColumn": 4,
-                    "startOffset": 154015,
+                    "startOffset": 154002,
                     "endLine": 2166,
                     "endColumn": 12,
-                    "endOffset": 154371
+                    "endOffset": 154358
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -8675,10 +8675,10 @@
                 "to": {
                     "startLine": 2167,
                     "startColumn": 4,
-                    "startOffset": 154376,
+                    "startOffset": 154363,
                     "endLine": 2169,
                     "endColumn": 12,
-                    "endOffset": 154500
+                    "endOffset": 154487
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -8688,10 +8688,10 @@
                 "to": {
                     "startLine": 2170,
                     "startColumn": 4,
-                    "startOffset": 154505,
+                    "startOffset": 154492,
                     "endLine": 2178,
                     "endColumn": 12,
-                    "endOffset": 155167
+                    "endOffset": 155154
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -8701,10 +8701,10 @@
                 "to": {
                     "startLine": 2179,
                     "startColumn": 4,
-                    "startOffset": 155172,
+                    "startOffset": 155159,
                     "endLine": 2182,
                     "endColumn": 12,
-                    "endOffset": 155347
+                    "endOffset": 155334
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"
@@ -8714,10 +8714,10 @@
                 "to": {
                     "startLine": 2183,
                     "startColumn": 4,
-                    "startOffset": 155352,
+                    "startOffset": 155339,
                     "endLine": 2191,
                     "endColumn": 12,
-                    "endOffset": 156056
+                    "endOffset": 156043
                 },
                 "from": {
                     "file": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\values\\values.xml"

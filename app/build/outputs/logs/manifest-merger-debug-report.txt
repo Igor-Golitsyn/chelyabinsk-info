@@ -28,13 +28,13 @@ MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\golit\.android\bu
 MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\golit\.android\build-cache\30159cb43d395409523991bec3b13e6f41566174\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\golit\.android\build-cache\a7dcd6ef8834b6a62bfa5532a65aa8663bbdb7a2\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:transition:25.3.1] C:\Users\golit\.android\build-cache\d4c5fcfd49215b37b402f872f648d6ba58638222\output\AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\golit\.android\build-cache\6e59e7701574d28af9d7447508c3034298ae52e6\output\AndroidManifest.xml:26:5-20
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\golit\.android\build-cache\c391e6a8e66d175e0c4ba5f4918c38e03d90f33c\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\golit\.android\build-cache\f71a3ed61dd43bced0c93b4f8e0b6961b0613a0d\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\golit\.android\build-cache\5ca018a911f3e84c36895c58d7ba01b860395375\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\golit\.android\build-cache\fe28fc2492b991a67c81154e9ec06297ad11450e\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\golit\.android\build-cache\738a10e557140c53c1bb6a4271e13281d3c607ee\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\golit\.android\build-cache\90f9167e3b5d2820916816f26852b3915228c1b1\output\AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\golit\.android\build-cache\6e59e7701574d28af9d7447508c3034298ae52e6\output\AndroidManifest.xml:26:5-20
 	android:label
 		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:11:9-41
 	android:supportsRtl
@@ -81,14 +81,14 @@ MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\golit
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\golit\.android\build-cache\a7dcd6ef8834b6a62bfa5532a65aa8663bbdb7a2\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\golit\.android\build-cache\82b4c5d1fe7a2d18c8624f50f69347315f4b8c98\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:transition:25.3.1] C:\Users\golit\.android\build-cache\d4c5fcfd49215b37b402f872f648d6ba58638222\output\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.4.0] C:\Users\golit\.android\build-cache\e835ff955fb349fd8678e8a426b36fff4a906323\output\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\golit\.android\build-cache\6e59e7701574d28af9d7447508c3034298ae52e6\output\AndroidManifest.xml:20:5-43
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\golit\.android\build-cache\c391e6a8e66d175e0c4ba5f4918c38e03d90f33c\output\AndroidManifest.xml:21:5-23:54
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\golit\.android\build-cache\f71a3ed61dd43bced0c93b4f8e0b6961b0613a0d\output\AndroidManifest.xml:21:5-23:60
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\golit\.android\build-cache\5ca018a911f3e84c36895c58d7ba01b860395375\output\AndroidManifest.xml:21:5-23:63
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\golit\.android\build-cache\fe28fc2492b991a67c81154e9ec06297ad11450e\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\golit\.android\build-cache\738a10e557140c53c1bb6a4271e13281d3c607ee\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\golit\.android\build-cache\90f9167e3b5d2820916816f26852b3915228c1b1\output\AndroidManifest.xml:21:5-23:58
-MERGED from [com.jakewharton:butterknife:8.4.0] C:\Users\golit\.android\build-cache\e835ff955fb349fd8678e8a426b36fff4a906323\output\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\golit\.android\build-cache\6e59e7701574d28af9d7447508c3034298ae52e6\output\AndroidManifest.xml:20:5-43
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] C:\Users\golit\.android\build-cache\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
@@ -104,13 +104,13 @@ MERGED from [com.android.support:animated-vector-drawable:25.3.1] C:\Users\golit
 MERGED from [com.android.support:support-vector-drawable:25.3.1] C:\Users\golit\.android\build-cache\a7dcd6ef8834b6a62bfa5532a65aa8663bbdb7a2\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:recyclerview-v7:25.3.1] C:\Users\golit\.android\build-cache\82b4c5d1fe7a2d18c8624f50f69347315f4b8c98\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:transition:25.3.1] C:\Users\golit\.android\build-cache\d4c5fcfd49215b37b402f872f648d6ba58638222\output\AndroidManifest.xml:22:5-24:34
+MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\golit\.android\build-cache\6e59e7701574d28af9d7447508c3034298ae52e6\output\AndroidManifest.xml:22:5-24:34
 MERGED from [com.android.support:support-v4:25.3.1] C:\Users\golit\.android\build-cache\c391e6a8e66d175e0c4ba5f4918c38e03d90f33c\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-fragment:25.3.1] C:\Users\golit\.android\build-cache\f71a3ed61dd43bced0c93b4f8e0b6961b0613a0d\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\golit\.android\build-cache\5ca018a911f3e84c36895c58d7ba01b860395375\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\golit\.android\build-cache\fe28fc2492b991a67c81154e9ec06297ad11450e\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\golit\.android\build-cache\738a10e557140c53c1bb6a4271e13281d3c607ee\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\golit\.android\build-cache\90f9167e3b5d2820916816f26852b3915228c1b1\output\AndroidManifest.xml:25:5-27:34
-MERGED from [com.android.support:cardview-v7:25.3.1] C:\Users\golit\.android\build-cache\6e59e7701574d28af9d7447508c3034298ae52e6\output\AndroidManifest.xml:22:5-24:34
 	android:value
 		ADDED from [com.android.support:design:25.3.1] C:\Users\golit\.android\build-cache\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\output\AndroidManifest.xml:27:9-31
 	android:name

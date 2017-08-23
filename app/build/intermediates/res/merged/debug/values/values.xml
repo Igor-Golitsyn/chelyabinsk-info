@@ -1705,9 +1705,9 @@
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
     <style name="NewsTheme" parent="android:Theme.DeviceDefault.Light.DarkActionBar">
-        <!--<item name="android:colorPrimary" tools:targetApi="lollipop">@color/colorPrimary</item>
-        <item name="android:colorPrimaryDark" tools:targetApi="lollipop">@color/colorPrimaryDark</item>
-        <item name="android:colorAccent" tools:targetApi="lollipop">@color/colorAccent</item>-->
+        <item name="android:colorPrimary" ns1:targetApi="lollipop">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark" ns1:targetApi="lollipop">@color/colorPrimaryDark</item>
+        <item name="android:colorAccent" ns1:targetApi="lollipop">@color/colorAccent</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>

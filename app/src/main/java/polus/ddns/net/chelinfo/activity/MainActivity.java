@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Parcelable;
 import android.os.StrictMode;
 import android.support.v4.app.FragmentManager;
 import android.util.Log;
@@ -11,6 +12,10 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -133,38 +138,44 @@ public class MainActivity extends BaseActivity {
 
     @OnClick(R.id.button_traktorozavodsky)
     public void showTraktorozavodsky() {
-        Log.d(TAG, "showCentralny");
+        Log.d(TAG, "showTraktorozavodsky");
         createDialog(ConstantManager.TRAKTOROZAVODSKY, ConstantManager.EDDS74RU_TRAKTOROZAVODSKY);
     }
 
     @OnClick(R.id.button_center)
     public void loadCenterPrognoz() {
+        Log.d(TAG, "loadCenterPrognoz");
         pogoda.loadUrl("file:///android_asset/chelpogoda_center.html");
         prognoz.loadUrl("file:///android_asset/prognoz_center.html");
     }
 
     @OnClick(R.id.button_north)
     public void loadNorthPrognoz() {
+        Log.d(TAG, "loadNorthPrognoz");
         pogoda.loadUrl("file:///android_asset/chelpogoda_north.html");
         prognoz.loadUrl("file:///android_asset/prognoz_north.html");
     }
 
     @OnClick(R.id.button_south)
     public void loadSouthPrognoz() {
+        Log.d(TAG, "loadSouthPrognoz");
         pogoda.loadUrl("file:///android_asset/chelpogoda_south.html");
         prognoz.loadUrl("file:///android_asset/prognoz_south.html");
     }
 
     @OnClick(R.id.button_request)
     public void request() {
+        Log.d(TAG, "request");
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("market://details?id=polus.ddns.net.chelinfo"));
         startActivity(intent);
     }
     @OnClick(R.id.button_news)
     public void showNews(){
+        Log.d(TAG, "showNews");
         Intent intent = new Intent(MainActivity.this, NewsActivity.class);
-        intent.putExtra(ConstantManager.NEWS_LINK, newsListItems);
+        ArrayList<NewsListItem> listItems =new ArrayList<>(Arrays.asList(newsListItems));
+        intent.putParcelableArrayListExtra(ConstantManager.NEWS_LINK, listItems);
         startActivity(intent);
     }
 
