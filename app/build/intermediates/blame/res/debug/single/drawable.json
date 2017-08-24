@@ -64,20 +64,16 @@
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_ic_visibility.xml",
-        "source": "C:\\Users\\golit\\.android\\build-cache\\d8be546be630bcce0c4f416e6cf5c7b09a2a55d2\\output\\res\\drawable\\design_ic_visibility.xml"
-    },
-    {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sovet.png",
         "source": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\drawable\\sovet.png"
     },
     {
-        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\traktor.png",
         "source": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\drawable\\traktor.png"
+    },
+    {
+        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\lenin.png",

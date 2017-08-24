@@ -25,4 +25,5 @@ public interface ConstantManager {
     String INTERNET_OUT = "Отсутствует интернет соединение";
     String RESTURL = "http://polus.ddns.net/RESTservice/";
     String NEWS_LINK = "NEWS_LINK";
+    String NEWS_ITEM_LINK = "NEWS_ITEM_LINK";
 }

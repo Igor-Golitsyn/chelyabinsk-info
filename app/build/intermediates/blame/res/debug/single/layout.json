@@ -12,12 +12,12 @@
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout\\notification_template_icon_group.xml"
     },
     {
-        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
-        "source": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\layout\\design_navigation_item_separator.xml"
-    },
-    {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_action_tombstone.xml",
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
+        "source": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\layout\\design_navigation_item_separator.xml"
     },
     {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_mode_bar.xml",
@@ -92,6 +92,10 @@
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout\\notification_template_media_custom.xml"
     },
     {
+        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item.xml",
+        "source": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\layout\\item.xml"
+    },
+    {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_bar_view_list_nav_layout.xml",
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout\\abc_action_bar_view_list_nav_layout.xml"
     },
@@ -110,10 +114,6 @@
     {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout\\abc_search_view.xml"
-    },
-    {
-        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media.xml",
-        "source": "C:\\Users\\golit\\.android\\build-cache\\c8e071482835db89546a81f123575e73ef70bc5b\\output\\res\\layout\\notification_template_big_media.xml"
     },
     {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_navigation_item.xml",
@@ -160,10 +160,6 @@
         "source": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\layout\\design_layout_tab_icon.xml"
     },
     {
-        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_custom.xml",
-        "source": "C:\\Users\\golit\\.android\\build-cache\\c8e071482835db89546a81f123575e73ef70bc5b\\output\\res\\layout\\notification_template_big_media_custom.xml"
-    },
-    {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_lines_media.xml",
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout\\notification_template_lines_media.xml"
     },
@@ -176,10 +172,6 @@
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
     {
-        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_cancel_action.xml",
-        "source": "C:\\Users\\golit\\.android\\build-cache\\c8e071482835db89546a81f123575e73ef70bc5b\\output\\res\\layout\\notification_media_cancel_action.xml"
-    },
-    {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
@@ -188,16 +180,8 @@
         "source": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
-        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_media_action.xml",
-        "source": "C:\\Users\\golit\\.android\\build-cache\\c8e071482835db89546a81f123575e73ef70bc5b\\output\\res\\layout\\notification_media_action.xml"
-    },
-    {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout\\abc_action_menu_layout.xml"
-    },
-    {
-        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
-        "source": "C:\\Users\\golit\\.android\\build-cache\\c8e071482835db89546a81f123575e73ef70bc5b\\output\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",
@@ -208,16 +192,12 @@
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
-        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow_custom.xml",
-        "source": "C:\\Users\\golit\\.android\\build-cache\\c8e071482835db89546a81f123575e73ef70bc5b\\output\\res\\layout\\notification_template_big_media_narrow_custom.xml"
+        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sample_main.xml",
+        "source": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\layout\\sample_main.xml"
     },
     {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\layout\\activity_main.xml"
-    },
-    {
-        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\sample_main.xml",
-        "source": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\layout\\sample_main.xml"
     },
     {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_alert_dialog_button_bar_material.xml",

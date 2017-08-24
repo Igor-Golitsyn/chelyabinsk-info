@@ -2,39 +2,53 @@ package polus.ddns.net.chelinfo.activity;
 
 import android.app.ActionBar;
 import android.app.FragmentTransaction;
+import android.app.ProgressDialog;
+import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 import java.util.Locale;
+import java.util.concurrent.ConcurrentHashMap;
 
 import polus.ddns.net.chelinfo.R;
+import polus.ddns.net.chelinfo.beans.GetBeansFromRest;
+import polus.ddns.net.chelinfo.beans.NewsItem;
 import polus.ddns.net.chelinfo.beans.NewsListItem;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
+import polus.ddns.net.chelinfo.utils.NetworkUtils;
+import polus.ddns.net.chelinfo.utils.RVAdapter;
+import polus.ddns.net.chelinfo.utils.RecyclerItemClickListener;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
 
 public class NewsActivity extends FragmentActivity implements ActionBar.TabListener {
     static final String TAG = ConstantManager.TAG_PREFIX + "NewsActivity";
     SectionsPagerAdapter mSectionsPagerAdapter;
     ViewPager mViewPager;
-    NewsListItem[] newsListItems;
+    static NewsListItem[] newsListItems;
+    static ConcurrentHashMap<Integer, NewsItem[]> newsItemsMap = new ConcurrentHashMap<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.d(TAG, "onCreate");
-        setContentView(R.layout.sample_main);
-        final ActionBar actionBar = getActionBar();
-        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
             if (extras != null) {
@@ -43,7 +57,19 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
             } else newsListItems = new NewsListItem[0];
         } else {
             newsListItems = (NewsListItem[]) savedInstanceState.getParcelableArray(ConstantManager.NEWS_LINK);
+            for (int i = 1; i < newsListItems.length + 1; i++) {
+                newsItemsMap.put(i, (NewsItem[]) savedInstanceState.getParcelableArray(ConstantManager.NEWS_ITEM_LINK + i));
+            }
         }
+        initPages();
+    }
+
+    private void initPages() {
+        Log.d(TAG, "initPages");
+
+        setContentView(R.layout.sample_main);
+        final ActionBar actionBar = getActionBar();
+        actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
         mViewPager = (ViewPager) findViewById(R.id.pager);
         mViewPager.setAdapter(mSectionsPagerAdapter);
@@ -94,7 +120,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
 
         @Override
         public int getCount() {
-            Log.d(TAG, "getCount");
+            //Log.d(TAG, "getCount");
 
             //return 3;
             return newsListItems.length;
@@ -103,17 +129,6 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         @Override
         public CharSequence getPageTitle(int position) {
             Log.d(TAG, "getPageTitle");
-            Locale l = Locale.getDefault();
-            /*switch (position) {
-                case 0:
-                    return getString(R.string.title_section1).toUpperCase(l);
-                case 1:
-                    return getString(R.string.title_section2).toUpperCase(l);
-                case 2:
-                    return getString(R.string.title_section3).toUpperCase(l);
-            }
-            return null;
-            */
             return newsListItems[position].getName();
         }
     }
@@ -121,6 +136,10 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
     public static class DummySectionFragment extends Fragment {
         static final String TAG = ConstantManager.TAG_PREFIX + "DummySection";
         public static final String ARG_SECTION_NUMBER = "section_number";
+        NewsItem[] newsItems = new NewsItem[0];
+        RecyclerView recyclerView;
+        ProgressDialog mProgressDialog;
+
 
         public DummySectionFragment() {
         }
@@ -130,10 +149,92 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                                  Bundle savedInstanceState) {
             Log.d(TAG, "onCreateView");
             View rootView = inflater.inflate(R.layout.fragment_main_dummy, container, false);
-            TextView dummyTextView = (TextView) rootView.findViewById(R.id.section_label);
-            dummyTextView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
+            recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
+            LinearLayoutManager llm = new LinearLayoutManager(this.getContext());
+            recyclerView.setLayoutManager(llm);
+            getNews();
+            final Context context = this.getActivity();
+            recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(context, recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
+                @Override
+                public void onItemClick(View view, int position) {
+                    Log.d(TAG, "onItemClick");
+                    if (NetworkUtils.isNetworkAvailable(context)) {
+                        //Intent intent = new Intent(ScrollingActivity.this, EntryActivity.class);
+                        //intent.putExtra(ConstantManager.ENTRY_LINK, siteList.get(position).getUri());
+                        //startActivity(intent);
+                        view.setBackgroundColor(Color.parseColor("#DBDBDB"));
+                    } else {
+                        //showToast(ConstantManager.INTERNET_OUT);
+                    }
+                }
+
+                @Override
+                public void onLongItemClick(View view, int position) {
+                    Log.d(TAG, "onLongItemClick");
+                    // do whatever
+                }
+            }));
             return rootView;
         }
+
+        private void getNews() {
+            final int num = getArguments().getInt(ARG_SECTION_NUMBER) - 1;
+            Log.d(TAG, "getNews" + num);
+            showProgress();
+            try {
+                RVAdapter adapter = new RVAdapter(Arrays.asList(newsItemsMap.get(num)));
+                recyclerView.setAdapter(adapter);
+                Log.d(TAG, "getNewsHist" + num);
+                hideProgress();
+            } catch (Exception e) {
+                Log.d(TAG, "getNewsInet" + num);
+                final Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
+                GetBeansFromRest service = retrofit.create(GetBeansFromRest.class);
+                service.getNews(newsListItems[num].getRestLink()).enqueue(new Callback<NewsItem[]>() {
+                    @Override
+                    public void onResponse(Call<NewsItem[]> call, Response<NewsItem[]> response) {
+                        Log.d(TAG, "onResponseGetNews");
+                        Log.d(TAG, "responseCode" + response.code());
+                        if (response.code() == 200) {
+                            newsItems = response.body();
+                            if (newsItems == null) newsItems = new NewsItem[0];
+                            newsItemsMap.put(num, newsItems);
+                            RVAdapter adapter = new RVAdapter(Arrays.asList(newsItems));
+                            recyclerView.setAdapter(adapter);
+                            hideProgress();
+                        }
+                    }
+
+                    @Override
+                    public void onFailure(Call<NewsItem[]> call, Throwable t) {
+                        Log.d(TAG, "onFailureGetNews");
+                        newsItems = new NewsItem[0];
+                        RVAdapter adapter = new RVAdapter(Arrays.asList(newsItems));
+                        recyclerView.setAdapter(adapter);
+                        hideProgress();
+                    }
+                });
+            }
+        }
+
+        public void showProgress() {
+            Log.d(TAG, "showProgress");
+            if (mProgressDialog == null) {
+                mProgressDialog = new ProgressDialog(this.getActivity());
+                mProgressDialog.setCancelable(false);
+                mProgressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            }
+            mProgressDialog.show();
+            mProgressDialog.setContentView(R.layout.progress_splash);
+        }
+
+        public void hideProgress() {
+            Log.d(TAG, "hideProgress");
+            if (mProgressDialog != null && mProgressDialog.isShowing()) {
+                mProgressDialog.hide();
+            }
+        }
+
     }
 
     @Override
@@ -141,5 +242,8 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         super.onSaveInstanceState(outState);
         Log.d(TAG, "onSaveInstanceState");
         outState.putParcelableArray(ConstantManager.NEWS_LINK, newsListItems);
+        for (int i : newsItemsMap.keySet()) {
+            outState.putParcelableArray(ConstantManager.NEWS_ITEM_LINK + i, newsItemsMap.get(i));
+        }
     }
 }

@@ -15,6 +15,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 import butterknife.BindView;
@@ -22,6 +23,7 @@ import butterknife.ButterKnife;
 import butterknife.OnClick;
 import polus.ddns.net.chelinfo.R;
 import polus.ddns.net.chelinfo.beans.GetBeansFromRest;
+import polus.ddns.net.chelinfo.beans.NewsItem;
 import polus.ddns.net.chelinfo.beans.NewsListItem;
 import polus.ddns.net.chelinfo.data.Edds74ru;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
@@ -82,15 +84,18 @@ public class MainActivity extends BaseActivity {
     }
     private void getNews(){
         Log.d(TAG, "getNews");
-        //showProgress();
         Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
         GetBeansFromRest service = retrofit.create(GetBeansFromRest.class);
         service.getNewsList().enqueue(new Callback<NewsListItem[]>() {
             @Override
             public void onResponse(Call<NewsListItem[]> call, Response<NewsListItem[]> response) {
                 if (response.code() == 200) {
-                    newsListItems = response.body();
-                    hideProgress();
+                    NewsListItem[] list = response.body();
+                    ArrayList<NewsListItem> arrayList =new ArrayList<>();
+                    for (NewsListItem listItem:list){
+                        if (listItem.isShowNewsList())arrayList.add(listItem);
+                    }
+                    newsListItems = arrayList.toArray(new NewsListItem[arrayList.size()]);
                     buttonNews.setVisibility(View.VISIBLE);
                 }
             }
