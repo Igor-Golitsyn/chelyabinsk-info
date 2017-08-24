@@ -7,11 +7,13 @@ import android.os.Handler;
 import android.os.Parcelable;
 import android.os.StrictMode;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -35,7 +37,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 
-public class MainActivity extends BaseActivity {
+public class MainActivity extends AppCompatActivity {
     static final String TAG = ConstantManager.TAG_PREFIX + "MainActivity";
     NewsListItem[] newsListItems;
     @BindView(R.id.pogoda)
@@ -82,7 +84,13 @@ public class MainActivity extends BaseActivity {
             }
         }
     }
-    private void getNews(){
+
+    public void showToast(String massage) {
+        Log.d(TAG, "showToast");
+        Toast.makeText(this, massage, Toast.LENGTH_LONG).show();
+    }
+
+    private void getNews() {
         Log.d(TAG, "getNews");
         Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
         GetBeansFromRest service = retrofit.create(GetBeansFromRest.class);
@@ -91,14 +99,15 @@ public class MainActivity extends BaseActivity {
             public void onResponse(Call<NewsListItem[]> call, Response<NewsListItem[]> response) {
                 if (response.code() == 200) {
                     NewsListItem[] list = response.body();
-                    ArrayList<NewsListItem> arrayList =new ArrayList<>();
-                    for (NewsListItem listItem:list){
-                        if (listItem.isShowNewsList())arrayList.add(listItem);
+                    ArrayList<NewsListItem> arrayList = new ArrayList<>();
+                    for (NewsListItem listItem : list) {
+                        if (listItem.isShowNewsList()) arrayList.add(listItem);
                     }
                     newsListItems = arrayList.toArray(new NewsListItem[arrayList.size()]);
                     buttonNews.setVisibility(View.VISIBLE);
                 }
             }
+
             @Override
             public void onFailure(Call<NewsListItem[]> call, Throwable t) {
             }
@@ -175,13 +184,20 @@ public class MainActivity extends BaseActivity {
         intent.setData(Uri.parse("market://details?id=polus.ddns.net.chelinfo"));
         startActivity(intent);
     }
+
     @OnClick(R.id.button_news)
-    public void showNews(){
+    public void showNews() {
         Log.d(TAG, "showNews");
         Intent intent = new Intent(MainActivity.this, NewsActivity.class);
-        ArrayList<NewsListItem> listItems =new ArrayList<>(Arrays.asList(newsListItems));
+        ArrayList<NewsListItem> listItems = new ArrayList<>(Arrays.asList(newsListItems));
         intent.putParcelableArrayListExtra(ConstantManager.NEWS_LINK, listItems);
         startActivity(intent);
+    }
+
+    public void showError(String massage, Exception error) {
+        Log.d(TAG, "showError");
+        showToast(massage);
+        Log.e(TAG, String.valueOf(error));
     }
 
     private void createDialog(String district, String link) {

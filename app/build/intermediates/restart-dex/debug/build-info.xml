@@ -6,22 +6,22 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1503562504700"
+    timestamp="1503575679723"
     token="-4506925229362239829"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1296" />
+        duration="1308" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="50" />
+        duration="7" />
     <task
         name="verifier"
-        duration="55" />
+        duration="3" />
 
     <artifact
         location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
@@ -70,18 +70,26 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1503558179645"
+        timestamp="1503566958036"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1503573806060"
+        verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\JAVA\chelyabinsk-info\app\build\outputs\apk\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1503559234378"
+        timestamp="1503574166273"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
@@ -89,7 +97,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1503562504700"
+        timestamp="1503575679723"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_6.apk"

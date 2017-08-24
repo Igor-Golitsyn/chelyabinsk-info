@@ -26,4 +26,6 @@ public interface ConstantManager {
     String RESTURL = "http://polus.ddns.net/RESTservice/";
     String NEWS_LINK = "NEWS_LINK";
     String NEWS_ITEM_LINK = "NEWS_ITEM_LINK";
+    String PAGE_REQUEST = "PAGE_REQUEST";
+    String NEWS_PAGE="NEWS_PAGE";
 }

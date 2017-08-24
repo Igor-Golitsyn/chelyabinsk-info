@@ -4,6 +4,7 @@ import android.app.ActionBar;
 import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -28,6 +29,7 @@ import polus.ddns.net.chelinfo.R;
 import polus.ddns.net.chelinfo.beans.GetBeansFromRest;
 import polus.ddns.net.chelinfo.beans.NewsItem;
 import polus.ddns.net.chelinfo.beans.NewsListItem;
+import polus.ddns.net.chelinfo.beans.PageRequest;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
 import polus.ddns.net.chelinfo.utils.NetworkUtils;
 import polus.ddns.net.chelinfo.utils.RVAdapter;
@@ -54,19 +56,13 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
             if (extras != null) {
                 ArrayList<NewsListItem> arrayItems = extras.getParcelableArrayList(ConstantManager.NEWS_LINK);
                 newsListItems = arrayItems.toArray(new NewsListItem[arrayItems.size()]);
-            } else newsListItems = new NewsListItem[0];
+            } else finish();
         } else {
             newsListItems = (NewsListItem[]) savedInstanceState.getParcelableArray(ConstantManager.NEWS_LINK);
             for (int i = 1; i < newsListItems.length + 1; i++) {
                 newsItemsMap.put(i, (NewsItem[]) savedInstanceState.getParcelableArray(ConstantManager.NEWS_ITEM_LINK + i));
             }
         }
-        initPages();
-    }
-
-    private void initPages() {
-        Log.d(TAG, "initPages");
-
         setContentView(R.layout.sample_main);
         final ActionBar actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -120,9 +116,6 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
 
         @Override
         public int getCount() {
-            //Log.d(TAG, "getCount");
-
-            //return 3;
             return newsListItems.length;
         }
 
@@ -139,7 +132,6 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         NewsItem[] newsItems = new NewsItem[0];
         RecyclerView recyclerView;
         ProgressDialog mProgressDialog;
-
 
         public DummySectionFragment() {
         }
@@ -159,9 +151,14 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                 public void onItemClick(View view, int position) {
                     Log.d(TAG, "onItemClick");
                     if (NetworkUtils.isNetworkAvailable(context)) {
-                        //Intent intent = new Intent(ScrollingActivity.this, EntryActivity.class);
-                        //intent.putExtra(ConstantManager.ENTRY_LINK, siteList.get(position).getUri());
-                        //startActivity(intent);
+                        int num = getArguments().getInt(ARG_SECTION_NUMBER) - 1;
+                        String name =newsListItems[num].getRestLink();
+                        String url = newsItemsMap.get(num)[position].getLink();
+                        Intent intent = new Intent(context, EntryActivityPage.class);
+                        PageRequest pageRequest = new PageRequest(url,name);
+                        System.out.println(pageRequest);
+                        intent.putExtra(ConstantManager.PAGE_REQUEST, new PageRequest(url,name));
+                        startActivity(intent);
                         view.setBackgroundColor(Color.parseColor("#DBDBDB"));
                     } else {
                         //showToast(ConstantManager.INTERNET_OUT);
@@ -209,6 +206,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                     public void onFailure(Call<NewsItem[]> call, Throwable t) {
                         Log.d(TAG, "onFailureGetNews");
                         newsItems = new NewsItem[0];
+                        newsItemsMap.put(num, newsItems);
                         RVAdapter adapter = new RVAdapter(Arrays.asList(newsItems));
                         recyclerView.setAdapter(adapter);
                         hideProgress();
@@ -234,7 +232,6 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                 mProgressDialog.hide();
             }
         }
-
     }
 
     @Override

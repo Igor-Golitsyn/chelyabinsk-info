@@ -168,6 +168,10 @@
         "source": "C:\\Users\\golit\\.android\\build-cache\\7fe5f9403bb4b1b90014b3ba8bb4e26d76fd1a7c\\output\\res\\layout\\design_navigation_menu_item.xml"
     },
     {
+        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\entry_foto.xml",
+        "source": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\layout\\entry_foto.xml"
+    },
+    {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout\\abc_select_dialog_material.xml"
     },
@@ -182,6 +186,10 @@
     {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_layout.xml",
         "source": "C:\\Users\\golit\\.android\\build-cache\\3f85fe3daad074ee6735f0a95a3aa5718e9115f8\\output\\res\\layout\\abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\entry_activity.xml",
+        "source": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\layout\\entry_activity.xml"
     },
     {
         "merged": "C:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_screen_simple.xml",

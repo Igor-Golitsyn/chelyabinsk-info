@@ -31,11 +31,17 @@
         </activity>
         <activity
             android:name="polus.ddns.net.chelinfo.activity.NewsActivity"
-            android:parentActivityName="polus.ddns.net.chelinfo.activity.MainActivity"
             android:theme="@style/NewsTheme" >
             <meta-data
                 android:name="android:support.PARENT_ACTIVITY"
                 android:value=".activity.MainActivity" />
+        </activity>
+        <activity
+            android:name="polus.ddns.net.chelinfo.activity.EntryActivityPage"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android:support.PARENT_ACTIVITY"
+                android:value=".activity.NewsActivity" />
         </activity>
 
         <provider
