@@ -6,19 +6,19 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1503654318392"
+    timestamp="1503658048993"
     token="-4506925229362239829"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="1267" />
+        duration="1318" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="9" />
+        duration="10" />
     <task
         name="verifier"
         duration="4" />
@@ -78,9 +78,6 @@
         <artifact
             location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
-        <artifact
-            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-            type="SPLIT" />
     </build>
     <build
         build-mode="COLD"
@@ -92,7 +89,15 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1503654318392"
+        timestamp="1503656895956"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1503658048993"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
             location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_0.apk"

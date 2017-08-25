@@ -67,9 +67,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
             } else finish();
         } else {
             newsListItems = (NewsListItem[]) savedInstanceState.getParcelableArray(ConstantManager.NEWS_LINK);
-            for (int i = 1; i < newsListItems.length + 1; i++) {
-                newsItemsMap.put(i, (NewsItem[]) savedInstanceState.getParcelableArray(ConstantManager.NEWS_ITEM_LINK + i));
-            }
+            newsItemsMap = (ConcurrentHashMap<Integer, NewsItem[]>) savedInstanceState.getSerializable(ConstantManager.NEWS_ITEM_LINK);
         }
         setContentView(R.layout.sample_main);
         final ActionBar actionBar = getActionBar();
@@ -303,8 +301,6 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         super.onSaveInstanceState(outState);
         Log.d(TAG, "onSaveInstanceState");
         outState.putParcelableArray(ConstantManager.NEWS_LINK, newsListItems);
-        for (int i : newsItemsMap.keySet()) {
-            outState.putParcelableArray(ConstantManager.NEWS_ITEM_LINK + i, newsItemsMap.get(i));
-        }
+        outState.putSerializable(ConstantManager.NEWS_ITEM_LINK, newsItemsMap);
     }
 }
