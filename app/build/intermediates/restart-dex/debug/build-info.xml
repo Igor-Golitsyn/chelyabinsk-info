@@ -6,7 +6,7 @@
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1503659019215"
+    timestamp="1503659500829"
     token="-4506925229362239829"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -22,6 +22,10 @@
     <task
         name="verifier"
         duration="0" />
+
+    <artifact
+        location="C:\JAVA\chelyabinsk-info\app\build\outputs\apk\app-debug.apk"
+        type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
@@ -77,14 +81,6 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1503653351543"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="C:\JAVA\chelyabinsk-info\app\build\outputs\apk\app-debug.apk"
-            type="SPLIT_MAIN" />
-    </build>
-    <build
-        build-mode="COLD"
         timestamp="1503656895956"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
@@ -101,7 +97,11 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1503659019215"
-        verifier="COLD_SWAP_REQUESTED" />
+        timestamp="1503659500829"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
 
 </instant-run>
