@@ -30,7 +30,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.EntryViewHolder> {
 
         EntryViewHolder(View itemView) {
             super(itemView);
-            Log.d(TAG, "onCreateEntryViewHolder");
+            //Log.d(TAG, "onCreateEntryViewHolder");
             cardView = (CardView) itemView.findViewById(R.id.card_view);
             cardName = (TextView) itemView.findViewById(R.id.card_name);
             cardSize = (TextView) itemView.findViewById(R.id.card_size);
@@ -43,19 +43,19 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.EntryViewHolder> {
     List<NewsItem> newsItems;
 
     public RVAdapter(List<NewsItem> newsItems) {
-        Log.d(TAG, "RVAdapteronCreate");
+        //Log.d(TAG, "RVAdapteronCreate");
         this.newsItems = newsItems;
     }
 
     @Override
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {
-        Log.d(TAG, "onAttachedToRecyclerView");
+        //Log.d(TAG, "onAttachedToRecyclerView");
         super.onAttachedToRecyclerView(recyclerView);
     }
 
     @Override
     public EntryViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        Log.d(TAG, "onCreateViewHolder");
+        //Log.d(TAG, "onCreateViewHolder");
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.item, viewGroup, false);
         EntryViewHolder viewHolder = new EntryViewHolder(v);
         return viewHolder;
@@ -63,7 +63,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.EntryViewHolder> {
 
     @Override
     public void onBindViewHolder(EntryViewHolder entryViewHolder, int i) {
-        Log.d(TAG, "onBindViewHolder");
+        //Log.d(TAG, "onBindViewHolder");
         entryViewHolder.cardName.setText(newsItems.get(i).getName());
         if (newsItems.get(i).getSeeders() != 0) {
             entryViewHolder.cardSeeders.setVisibility(View.VISIBLE);
@@ -79,7 +79,7 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.EntryViewHolder> {
 
     @Override
     public int getItemCount() {
-        Log.d(TAG, "getItemCount");
+        //Log.d(TAG, "getItemCount");
         return newsItems.size();
     }
 }

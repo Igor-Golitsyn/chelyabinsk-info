@@ -23,10 +23,9 @@ public interface GetBeansFromRest {
     @POST("{restLink}")
     Call<NewsItem[]> getNews(@Path("restLink") String restLink);
 
-    @FormUrlEncoded
-    @POST("{restLink}")
-    Call<NewsItem[]> searcNews(@Path("restLink") String restLink, @Field("word") String word);
-
     @POST("newsPage")
     Call<NewsPage> getNewsPage(@Body PageRequest pageRequest);
+
+    @POST("{restLink}")
+    Call<NewsItem[]> searchNews(@Path("restLink") String restLink, @Body PageRequest pageRequest);
 }

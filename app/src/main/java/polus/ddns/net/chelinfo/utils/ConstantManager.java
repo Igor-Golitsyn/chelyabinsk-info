@@ -28,4 +28,5 @@ public interface ConstantManager {
     String NEWS_ITEM_LINK = "NEWS_ITEM_LINK";
     String PAGE_REQUEST = "PAGE_REQUEST";
     String NEWS_PAGE="NEWS_PAGE";
+    String ADDING_TO_SEARCH="Search";
 }

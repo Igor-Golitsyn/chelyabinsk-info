@@ -27,6 +27,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.concurrent.ConcurrentHashMap;
@@ -157,7 +159,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
             searchText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
                 @Override
                 public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                    if (actionId==EditorInfo.IME_ACTION_DONE) searchNews();
+                    if (actionId == EditorInfo.IME_ACTION_DONE) searchNews();
                     return false;
                 }
             });
@@ -183,12 +185,11 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                     Log.d(TAG, "onItemClick");
                     if (NetworkUtils.isNetworkAvailable(context)) {
                         int num = getArguments().getInt(ARG_SECTION_NUMBER) - 1;
-                        String name =newsListItems[num].getRestLink();
+                        String name = newsListItems[num].getRestLink();
                         String url = newsItemsMap.get(num)[position].getLink();
                         Intent intent = new Intent(context, EntryActivityPage.class);
-                        PageRequest pageRequest = new PageRequest(url,name);
-                        System.out.println(pageRequest);
-                        intent.putExtra(ConstantManager.PAGE_REQUEST, new PageRequest(url,name));
+                        PageRequest pageRequest = new PageRequest(url, name);
+                        intent.putExtra(ConstantManager.PAGE_REQUEST, new PageRequest(url, name));
                         startActivity(intent);
                         view.setBackgroundColor(Color.parseColor("#DBDBDB"));
                     } else {
@@ -204,13 +205,15 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
             }));
             return rootView;
         }
-        private void searchNews(){
+
+        private void searchNews() {
+            Log.d(TAG, "searchNews");
             showProgress();
             final int num = getArguments().getInt(ARG_SECTION_NUMBER) - 1;
             Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
             GetBeansFromRest service = retrofit.create(GetBeansFromRest.class);
-            Log.d(TAG, searchText.getText().toString());
-            service.searcNews(newsListItems[num].getRestLink(), searchText.getText().toString()).enqueue(new Callback<NewsItem[]>() {
+            PageRequest pageRequest = new PageRequest(searchText.getText().toString(), newsListItems[num].getRestLink() + ConstantManager.ADDING_TO_SEARCH);
+            service.searchNews(pageRequest.getNewsName(), pageRequest).enqueue(new Callback<NewsItem[]>() {
                 @Override
                 public void onResponse(Call<NewsItem[]> call, Response<NewsItem[]> response) {
                     Log.d(TAG, "onResponseGetNews");

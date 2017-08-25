@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:paddingLeft="@dimen/padding_small_16"
             android:paddingRight="@dimen/padding_small_16"
-            android:paddingTop="@dimen/padding_small_16"
+            android:paddingTop="@dimen/padding_small_4"
             android:visibility="gone">
 
             <EditText

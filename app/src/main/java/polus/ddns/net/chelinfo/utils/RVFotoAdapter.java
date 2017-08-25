@@ -38,20 +38,20 @@ public class RVFotoAdapter extends RecyclerView.Adapter<RVFotoAdapter.EntryViewH
     }
 
     public RVFotoAdapter(List<String> imageLink, Context context) {
-        Log.d(TAG, "RVFotoAdapteronCreate");
+        //Log.d(TAG, "RVFotoAdapteronCreate");
         this.imageLink = imageLink;
         this.context=context;
     }
 
     @Override
     public void onAttachedToRecyclerView(RecyclerView recyclerView) {
-        Log.d(TAG, "onAttachedToRecyclerView");
+        //Log.d(TAG, "onAttachedToRecyclerView");
         super.onAttachedToRecyclerView(recyclerView);
     }
 
     @Override
     public EntryViewHolder onCreateViewHolder(ViewGroup viewGroup, int i) {
-        Log.d(TAG, "onCreateViewHolder");
+        //Log.d(TAG, "onCreateViewHolder");
         View v = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.entry_foto, viewGroup, false);
         EntryViewHolder viewHolder = new EntryViewHolder(v);
         return viewHolder;
@@ -59,7 +59,7 @@ public class RVFotoAdapter extends RecyclerView.Adapter<RVFotoAdapter.EntryViewH
 
     @Override
     public void onBindViewHolder(EntryViewHolder holder, int i) {
-        Log.d(TAG, "onBindViewHolder");
+        //Log.d(TAG, "onBindViewHolder");
         DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
         int width =displayMetrics.widthPixels;
         Picasso.with(context).load(imageLink.get(i)).resize(width,width).centerCrop().into(holder.imageView);
@@ -67,7 +67,7 @@ public class RVFotoAdapter extends RecyclerView.Adapter<RVFotoAdapter.EntryViewH
 
     @Override
     public int getItemCount() {
-        Log.d(TAG, "getItemCount");
+        //Log.d(TAG, "getItemCount");
         return imageLink.size();
     }
 

@@ -561,6 +561,8 @@
     <dimen name="padding_medium_72">72dp</dimen>
     <dimen name="padding_normal_32">32dp</dimen>
     <dimen name="padding_small_16">16dp</dimen>
+    <dimen name="padding_small_4">4dp</dimen>
+    <dimen name="padding_small_8">8dp</dimen>
     <dimen name="profile_image_height">200dp</dimen>
     <dimen name="spacing_huge_40">40dp</dimen>
     <dimen name="spacing_large_24">24dp</dimen>

@@ -26,6 +26,8 @@
     <dimen name="profile_image_height">200dp</dimen>
     <dimen name="entry_activity_image_height_400">400dp</dimen>
     <!--Padding-->
+    <dimen name="padding_small_4">4dp</dimen>
+    <dimen name="padding_small_8">8dp</dimen>
     <dimen name="padding_small_16">16dp</dimen>
     <dimen name="padding_normal_32">32dp</dimen>
     <dimen name="padding_medial_56">56dp</dimen>

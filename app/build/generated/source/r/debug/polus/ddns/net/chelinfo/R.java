@@ -2684,13 +2684,15 @@ containing a value of this type.
         public static final int padding_medium_72=0x7f08009d;
         public static final int padding_normal_32=0x7f08009e;
         public static final int padding_small_16=0x7f08009f;
-        public static final int profile_image_height=0x7f0800a0;
-        public static final int spacing_huge_40=0x7f0800a1;
-        public static final int spacing_large_24=0x7f0800a2;
-        public static final int spacing_normal_14=0x7f0800a3;
-        public static final int spacing_small_10=0x7f0800a4;
-        public static final int spacing_tiny_4=0x7f0800a5;
-        public static final int text_margin_16=0x7f0800a6;
+        public static final int padding_small_4=0x7f0800a0;
+        public static final int padding_small_8=0x7f0800a1;
+        public static final int profile_image_height=0x7f0800a2;
+        public static final int spacing_huge_40=0x7f0800a3;
+        public static final int spacing_large_24=0x7f0800a4;
+        public static final int spacing_normal_14=0x7f0800a5;
+        public static final int spacing_small_10=0x7f0800a6;
+        public static final int spacing_tiny_4=0x7f0800a7;
+        public static final int text_margin_16=0x7f0800a8;
     }
     public static final class drawable {
         public static final int abc_ab_share_pack_mtrl_alpha=0x7f020000;
