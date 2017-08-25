@@ -1,8 +1,11 @@
 package polus.ddns.net.chelinfo.activity;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
@@ -11,10 +14,13 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 import java.util.HashSet;
+import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 import polus.ddns.net.chelinfo.R;
 import polus.ddns.net.chelinfo.beans.GetBeansFromRest;
 import polus.ddns.net.chelinfo.beans.NewsItem;
@@ -40,7 +46,7 @@ public class EntryActivityPage extends AppCompatActivity {
     @BindView(R.id.text_news)
     TextView newsText;
     @BindView(R.id.entry_recycler_view)
-    RecyclerView recyclerView;
+    RecyclerView entryRecyclerView;
     @BindView(R.id.button_1)
     Button button1;
     @BindView(R.id.button_2)
@@ -54,6 +60,10 @@ public class EntryActivityPage extends AppCompatActivity {
         Log.d(TAG, "onCreate");
         setContentView(R.layout.entry_activity);
         ButterKnife.bind(this);
+
+        LinearLayoutManager llm = new LinearLayoutManager(this);
+        entryRecyclerView.setLayoutManager(llm);
+
         if (savedInstanceState == null) {
             Bundle extras = getIntent().getExtras();
             if (extras != null) {
@@ -65,9 +75,6 @@ public class EntryActivityPage extends AppCompatActivity {
             pageRequest = (PageRequest) savedInstanceState.getSerializable(ConstantManager.PAGE_REQUEST);
             newsPage = (NewsPage) savedInstanceState.getSerializable(ConstantManager.NEWS_PAGE);
         }
-        System.out.println("*************************");
-        System.out.println(pageRequest);
-        System.out.println("*************************");
         getNewsPage();
     }
 
@@ -95,21 +102,34 @@ public class EntryActivityPage extends AppCompatActivity {
         Log.d(TAG, "setDataToFields");
         titleText.setText(newsPage.getName());
         newsText.setText(newsPage.getText());
-        if (newsPage.getButton1Text() != null) {
+        if (newsPage.getButton1Text() != null && !newsPage.getButton1Text().isEmpty()) {
             button1.setVisibility(View.VISIBLE);
             button1.setText(newsPage.getButton1Text());
         }
-        if (newsPage.getButton2Text() != null) {
+        if (newsPage.getButton2Text() != null && !newsPage.getButton2Text().isEmpty()) {
             button2.setVisibility(View.VISIBLE);
             button2.setText(newsPage.getButton2Text());
         }
         RVFotoAdapter adapter;
-        if (newsPage.getImages() != null) {
+        if (newsPage.getImages() != null && !newsPage.getImages().isEmpty()) {
             adapter = new RVFotoAdapter(new ArrayList<>(newsPage.getImages()), this);
         } else {
             adapter=new RVFotoAdapter(new ArrayList<String>(),this);
         }
-        recyclerView.setAdapter(adapter);
+        entryRecyclerView.setAdapter(adapter);
+    }
+
+    @OnClick(R.id.button_1)
+    public void onClickButton1(){
+        Log.d(TAG, "onClickButton1");
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(newsPage.getButton1Action()));
+        startActivity(intent);
+    }
+    @OnClick(R.id.button_2)
+    public  void onClickButton2(){
+        Log.d(TAG, "onClickButton1");
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(newsPage.getButton2Action()));
+        startActivity(intent);
     }
 
     @Override

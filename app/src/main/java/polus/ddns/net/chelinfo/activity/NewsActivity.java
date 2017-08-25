@@ -16,13 +16,19 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.inputmethod.EditorInfo;
+import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Locale;
 import java.util.concurrent.ConcurrentHashMap;
 
 import polus.ddns.net.chelinfo.R;
@@ -132,6 +138,9 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         NewsItem[] newsItems = new NewsItem[0];
         RecyclerView recyclerView;
         ProgressDialog mProgressDialog;
+        LinearLayout searchLinearLayout;
+        EditText searchText;
+        ImageView icSearch;
 
         public DummySectionFragment() {
         }
@@ -142,8 +151,30 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
             Log.d(TAG, "onCreateView");
             View rootView = inflater.inflate(R.layout.fragment_main_dummy, container, false);
             recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
+            searchLinearLayout = (LinearLayout) rootView.findViewById(R.id.search_linear_layout);
+            searchText = (EditText) rootView.findViewById(R.id.search_text1);
+            searchText.setImeOptions(EditorInfo.IME_ACTION_DONE);
+            searchText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+                @Override
+                public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                    if (actionId==EditorInfo.IME_ACTION_DONE) searchNews();
+                    return false;
+                }
+            });
+
+            icSearch = (ImageView) rootView.findViewById(R.id.search_image1);
+            icSearch.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    searchNews();
+                }
+            });
+
             LinearLayoutManager llm = new LinearLayoutManager(this.getContext());
             recyclerView.setLayoutManager(llm);
+            if (newsListItems[getArguments().getInt(ARG_SECTION_NUMBER) - 1].isTypeFinder()) {
+                searchLinearLayout.setVisibility(View.VISIBLE);
+            }
             getNews();
             final Context context = this.getActivity();
             recyclerView.addOnItemTouchListener(new RecyclerItemClickListener(context, recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
@@ -161,7 +192,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                         startActivity(intent);
                         view.setBackgroundColor(Color.parseColor("#DBDBDB"));
                     } else {
-                        //showToast(ConstantManager.INTERNET_OUT);
+                        Toast.makeText(context, ConstantManager.INTERNET_OUT, Toast.LENGTH_LONG).show();
                     }
                 }
 
@@ -172,6 +203,37 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                 }
             }));
             return rootView;
+        }
+        private void searchNews(){
+            showProgress();
+            final int num = getArguments().getInt(ARG_SECTION_NUMBER) - 1;
+            Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
+            GetBeansFromRest service = retrofit.create(GetBeansFromRest.class);
+            Log.d(TAG, searchText.getText().toString());
+            service.searcNews(newsListItems[num].getRestLink(), searchText.getText().toString()).enqueue(new Callback<NewsItem[]>() {
+                @Override
+                public void onResponse(Call<NewsItem[]> call, Response<NewsItem[]> response) {
+                    Log.d(TAG, "onResponseGetNews");
+                    if (response.code() == 200) {
+                        newsItems = response.body();
+                        if (newsItems == null) newsItems = new NewsItem[0];
+                        newsItemsMap.put(num, newsItems);
+                        RVAdapter adapter = new RVAdapter(Arrays.asList(newsItems));
+                        recyclerView.setAdapter(adapter);
+                        hideProgress();
+                    }
+                }
+
+                @Override
+                public void onFailure(Call<NewsItem[]> call, Throwable t) {
+                    Log.d(TAG, "onFailureGetNews");
+                    newsItems = new NewsItem[0];
+                    newsItemsMap.put(num, newsItems);
+                    RVAdapter adapter = new RVAdapter(Arrays.asList(newsItems));
+                    recyclerView.setAdapter(adapter);
+                    hideProgress();
+                }
+            });
         }
 
         private void getNews() {
@@ -191,7 +253,6 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                     @Override
                     public void onResponse(Call<NewsItem[]> call, Response<NewsItem[]> response) {
                         Log.d(TAG, "onResponseGetNews");
-                        Log.d(TAG, "responseCode" + response.code());
                         if (response.code() == 200) {
                             newsItems = response.body();
                             if (newsItems == null) newsItems = new NewsItem[0];

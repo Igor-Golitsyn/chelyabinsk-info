@@ -2,7 +2,10 @@ package polus.ddns.net.chelinfo.beans;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
+import retrofit2.http.Field;
+import retrofit2.http.FormUrlEncoded;
 import retrofit2.http.GET;
+import retrofit2.http.HEAD;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
 
@@ -17,8 +20,12 @@ public interface GetBeansFromRest {
     @GET("newsList")
     Call<NewsListItem[]> getNewsList();
 
-    @GET("{restLink}")
+    @POST("{restLink}")
     Call<NewsItem[]> getNews(@Path("restLink") String restLink);
+
+    @FormUrlEncoded
+    @POST("{restLink}")
+    Call<NewsItem[]> searcNews(@Path("restLink") String restLink, @Field("word") String word);
 
     @POST("newsPage")
     Call<NewsPage> getNewsPage(@Body PageRequest pageRequest);
