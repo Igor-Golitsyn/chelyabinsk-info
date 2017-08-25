@@ -14,12 +14,22 @@
             android:layout_height="wrap_content"
             android:padding="@dimen/text_margin_16">
 
+
             <TextView
                 android:id="@+id/card_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:id="@+id/card_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/card_name"
+                android:layout_marginTop="@dimen/spacing_tiny_4"
                 android:textColor="@color/black"/>
 
             <TextView

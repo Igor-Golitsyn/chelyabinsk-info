@@ -8,6 +8,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import polus.ddns.net.chelinfo.R;
@@ -18,6 +21,7 @@ import polus.ddns.net.chelinfo.beans.NewsItem;
  */
 public class RVAdapter extends RecyclerView.Adapter<RVAdapter.EntryViewHolder> {
     static final String TAG = ConstantManager.TAG_PREFIX + "RVAdapter";
+    SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd.MM.yy hh:mm");
 
     public static class EntryViewHolder extends RecyclerView.ViewHolder {
         static final String TAG = ConstantManager.TAG_PREFIX + "EntryViewHolder";
@@ -27,11 +31,13 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.EntryViewHolder> {
         TextView cardSeeders;
         TextView cardSeedersStart;
         TextView cardSizeStart;
+        TextView cardDate;
 
         EntryViewHolder(View itemView) {
             super(itemView);
             //Log.d(TAG, "onCreateEntryViewHolder");
             cardView = (CardView) itemView.findViewById(R.id.card_view);
+            cardDate = (TextView) itemView.findViewById(R.id.card_date);
             cardName = (TextView) itemView.findViewById(R.id.card_name);
             cardSize = (TextView) itemView.findViewById(R.id.card_size);
             cardSizeStart = (TextView) itemView.findViewById(R.id.card_size_startName);
@@ -65,11 +71,15 @@ public class RVAdapter extends RecyclerView.Adapter<RVAdapter.EntryViewHolder> {
     public void onBindViewHolder(EntryViewHolder entryViewHolder, int i) {
         //Log.d(TAG, "onBindViewHolder");
         entryViewHolder.cardName.setText(newsItems.get(i).getName());
+
         if (newsItems.get(i).getSeeders() != 0) {
             entryViewHolder.cardSeeders.setVisibility(View.VISIBLE);
             entryViewHolder.cardSeedersStart.setVisibility(View.VISIBLE);
             entryViewHolder.cardSeeders.setText(String.valueOf(newsItems.get(i).getSeeders()));
+        } else {
+            entryViewHolder.cardDate.setText(simpleDateFormat.format(new Date(newsItems.get(i).getDate())));
         }
+
         if (!newsItems.get(i).getSize().isEmpty()) {
             entryViewHolder.cardSize.setVisibility(View.VISIBLE);
             entryViewHolder.cardSizeStart.setVisibility(View.VISIBLE);
