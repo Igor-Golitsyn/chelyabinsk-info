@@ -21,7 +21,7 @@ import polus.ddns.net.chelinfo.beans.NewsItem;
  */
 public class RVAdapter extends RecyclerView.Adapter<RVAdapter.EntryViewHolder> {
     static final String TAG = ConstantManager.TAG_PREFIX + "RVAdapter";
-    SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd.MM.yy hh:mm");
+    SimpleDateFormat simpleDateFormat=new SimpleDateFormat("dd.MM.yy");
 
     public static class EntryViewHolder extends RecyclerView.ViewHolder {
         static final String TAG = ConstantManager.TAG_PREFIX + "EntryViewHolder";

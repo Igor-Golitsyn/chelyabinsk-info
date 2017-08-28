@@ -13,6 +13,7 @@ import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
+import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -151,6 +152,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
             Log.d(TAG, "onCreateView");
             View rootView = inflater.inflate(R.layout.fragment_main_dummy, container, false);
             recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
+            recyclerView.setNestedScrollingEnabled(false);
             searchLinearLayout = (LinearLayout) rootView.findViewById(R.id.search_linear_layout);
             searchText = (EditText) rootView.findViewById(R.id.search_text1);
             searchText.setImeOptions(EditorInfo.IME_ACTION_DONE);
@@ -189,7 +191,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                         PageRequest pageRequest = new PageRequest(url, name);
                         intent.putExtra(ConstantManager.PAGE_REQUEST, new PageRequest(url, name));
                         startActivity(intent);
-                        view.setBackgroundColor(Color.parseColor("#DBDBDB"));
+                        view.setBackgroundColor(Color.parseColor("#939393"));
                     } else {
                         Toast.makeText(context, ConstantManager.INTERNET_OUT, Toast.LENGTH_LONG).show();
                     }
