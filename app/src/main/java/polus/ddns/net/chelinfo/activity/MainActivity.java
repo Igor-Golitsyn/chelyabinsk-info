@@ -42,8 +42,8 @@ public class MainActivity extends AppCompatActivity {
     NewsListItem[] newsListItems;
     @BindView(R.id.pogoda)
     WebView pogoda;
-    @BindView(R.id.prognoz)
-    WebView prognoz;
+    /*@BindView(R.id.prognoz)
+    WebView prognoz;*/
     @BindView(R.id.school_text)
     TextView schoolText;
     @BindView(R.id.button_news)
@@ -61,8 +61,8 @@ public class MainActivity extends AppCompatActivity {
         getNews();
         if (savedInstanceState == null) {
             if (NetworkUtils.isNetworkAvailable(this)) {
-                pogoda.loadUrl("file:///android_asset/chelpogoda_center.html");
-                prognoz.loadUrl("file:///android_asset/prognoz_center.html");
+                pogoda.loadUrl("file:///android_asset/yandex.html");
+                //prognoz.loadUrl("file:///android_asset/prognoz_center.html");
                 schoolText.setText(Edds74ru.getSchool());
             } else {
                 showToast(ConstantManager.INTERNET_OUT);
@@ -76,8 +76,8 @@ public class MainActivity extends AppCompatActivity {
             }
         } else {
             if (NetworkUtils.isNetworkAvailable(this)) {
-                pogoda.loadUrl("file:///android_asset/chelpogoda_center.html");
-                prognoz.loadUrl("file:///android_asset/prognoz_center.html");
+                pogoda.loadUrl("file:///android_asset/yandex.html");
+                //prognoz.loadUrl("file:///android_asset/prognoz_center.html");
                 schoolText.setText(Edds74ru.getSchool());
             } else {
                 showToast(ConstantManager.INTERNET_OUT);
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity {
         createDialog(ConstantManager.TRAKTOROZAVODSKY, ConstantManager.EDDS74RU_TRAKTOROZAVODSKY);
     }
 
-    @OnClick(R.id.button_center)
+    /*@OnClick(R.id.button_center)
     public void loadCenterPrognoz() {
         Log.d(TAG, "loadCenterPrognoz");
         pogoda.loadUrl("file:///android_asset/chelpogoda_center.html");
@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "loadSouthPrognoz");
         pogoda.loadUrl("file:///android_asset/chelpogoda_south.html");
         prognoz.loadUrl("file:///android_asset/prognoz_south.html");
-    }
+    }*/
 
     @OnClick(R.id.button_request)
     public void request() {

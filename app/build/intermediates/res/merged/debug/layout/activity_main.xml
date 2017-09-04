@@ -18,10 +18,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="@string/realmeteo_ru"
-            android:textColor="@color/black"/>
+            android:text="@string/yandex"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_large_18"/>
 
-        <LinearLayout
+        <!--<LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -46,7 +47,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="0.3"
                 android:text="@string/button_south"/>
-        </LinearLayout>
+        </LinearLayout>-->
 
         <WebView
             android:id="@+id/pogoda"
@@ -150,7 +151,7 @@
             </TableRow>
         </TableLayout>
 
-        <TextView
+        <!--<TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
@@ -158,23 +159,23 @@
             android:text="@string/prognoz_text"
             android:textColor="@color/black"
             android:textSize="@dimen/font_large_18"
-            android:textStyle="bold"/>
+            android:textStyle="bold"/>-->
 
-        <WebView
+        <!--<WebView
             android:id="@+id/prognoz"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="@dimen/padding_small_16"
-            android:layout_gravity="center"/>
+            android:layout_gravity="center"/>-->
         <Button
             android:id="@+id/button_news"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/colorPrimary"
             android:padding="@dimen/padding_small_16"
+            android:layout_marginTop="@dimen/padding_small_16"
             android:text="@string/button_news_text"
             android:textColor="@color/white"
-            android:layout_marginBottom="@dimen/padding_small_16"
             android:visibility="gone"
             android:textStyle="bold" />
 
@@ -186,6 +187,7 @@
             android:padding="@dimen/padding_small_16"
             android:text="@string/button_request_text"
             android:textColor="@color/white"
+            android:layout_marginTop="@dimen/padding_small_16"
             android:textStyle="bold"/>
     </LinearLayout>
 </ScrollView>

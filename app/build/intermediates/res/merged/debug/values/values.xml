@@ -651,7 +651,6 @@
     <string name="path_password_eye_mask_visible" translatable="false">M2,4.27 L2,4.27 L4.54,1.73 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
     <string name="path_password_strike_through" translatable="false">M3.27,4.27 L19.74,20.74</string>
     <string name="prognoz_text">Прогноз на ближайшие дни:</string>
-    <string name="realmeteo_ru">realmeteo.ru\nРеальная погода в Челябинске</string>
     <string name="search_menu_title">Search</string>
     <string name="sovetsky">СОВЕТСКИЙ</string>
     <string name="status_bar_notification_info_overflow">999+</string>
@@ -659,6 +658,7 @@
     <string name="title_section2">Section 2</string>
     <string name="title_section3">Section 3</string>
     <string name="traktorozavodskoy">ТРАКТОРОЗАВОДСКИЙ</string>
+    <string name="yandex">Яндекс Погода</string>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>

@@ -93,7 +93,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
 
     @Override
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
-        Log.d(TAG, "onTabSelected");
+        Log.d(TAG, "onTabSelected" + tab.getPosition());
         mViewPager.setCurrentItem(tab.getPosition());
     }
 
@@ -139,6 +139,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         NewsItem[] newsItems = new NewsItem[0];
         RecyclerView recyclerView;
         ProgressDialog mProgressDialog;
+
         LinearLayout searchLinearLayout;
         EditText searchText;
         ImageView icSearch;
@@ -188,7 +189,6 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                         String name = newsListItems[num].getRestLink();
                         String url = newsItemsMap.get(num)[position].getLink();
                         Intent intent = new Intent(context, EntryActivityPage.class);
-                        PageRequest pageRequest = new PageRequest(url, name);
                         intent.putExtra(ConstantManager.PAGE_REQUEST, new PageRequest(url, name));
                         startActivity(intent);
                         view.setBackgroundColor(Color.parseColor("#939393"));
@@ -242,6 +242,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         private void getNews() {
             final int num = getArguments().getInt(ARG_SECTION_NUMBER) - 1;
             Log.d(TAG, "getNews" + num);
+
             showProgress();
             try {
                 RVAdapter adapter = new RVAdapter(Arrays.asList(newsItemsMap.get(num)));
@@ -280,14 +281,14 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         }
 
         public void showProgress() {
-            Log.d(TAG, "showProgress");
-            if (mProgressDialog == null) {
-                mProgressDialog = new ProgressDialog(this.getActivity());
-                mProgressDialog.setCancelable(false);
-                mProgressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            }
-            mProgressDialog.show();
-            mProgressDialog.setContentView(R.layout.progress_splash);
+                Log.d(TAG, "showProgressDum-" + (getArguments().getInt(ARG_SECTION_NUMBER) - 1));
+                if (mProgressDialog == null) {
+                    mProgressDialog = new ProgressDialog(this.getActivity());
+                    mProgressDialog.setCancelable(false);
+                    mProgressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                }
+                mProgressDialog.show();
+                mProgressDialog.setContentView(R.layout.progress_splash);
         }
 
         public void hideProgress() {
