@@ -48,7 +48,6 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.button_news)
     Button buttonNews;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
