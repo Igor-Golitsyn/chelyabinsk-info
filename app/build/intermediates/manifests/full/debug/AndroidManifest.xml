@@ -40,7 +40,7 @@
         <activity
             android:name="polus.ddns.net.chelinfo.activity.EntryActivityPage"
             android:label="Новости Челябинска"
-            android:theme="@style/AppTheme" >
+            android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android:support.PARENT_ACTIVITY"
                 android:value=".activity.NewsActivity" />
