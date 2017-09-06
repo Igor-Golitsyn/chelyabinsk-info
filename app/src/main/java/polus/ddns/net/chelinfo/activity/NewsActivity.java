@@ -7,6 +7,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -32,6 +33,7 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
 
 import polus.ddns.net.chelinfo.R;
@@ -84,6 +86,10 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         });
 
         for (int i = 0; i < mSectionsPagerAdapter.getCount(); i++) {
+           /* ActionBar.Tab tab=actionBar.newTab()
+                    .setText(mSectionsPagerAdapter.getPageTitle(i))
+                    .setTabListener(this);*/
+
             actionBar.addTab(
                     actionBar.newTab()
                             .setText(mSectionsPagerAdapter.getPageTitle(i))
@@ -281,14 +287,14 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         }
 
         public void showProgress() {
-                Log.d(TAG, "showProgressDum-" + (getArguments().getInt(ARG_SECTION_NUMBER) - 1));
-                if (mProgressDialog == null) {
-                    mProgressDialog = new ProgressDialog(this.getActivity());
-                    mProgressDialog.setCancelable(false);
-                    mProgressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-                }
-                mProgressDialog.show();
-                mProgressDialog.setContentView(R.layout.progress_splash);
+            Log.d(TAG, "showProgressDum-" + (getArguments().getInt(ARG_SECTION_NUMBER) - 1));
+            if (mProgressDialog == null) {
+                mProgressDialog = new ProgressDialog(this.getActivity());
+                mProgressDialog.setCancelable(true);
+                mProgressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+            }
+            mProgressDialog.show();
+            mProgressDialog.setContentView(R.layout.progress_splash);
         }
 
         public void hideProgress() {
@@ -305,5 +311,13 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         Log.d(TAG, "onSaveInstanceState");
         outState.putParcelableArray(ConstantManager.NEWS_LINK, newsListItems);
         outState.putSerializable(ConstantManager.NEWS_ITEM_LINK, newsItemsMap);
+    }
+
+    private int getRandColor() {
+        Random rand = new Random();
+        int r = rand.nextInt();
+        int g = rand.nextInt();
+        int b = rand.nextInt();
+        return Color.rgb(r, g, b);
     }
 }

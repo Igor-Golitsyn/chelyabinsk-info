@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.os.Parcelable;
 import android.os.StrictMode;
 import android.support.v4.app.FragmentManager;
@@ -42,8 +43,6 @@ public class MainActivity extends AppCompatActivity {
     NewsListItem[] newsListItems;
     @BindView(R.id.pogoda)
     WebView pogoda;
-    /*@BindView(R.id.prognoz)
-    WebView prognoz;*/
     @BindView(R.id.school_text)
     TextView schoolText;
     @BindView(R.id.button_news)
@@ -62,8 +61,12 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             if (NetworkUtils.isNetworkAvailable(this)) {
                 pogoda.loadUrl("file:///android_asset/yandex.html");
-                //prognoz.loadUrl("file:///android_asset/prognoz_center.html");
-                schoolText.setText(Edds74ru.getSchool());
+                Handler refresh = new Handler(Looper.getMainLooper());
+                refresh.post(new Runnable() {
+                    public void run() {
+                        schoolText.setText(Edds74ru.getSchool());
+                    }
+                });
             } else {
                 showToast(ConstantManager.INTERNET_OUT);
                 Handler handler = new Handler();
@@ -75,13 +78,9 @@ public class MainActivity extends AppCompatActivity {
                 }, 5000);
             }
         } else {
-            if (NetworkUtils.isNetworkAvailable(this)) {
                 pogoda.loadUrl("file:///android_asset/yandex.html");
-                //prognoz.loadUrl("file:///android_asset/prognoz_center.html");
-                schoolText.setText(Edds74ru.getSchool());
-            } else {
-                showToast(ConstantManager.INTERNET_OUT);
-            }
+                schoolText.setText(savedInstanceState.getString(ConstantManager.OTMENA));
+
         }
     }
 
@@ -156,27 +155,6 @@ public class MainActivity extends AppCompatActivity {
         createDialog(ConstantManager.TRAKTOROZAVODSKY, ConstantManager.EDDS74RU_TRAKTOROZAVODSKY);
     }
 
-    /*@OnClick(R.id.button_center)
-    public void loadCenterPrognoz() {
-        Log.d(TAG, "loadCenterPrognoz");
-        pogoda.loadUrl("file:///android_asset/chelpogoda_center.html");
-        prognoz.loadUrl("file:///android_asset/prognoz_center.html");
-    }
-
-    @OnClick(R.id.button_north)
-    public void loadNorthPrognoz() {
-        Log.d(TAG, "loadNorthPrognoz");
-        pogoda.loadUrl("file:///android_asset/chelpogoda_north.html");
-        prognoz.loadUrl("file:///android_asset/prognoz_north.html");
-    }
-
-    @OnClick(R.id.button_south)
-    public void loadSouthPrognoz() {
-        Log.d(TAG, "loadSouthPrognoz");
-        pogoda.loadUrl("file:///android_asset/chelpogoda_south.html");
-        prognoz.loadUrl("file:///android_asset/prognoz_south.html");
-    }*/
-
     @OnClick(R.id.button_request)
     public void request() {
         Log.d(TAG, "request");
@@ -215,4 +193,10 @@ public class MainActivity extends AppCompatActivity {
         kommunityServices.show(fragmentManager, "dialog");
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        Log.d(TAG, "onSaveInstanceState");
+        outState.putString(ConstantManager.OTMENA, schoolText.getText().toString());
+    }
 }

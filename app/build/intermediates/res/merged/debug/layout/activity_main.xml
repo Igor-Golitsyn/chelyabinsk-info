@@ -22,33 +22,6 @@
             android:textColor="@color/black"
             android:textSize="@dimen/font_large_18"/>
 
-        <!--<LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button_north"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.3"
-                android:text="@string/button_north"/>
-
-            <Button
-                android:id="@+id/button_center"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.3"
-                android:text="@string/button_centr"/>
-
-            <Button
-                android:id="@+id/button_south"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="0.3"
-                android:text="@string/button_south"/>
-        </LinearLayout>-->
-
         <WebView
             android:id="@+id/pogoda"
             android:layout_width="wrap_content"
@@ -151,22 +124,6 @@
             </TableRow>
         </TableLayout>
 
-        <!--<TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="@dimen/padding_small_16"
-            android:text="@string/prognoz_text"
-            android:textColor="@color/black"
-            android:textSize="@dimen/font_large_18"
-            android:textStyle="bold"/>-->
-
-        <!--<WebView
-            android:id="@+id/prognoz"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/padding_small_16"
-            android:layout_gravity="center"/>-->
         <Button
             android:id="@+id/button_news"
             android:layout_width="match_parent"
