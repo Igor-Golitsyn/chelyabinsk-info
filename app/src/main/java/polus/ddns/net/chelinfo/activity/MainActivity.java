@@ -5,7 +5,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.os.Parcelable;
 import android.os.StrictMode;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
@@ -18,15 +17,14 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+
 import polus.ddns.net.chelinfo.R;
 import polus.ddns.net.chelinfo.beans.GetBeansFromRest;
-import polus.ddns.net.chelinfo.beans.NewsItem;
 import polus.ddns.net.chelinfo.beans.NewsListItem;
 import polus.ddns.net.chelinfo.data.Edds74ru;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
@@ -60,12 +58,18 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             if (NetworkUtils.isNetworkAvailable(this)) {
                 pogoda.loadUrl("file:///android_asset/yandex.html");
-                Handler refresh = new Handler(Looper.getMainLooper());
-                refresh.post(new Runnable() {
+                final Handler handler = new Handler();
+                new Thread(new Runnable() {
+                    @Override
                     public void run() {
-                        schoolText.setText(Edds74ru.getSchool());
+                        handler.postDelayed(new Runnable() {
+                            @Override
+                            public void run() {
+                                schoolText.setText(Edds74ru.getSchool());
+                            }
+                        }, 10);
                     }
-                });
+                }).start();
             } else {
                 showToast(ConstantManager.INTERNET_OUT);
                 Handler handler = new Handler();
@@ -77,9 +81,8 @@ public class MainActivity extends AppCompatActivity {
                 }, 5000);
             }
         } else {
-                pogoda.loadUrl("file:///android_asset/yandex.html");
-                schoolText.setText(savedInstanceState.getString(ConstantManager.OTMENA));
-
+            pogoda.loadUrl("file:///android_asset/yandex.html");
+            schoolText.setText(savedInstanceState.getString(ConstantManager.OTMENA));
         }
     }
 

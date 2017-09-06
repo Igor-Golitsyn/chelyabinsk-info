@@ -2,62 +2,29 @@
 <instant-run
     abi="x86"
     api-level="24"
-    build-mode="FULL"
+    build-mode="COLD"
     density="xxhdpi"
     format="10"
     plugin-version="2.3.3"
-    timestamp="1504678711580"
+    timestamp="1504697187606"
     token="-4506925229362239829"
-    verifier="FULL_BUILD_REQUESTED" >
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2380" />
+        duration="1054" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="703" />
+        duration="7" />
     <task
         name="verifier"
-        duration="588" />
+        duration="3" />
 
     <artifact
-        location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
         location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\JAVA\chelyabinsk-info\app\build\outputs\apk\app-debug.apk"
-        type="SPLIT_MAIN" />
-    <artifact
-        location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
         type="SPLIT" />
 
     <build
@@ -99,6 +66,57 @@
             type="SPLIT" />
         <artifact
             location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1504692781682"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\outputs\apk\app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1504696471354"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            type="SPLIT" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1504697187606"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="C:\JAVA\chelyabinsk-info\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
     </build>
 

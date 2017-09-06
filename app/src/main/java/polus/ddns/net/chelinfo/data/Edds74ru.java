@@ -1,23 +1,22 @@
 package polus.ddns.net.chelinfo.data;
 
 import android.util.Log;
-import android.view.View;
+import android.widget.TextView;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
 import java.io.IOException;
-import java.util.ArrayList;
 
+import okhttp3.Call;
+import okhttp3.Callback;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
 import polus.ddns.net.chelinfo.R;
-import polus.ddns.net.chelinfo.beans.GetBeansFromRest;
-import polus.ddns.net.chelinfo.beans.NewsListItem;
+import polus.ddns.net.chelinfo.activity.MainActivity;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
-import retrofit2.Retrofit;
-import retrofit2.converter.gson.GsonConverterFactory;
+
 
 /**
  * Created by Игорь on 09.12.2016.

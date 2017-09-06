@@ -4330,15 +4330,7 @@
                     "endOffset": 55880
                 },
                 "from": {
-                    "file": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 17,
-                        "startColumn": 4,
-                        "startOffset": 1019,
-                        "endLine": 20,
-                        "endColumn": 12,
-                        "endOffset": 1167
-                    }
+                    "file": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\values\\styles.xml"
                 }
             },
             {
@@ -6180,7 +6172,15 @@
                     "endOffset": 121186
                 },
                 "from": {
-                    "file": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\values\\styles.xml"
+                    "file": "C:\\JAVA\\chelyabinsk-info\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 429,
+                        "endLine": 16,
+                        "endColumn": 12,
+                        "endOffset": 1013
+                    }
                 }
             },
             {

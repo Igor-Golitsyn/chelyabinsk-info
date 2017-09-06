@@ -9,6 +9,8 @@ import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.support.design.widget.TabItem;
+import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
@@ -86,14 +88,10 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         });
 
         for (int i = 0; i < mSectionsPagerAdapter.getCount(); i++) {
-           /* ActionBar.Tab tab=actionBar.newTab()
+            ActionBar.Tab tab = actionBar.newTab()
                     .setText(mSectionsPagerAdapter.getPageTitle(i))
-                    .setTabListener(this);*/
-
-            actionBar.addTab(
-                    actionBar.newTab()
-                            .setText(mSectionsPagerAdapter.getPageTitle(i))
-                            .setTabListener(this));
+                    .setTabListener(this);
+            actionBar.addTab(tab);
         }
     }
 
@@ -101,6 +99,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
         Log.d(TAG, "onTabSelected" + tab.getPosition());
         mViewPager.setCurrentItem(tab.getPosition());
+        getActionBar().setStackedBackgroundDrawable(new ColorDrawable(getRandColor()));
     }
 
     @Override
@@ -111,10 +110,10 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
     public void onTabReselected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
     }
 
-    public class SectionsPagerAdapter extends FragmentPagerAdapter {
+    private class SectionsPagerAdapter extends FragmentPagerAdapter {
         static final String TAG = ConstantManager.TAG_PREFIX + "SectionsPagerAd";
 
-        public SectionsPagerAdapter(FragmentManager fm) {
+        private SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
         }
 
@@ -315,9 +314,9 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
 
     private int getRandColor() {
         Random rand = new Random();
-        int r = rand.nextInt();
-        int g = rand.nextInt();
-        int b = rand.nextInt();
+        int r = rand.nextInt(255);
+        int g = rand.nextInt(255);
+        int b = rand.nextInt(255);
         return Color.rgb(r, g, b);
     }
 }
