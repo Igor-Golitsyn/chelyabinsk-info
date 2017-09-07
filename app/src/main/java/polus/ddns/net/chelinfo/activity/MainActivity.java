@@ -58,22 +58,15 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             if (NetworkUtils.isNetworkAvailable(this)) {
                 pogoda.loadUrl("file:///android_asset/yandex.html");
-                final Handler handler = new Handler();
-                new Thread(new Runnable() {
+                new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        handler.postDelayed(new Runnable() {
-                            @Override
-                            public void run() {
-                                schoolText.setText(Edds74ru.getSchool());
-                            }
-                        }, 10);
+                        schoolText.setText(Edds74ru.getSchool());
                     }
-                }).start();
+                }, 10);
             } else {
                 showToast(ConstantManager.INTERNET_OUT);
-                Handler handler = new Handler();
-                handler.postDelayed(new Runnable() {
+                new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         finish();

@@ -1,7 +1,4 @@
-#Wed Sep 06 16:49:55 YEKT 2017
-base.0=C\:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_7ce0252aa6a450e644b4dbf5ad548c9028312f67
-renamed.1=classes2.dex
+#Thu Sep 07 13:40:20 YEKT 2017
+base.0=C\:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
 renamed.0=classes.dex
-file.1=C\:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_e26e3eb859881922c9c509b1751e001888014405\\classes.dex
-base.1=C\:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_e26e3eb859881922c9c509b1751e001888014405
-file.0=C\:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_7ce0252aa6a450e644b4dbf5ad548c9028312f67\\classes.dex
+file.0=C\:\\JAVA\\chelyabinsk-info\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex

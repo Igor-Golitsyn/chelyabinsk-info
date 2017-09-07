@@ -31,13 +31,16 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+
 import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.TimeUnit;
 
+import okhttp3.OkHttpClient;
 import polus.ddns.net.chelinfo.R;
 import polus.ddns.net.chelinfo.beans.GetBeansFromRest;
 import polus.ddns.net.chelinfo.beans.NewsItem;
@@ -244,6 +247,11 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
             });
         }
 
+        OkHttpClient okHttpClient = new OkHttpClient.Builder()
+                .readTimeout(60, TimeUnit.SECONDS)
+                .connectTimeout(60, TimeUnit.SECONDS)
+                .build();
+
         private void getNews() {
             final int num = getArguments().getInt(ARG_SECTION_NUMBER) - 1;
             Log.d(TAG, "getNews" + num);
@@ -256,7 +264,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                 hideProgress();
             } catch (Exception e) {
                 Log.d(TAG, "getNewsInet" + num);
-                final Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
+                final Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).client(okHttpClient).build();
                 GetBeansFromRest service = retrofit.create(GetBeansFromRest.class);
                 service.getNews(newsListItems[num].getRestLink()).enqueue(new Callback<NewsItem[]>() {
                     @Override
