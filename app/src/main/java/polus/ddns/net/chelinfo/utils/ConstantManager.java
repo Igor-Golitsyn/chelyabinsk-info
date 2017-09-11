@@ -13,6 +13,7 @@ public interface ConstantManager {
     String EDDS74RU_SOVETSKY = "http://edds74.ru/Upload/files/Svodka_5.htm";
     String EDDS74RU_TRAKTOROZAVODSKY = "http://edds74.ru/Upload/files/Svodka_6.htm";
     String EDDS74RU_CENTRALNY = "http://edds74.ru/Upload/files/Svodka_7.htm";
+    String VODA = "http://voda.uu.ru/otklyucheniya/";
     String DOWNLOAD_FAIL = "Не удалось загрузить данные";
     String DIALOG_ARRAY = "DIALOG_ARRAY";
     String KALININSKY = "КАЛИНИНСКИЙ район";
@@ -27,7 +28,7 @@ public interface ConstantManager {
     String NEWS_LINK = "NEWS_LINK";
     String NEWS_ITEM_LINK = "NEWS_ITEM_LINK";
     String PAGE_REQUEST = "PAGE_REQUEST";
-    String NEWS_PAGE="NEWS_PAGE";
-    String ADDING_TO_SEARCH="Search";
-    String OTMENA="OTMENA";
+    String NEWS_PAGE = "NEWS_PAGE";
+    String ADDING_TO_SEARCH = "Search";
+    String OTMENA = "OTMENA";
 }

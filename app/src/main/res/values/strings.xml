@@ -22,4 +22,5 @@
     <string name="title_section3">Section 3</string>
     <string name="cardSeeders">Раздающих:</string>
     <string name="cardSize">Размер:</string>
+    <string name="search">Поиск</string>
 </resources>

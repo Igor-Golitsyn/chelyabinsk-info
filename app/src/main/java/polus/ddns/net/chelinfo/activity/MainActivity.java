@@ -1,22 +1,30 @@
 package polus.ddns.net.chelinfo.activity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
-import android.os.Looper;
 import android.os.StrictMode;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.KeyEvent;
 import android.view.View;
+import android.view.inputmethod.EditorInfo;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Date;
 
 
 import butterknife.BindView;
@@ -25,7 +33,9 @@ import butterknife.OnClick;
 
 import polus.ddns.net.chelinfo.R;
 import polus.ddns.net.chelinfo.beans.GetBeansFromRest;
+import polus.ddns.net.chelinfo.beans.NewsItem;
 import polus.ddns.net.chelinfo.beans.NewsListItem;
+import polus.ddns.net.chelinfo.beans.PageRequest;
 import polus.ddns.net.chelinfo.data.Edds74ru;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
 import polus.ddns.net.chelinfo.utils.NetworkUtils;
@@ -45,6 +55,9 @@ public class MainActivity extends AppCompatActivity {
     TextView schoolText;
     @BindView(R.id.button_news)
     Button buttonNews;
+    @BindView(R.id.search_voda_text)
+    EditText searchVodaText;
+    ProgressDialog mProgressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,6 +90,57 @@ public class MainActivity extends AppCompatActivity {
             pogoda.loadUrl("file:///android_asset/yandex.html");
             schoolText.setText(savedInstanceState.getString(ConstantManager.OTMENA));
         }
+        searchVodaText.setImeOptions(EditorInfo.IME_ACTION_DONE);
+        searchVodaText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+            @Override
+            public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+                if (actionId == EditorInfo.IME_ACTION_DONE) getAndShowVoda();
+                return false;
+            }
+        });
+    }
+
+    private void getAndShowVoda() {
+        showProgress();
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
+        GetBeansFromRest service = retrofit.create(GetBeansFromRest.class);
+        PageRequest pageRequest = new PageRequest(searchVodaText.getText().toString(), "vodaSearch");
+        service.searchNews(pageRequest.getNewsName(), pageRequest).enqueue(new Callback<NewsItem[]>() {
+            @Override
+            public void onResponse(Call<NewsItem[]> call, Response<NewsItem[]> response) {
+                Log.d(TAG, "onResponsegetAndShowVoda");
+                if (response.code() == 200) {
+                    DateFormat dateFormat = new SimpleDateFormat("dd MMMM");
+                    NewsItem[] newsItems = response.body();
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    DialogKommunityServices kommunityServices = new DialogKommunityServices();
+                    Bundle bundle = new Bundle();
+                    String[] data = new String[3];
+                    data[0] = "МУП ПОВВ отключения:";
+                    data[1] = "";
+                    if (newsItems == null || newsItems.length == 0) {
+                        data[1] = "По улице: " + searchVodaText.getText().toString() + "\nотключений не найдено.";
+                    } else {
+                        for (NewsItem item : newsItems) {
+                            if (data[1].isEmpty()) data[1] = data[1] + item.getName() + "\nОтключат: " + dateFormat.format(new Date(item.getDate())) + "\n";
+                            else data[1] = data[1] + "\n" + item.getName() + "\nОтключат: " + dateFormat.format(new Date(item.getDate())) + "\n";
+                        }
+                        data[1] = data[1] + "\nБолее подробно в разделе НОВОСТИ.";
+                    }
+                    data[2] = String.valueOf(R.drawable.logo_voda);
+                    bundle.putStringArray(ConstantManager.DIALOG_ARRAY, data);
+                    kommunityServices.setArguments(bundle);
+                    hideProgress();
+                    kommunityServices.show(fragmentManager, "dialog");
+                }
+            }
+
+            @Override
+            public void onFailure(Call<NewsItem[]> call, Throwable t) {
+                Log.d(TAG, "onFailuregetAndShowVoda");
+                hideProgress();
+            }
+        });
     }
 
     public void showToast(String massage) {
@@ -106,6 +170,19 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(Call<NewsListItem[]> call, Throwable t) {
             }
         });
+    }
+
+    @OnClick(R.id.search_voda_image)
+    public void showVoda() {
+        Log.d(TAG, "showVoda");
+        getAndShowVoda();
+    }
+
+    @OnClick(R.id.image_voda)
+    public void showSite(){
+        Log.d(TAG, "showVoda");
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(ConstantManager.VODA));
+        startActivity(intent);
     }
 
     @OnClick(R.id.button_centralny)
@@ -193,5 +270,23 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         Log.d(TAG, "onSaveInstanceState");
         outState.putString(ConstantManager.OTMENA, schoolText.getText().toString());
+    }
+
+    public void showProgress() {
+        Log.d(TAG, "showProgress");
+        if (mProgressDialog == null) {
+            mProgressDialog = new ProgressDialog(this);
+            mProgressDialog.setCancelable(false);
+            mProgressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        }
+        mProgressDialog.show();
+        mProgressDialog.setContentView(R.layout.progress_splash);
+    }
+
+    public void hideProgress() {
+        Log.d(TAG, "hideProgress");
+        if (mProgressDialog != null && mProgressDialog.isShowing()) {
+            mProgressDialog.hide();
+        }
     }
 }

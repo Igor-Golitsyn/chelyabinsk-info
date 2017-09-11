@@ -12,6 +12,7 @@
         android:supportsRtl="true">
         <activity
             android:name="polus.ddns.net.chelinfo.activity.MainActivity"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,6 +23,7 @@
         <activity
             android:label="Новости Челябинска"
             android:name=".activity.NewsActivity"
+            android:windowSoftInputMode="stateHidden"
             android:theme="@style/NewsTheme">
             <meta-data
                 android:name="android:support.PARENT_ACTIVITY"

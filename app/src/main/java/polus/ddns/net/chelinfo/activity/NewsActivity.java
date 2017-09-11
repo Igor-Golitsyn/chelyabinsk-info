@@ -220,6 +220,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
             final int num = getArguments().getInt(ARG_SECTION_NUMBER) - 1;
             Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
             GetBeansFromRest service = retrofit.create(GetBeansFromRest.class);
+            //В PageRequest передаем текст для поиска вместо url и формируем строку куда слать REST запрос (имяСервиса+Search).
             PageRequest pageRequest = new PageRequest(searchText.getText().toString(), newsListItems[num].getRestLink() + ConstantManager.ADDING_TO_SEARCH);
             service.searchNews(pageRequest.getNewsName(), pageRequest).enqueue(new Callback<NewsItem[]>() {
                 @Override

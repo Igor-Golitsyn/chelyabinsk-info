@@ -6,6 +6,7 @@ import android.support.annotation.UiThread;
 import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
@@ -17,7 +18,11 @@ import polus.ddns.net.chelinfo.R;
 public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinder {
   protected T target;
 
-  private View view2131558525;
+  private View view2131558529;
+
+  private View view2131558528;
+
+  private View view2131558526;
 
   private View view2131558518;
 
@@ -33,7 +38,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
 
   private View view2131558521;
 
-  private View view2131558526;
+  private View view2131558530;
 
   @UiThread
   public MainActivity_ViewBinding(final T target, View source) {
@@ -44,11 +49,28 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
     target.schoolText = Utils.findRequiredViewAsType(source, R.id.school_text, "field 'schoolText'", TextView.class);
     view = Utils.findRequiredView(source, R.id.button_news, "field 'buttonNews' and method 'showNews'");
     target.buttonNews = Utils.castView(view, R.id.button_news, "field 'buttonNews'", Button.class);
-    view2131558525 = view;
+    view2131558529 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.showNews();
+      }
+    });
+    target.searchVodaText = Utils.findRequiredViewAsType(source, R.id.search_voda_text, "field 'searchVodaText'", EditText.class);
+    view = Utils.findRequiredView(source, R.id.search_voda_image, "method 'showVoda'");
+    view2131558528 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.showVoda();
+      }
+    });
+    view = Utils.findRequiredView(source, R.id.image_voda, "method 'showSite'");
+    view2131558526 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.showSite();
       }
     });
     view = Utils.findRequiredView(source, R.id.button_centralny, "method 'showCentralny'");
@@ -108,7 +130,7 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
       }
     });
     view = Utils.findRequiredView(source, R.id.button_request, "method 'request'");
-    view2131558526 = view;
+    view2131558530 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -126,9 +148,14 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
     target.pogoda = null;
     target.schoolText = null;
     target.buttonNews = null;
+    target.searchVodaText = null;
 
-    view2131558525.setOnClickListener(null);
-    view2131558525 = null;
+    view2131558529.setOnClickListener(null);
+    view2131558529 = null;
+    view2131558528.setOnClickListener(null);
+    view2131558528 = null;
+    view2131558526.setOnClickListener(null);
+    view2131558526 = null;
     view2131558518.setOnClickListener(null);
     view2131558518 = null;
     view2131558520.setOnClickListener(null);
@@ -143,8 +170,8 @@ public class MainActivity_ViewBinding<T extends MainActivity> implements Unbinde
     view2131558519 = null;
     view2131558521.setOnClickListener(null);
     view2131558521 = null;
-    view2131558526.setOnClickListener(null);
-    view2131558526 = null;
+    view2131558530.setOnClickListener(null);
+    view2131558530 = null;
 
     this.target = null;
   }
