@@ -229,7 +229,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                     if (response.code() == 200) {
                         newsItems = response.body();
                         if (newsItems == null) newsItems = new NewsItem[0];
-                        newsItemsMap.put(num, newsItems);
+                        if (newsItems.length > 0) newsItemsMap.put(num, newsItems);
                         RVAdapter adapter = new RVAdapter(Arrays.asList(newsItems));
                         recyclerView.setAdapter(adapter);
                         hideProgress();
@@ -240,7 +240,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                 public void onFailure(Call<NewsItem[]> call, Throwable t) {
                     Log.d(TAG, "onFailureGetNews");
                     newsItems = new NewsItem[0];
-                    newsItemsMap.put(num, newsItems);
+                    //newsItemsMap.put(num, newsItems);
                     RVAdapter adapter = new RVAdapter(Arrays.asList(newsItems));
                     recyclerView.setAdapter(adapter);
                     hideProgress();
@@ -274,7 +274,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                         if (response.code() == 200) {
                             newsItems = response.body();
                             if (newsItems == null) newsItems = new NewsItem[0];
-                            newsItemsMap.put(num, newsItems);
+                            if (newsItems.length > 0) newsItemsMap.put(num, newsItems);
                             RVAdapter adapter = new RVAdapter(Arrays.asList(newsItems));
                             recyclerView.setAdapter(adapter);
                             hideProgress();
@@ -285,7 +285,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                     public void onFailure(Call<NewsItem[]> call, Throwable t) {
                         Log.d(TAG, "onFailureGetNews");
                         newsItems = new NewsItem[0];
-                        newsItemsMap.put(num, newsItems);
+                        //newsItemsMap.put(num, newsItems);
                         RVAdapter adapter = new RVAdapter(Arrays.asList(newsItems));
                         recyclerView.setAdapter(adapter);
                         hideProgress();

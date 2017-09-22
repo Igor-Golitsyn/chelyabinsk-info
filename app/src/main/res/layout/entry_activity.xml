@@ -28,22 +28,26 @@
             android:layout_height="wrap_content"/>
 
         <TextView
-            android:id="@+id/text_news"
-            android:gravity="center"
+            android:id="@+id/text_news_small"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/black" />
+            android:gravity="center"
+            android:textColor="@color/black"/>
 
         <Button
             android:id="@+id/button_1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone" />
+            android:visibility="gone"
+            android:layout_marginTop="@dimen/padding_small_16"
+            android:background="@drawable/rectangle_rounded_grey_light"/>
 
         <Button
             android:id="@+id/button_2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_small_16"
+            android:background="@drawable/rectangle_rounded_grey_light"
             android:visibility="gone" />
 
     </LinearLayout>

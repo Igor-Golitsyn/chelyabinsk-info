@@ -9,7 +9,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-
         android:padding="@dimen/padding_small_16"
         tools:context="polus.ddns.net.chelinfo.activity.MainActivity">
 
@@ -137,7 +136,7 @@
             android:id="@+id/search_voda_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/gray_light"
+            android:background="@drawable/rectangle_rounded_grey_light"
             android:padding="@dimen/padding_small_4">
 
             <ImageView
@@ -171,11 +170,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/padding_small_16"
-            android:background="@color/colorPrimary"
+            android:background="@drawable/rectangle_rounded_main_color"
             android:padding="@dimen/padding_small_16"
             android:text="@string/button_news_text"
             android:textColor="@color/white"
             android:textStyle="bold"
+
             android:visibility="gone" />
 
         <Button
@@ -183,10 +183,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/padding_small_16"
-            android:background="@color/colorPrimary"
             android:padding="@dimen/padding_small_16"
             android:text="@string/button_request_text"
             android:textColor="@color/white"
+            android:background="@drawable/rectangle_rounded_main_color"
+            android:elevation="30dp"
             android:textStyle="bold" />
     </LinearLayout>
 </ScrollView>
