@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="polus.ddns.net.chelinfo"
-    android:versionCode="14"
-    android:versionName="1.14" >
+    android:versionCode="15"
+    android:versionName="1.15" >
 
     <uses-sdk
         android:minSdkVersion="14"
         android:targetSdkVersion="25" />
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
@@ -47,6 +49,10 @@
                 android:name="android:support.PARENT_ACTIVITY"
                 android:value=".activity.NewsActivity" />
         </activity>
+        <activity
+            android:name="com.karumi.dexter.DexterActivity"
+            android:launchMode="singleInstance"
+            android:theme="@style/Theme.Transparent" />
 
         <provider
             android:name="com.android.tools.fd.runtime.InstantRunContentProvider"

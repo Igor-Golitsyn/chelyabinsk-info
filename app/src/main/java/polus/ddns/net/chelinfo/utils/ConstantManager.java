@@ -31,4 +31,9 @@ public interface ConstantManager {
     String NEWS_PAGE = "NEWS_PAGE";
     String ADDING_TO_SEARCH = "Search";
     String OTMENA = "OTMENA";
+    String YANDEXGEOCODE = "https://geocode-maps.yandex.ru/";
+    String IS_SEARCH_LOCATION_PROCESS = "IS_SEARCH_LOCATION_PROCESS";
+    String GEO_DISABLED_WARNING = "Определение местоположения отключено";
+    String ERROR_LOCATE = "Не удалось определить адрес";
+    String VODA_NEWS = "VODA_NEWS";
 }

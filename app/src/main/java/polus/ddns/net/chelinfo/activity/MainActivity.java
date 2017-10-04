@@ -1,13 +1,23 @@
 package polus.ddns.net.chelinfo.activity;
 
+import android.Manifest;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.location.Address;
+import android.location.Criteria;
+import android.location.Geocoder;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
+import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -20,11 +30,22 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.PermissionDeniedResponse;
+import com.karumi.dexter.listener.PermissionGrantedResponse;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.single.PermissionListener;
+
+import java.io.IOException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Locale;
 
 
 import butterknife.BindView;
@@ -36,6 +57,8 @@ import polus.ddns.net.chelinfo.beans.GetBeansFromRest;
 import polus.ddns.net.chelinfo.beans.NewsItem;
 import polus.ddns.net.chelinfo.beans.NewsListItem;
 import polus.ddns.net.chelinfo.beans.PageRequest;
+import polus.ddns.net.chelinfo.beans.yandexBeans.FeatureMember;
+import polus.ddns.net.chelinfo.beans.yandexBeans.YandexBean;
 import polus.ddns.net.chelinfo.data.Edds74ru;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
 import polus.ddns.net.chelinfo.utils.NetworkUtils;
@@ -57,7 +80,12 @@ public class MainActivity extends AppCompatActivity {
     Button buttonNews;
     @BindView(R.id.search_voda_text)
     EditText searchVodaText;
-    ProgressDialog mProgressDialog;
+    private ProgressDialog mProgressDialog;
+    private boolean isSearchLocationProcess = false;
+    private NewsItem[] vodaNews;
+    private LocationManager locationManager;
+    private Context context;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +95,14 @@ public class MainActivity extends AppCompatActivity {
         StrictMode.setThreadPolicy(policy);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+        context = this;
+
+        checkAccess(Manifest.permission.ACCESS_NETWORK_STATE);
+        checkAccess(Manifest.permission.INTERNET);
+        checkAccess(Manifest.permission.ACCESS_FINE_LOCATION);
+        checkAccess(Manifest.permission.ACCESS_COARSE_LOCATION);
+
         getNews();
         if (savedInstanceState == null) {
             if (NetworkUtils.isNetworkAvailable(this)) {
@@ -89,6 +125,12 @@ public class MainActivity extends AppCompatActivity {
         } else {
             pogoda.loadUrl("file:///android_asset/yandex.html");
             schoolText.setText(savedInstanceState.getString(ConstantManager.OTMENA));
+            isSearchLocationProcess = savedInstanceState.getBoolean(ConstantManager.IS_SEARCH_LOCATION_PROCESS);
+            vodaNews = (NewsItem[]) savedInstanceState.getParcelableArray(ConstantManager.VODA_NEWS);
+            if (isSearchLocationProcess) {
+                showProgress();
+                locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+            }
         }
         searchVodaText.setImeOptions(EditorInfo.IME_ACTION_DONE);
         searchVodaText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
@@ -100,7 +142,134 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    private void checkAccess(String permission) {
+        Log.d(TAG, "checkAccess");
+        Dexter.withActivity(this)
+                .withPermission(permission)
+                .withListener(new PermissionListener() {
+                    @Override
+                    public void onPermissionGranted(PermissionGrantedResponse response) {/* ... */}
+
+                    @Override
+                    public void onPermissionDenied(PermissionDeniedResponse response) {/* ... */}
+
+                    @Override
+                    public void onPermissionRationaleShouldBeShown(PermissionRequest permission, PermissionToken token) {/* ... */}
+                }).check();
+    }
+
+    @Override
+    protected void onResume() {
+        Log.d(TAG, "onResume");
+        super.onResume();
+        if (isSearchLocationProcess) {
+            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                showWarningPermDisabled();
+            } else {
+                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 10, locationListener);
+                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 10, locationListener);
+            }
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        Log.d(TAG, "onPause");
+        super.onPause();
+        if (isSearchLocationProcess) locationManager.removeUpdates(locationListener);
+    }
+
+    private LocationListener locationListener = new LocationListener() {
+
+        @Override
+        public void onLocationChanged(Location location) {
+            Log.d(TAG, "onLocationChanged");
+            locationManager.removeUpdates(locationListener);
+            getAndShowVoda(location);
+            isSearchLocationProcess = false;
+        }
+
+        @Override
+        public void onStatusChanged(String provider, int status, Bundle extras) {
+            Log.d(TAG, "onStatusChanged");
+        }
+
+
+        @Override
+        public void onProviderEnabled(String provider) {
+            Log.d(TAG, "onProviderEnabled");
+            if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                showWarningPermDisabled();
+            } else {
+                locationManager.removeUpdates(locationListener);
+                getAndShowVoda(locationManager.getLastKnownLocation(provider));
+                isSearchLocationProcess = false;
+            }
+        }
+
+        @Override
+        public void onProviderDisabled(String provider) {
+            Log.d(TAG, "onProviderDisabled");
+        }
+    };
+
+    private void showWarningPermDisabled() {
+        Log.d(TAG, "showWarningPermDisabled");
+        hideProgress();
+        showToast(ConstantManager.GEO_DISABLED_WARNING);
+        showVodaDialog(vodaNews);
+    }
+
+    private void getAndShowVoda(Location location) {
+        Log.d(TAG, "getAndShowVodaLocation");
+        showProgress();
+        Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.YANDEXGEOCODE).addConverterFactory(GsonConverterFactory.create()).build();
+        GetBeansFromRest service = retrofit.create(GetBeansFromRest.class);
+        service.getLocation(String.valueOf(location.getLongitude() + "," + location.getLatitude()), "5", "json", "house").enqueue(new Callback<YandexBean>() {
+            @Override
+            public void onResponse(Call<YandexBean> call, Response<YandexBean> response) {
+                hideProgress();
+                if (response.code() == 200) {
+                    List<FeatureMember> featureMemberList = response.body().response.geoObjectCollection.featureMember;
+                    ArrayList<NewsItem> filterListStreet = new ArrayList<NewsItem>();
+                    ArrayList<NewsItem> filterListHouse = new ArrayList<NewsItem>();
+                    for (FeatureMember featureMember : featureMemberList) {
+                        String[] currentAdr = featureMember.geoObject.metaDataProperty.geocoderMetaData.addressDetails.country.addressLine.split(",");
+                        String[] street = currentAdr[1].trim().split(" ");
+                        String house = currentAdr[2].trim().toLowerCase();
+                        for (NewsItem item : vodaNews) {
+                            for (String str : street) {
+                                if (item.getName().toLowerCase().contains(str.trim().toLowerCase()))
+                                    filterListStreet.add(item);
+                            }
+                        }
+                        for (NewsItem item : filterListStreet) {
+                            if (item.getName().toLowerCase().contains(house))
+                                filterListHouse.add(item);
+                        }
+                    }
+                    if (filterListHouse.size() > 0)
+                        showVodaDialog(filterListHouse.toArray(new NewsItem[filterListHouse.size()]));
+                    else if (filterListStreet.size() > 0)
+                        showVodaDialog(filterListStreet.toArray(new NewsItem[filterListStreet.size()]));
+                    else showVodaDialog(vodaNews);
+                } else {
+                    showToast(ConstantManager.ERROR_LOCATE);
+                    showVodaDialog(vodaNews);
+                }
+            }
+
+            @Override
+            public void onFailure(Call<YandexBean> call, Throwable t) {
+                hideProgress();
+                showToast(ConstantManager.ERROR_LOCATE);
+                showVodaDialog(vodaNews);
+            }
+        });
+    }
+
     private void getAndShowVoda() {
+        Log.d(TAG, "getAndShowVoda");
         showProgress();
         Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
         GetBeansFromRest service = retrofit.create(GetBeansFromRest.class);
@@ -110,28 +279,22 @@ public class MainActivity extends AppCompatActivity {
             public void onResponse(Call<NewsItem[]> call, Response<NewsItem[]> response) {
                 Log.d(TAG, "onResponsegetAndShowVoda");
                 if (response.code() == 200) {
-                    DateFormat dateFormat = new SimpleDateFormat("dd MMMM");
-                    NewsItem[] newsItems = response.body();
-                    FragmentManager fragmentManager = getSupportFragmentManager();
-                    DialogKommunityServices kommunityServices = new DialogKommunityServices();
-                    Bundle bundle = new Bundle();
-                    String[] data = new String[3];
-                    data[0] = "МУП ПОВВ отключения:";
-                    data[1] = "";
-                    if (newsItems == null || newsItems.length == 0) {
-                        data[1] = "По улице: " + searchVodaText.getText().toString() + "\nотключений не найдено.";
+                    vodaNews = response.body();
+                    if (!searchVodaText.getText().toString().isEmpty()) {
+                        hideProgress();
+                        showVodaDialog(vodaNews);
                     } else {
-                        for (NewsItem item : newsItems) {
-                            if (data[1].isEmpty()) data[1] = data[1] + item.getName() + "\nОтключат: " + dateFormat.format(new Date(item.getDate())) + "\n";
-                            else data[1] = data[1] + "\n" + item.getName() + "\nОтключат: " + dateFormat.format(new Date(item.getDate())) + "\n";
+                        hideProgress();
+                        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+                        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                            showWarningPermDisabled();
+                        } else {
+                            showProgress();
+                            isSearchLocationProcess = true;
+                            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 10, locationListener);
+                            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 10, locationListener);
                         }
-                        data[1] = data[1] + "\nБолее подробно в разделе НОВОСТИ.";
                     }
-                    data[2] = String.valueOf(R.drawable.logo_voda);
-                    bundle.putStringArray(ConstantManager.DIALOG_ARRAY, data);
-                    kommunityServices.setArguments(bundle);
-                    hideProgress();
-                    kommunityServices.show(fragmentManager, "dialog");
                 }
             }
 
@@ -141,6 +304,33 @@ public class MainActivity extends AppCompatActivity {
                 hideProgress();
             }
         });
+    }
+
+    private void showVodaDialog(NewsItem[] newsItems) {
+        Log.d(TAG, "showVodaDialog");
+        DateFormat dateFormat = new SimpleDateFormat("dd MMMM");
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        DialogKommunityServices kommunityServices = new DialogKommunityServices();
+        Bundle bundle = new Bundle();
+        String[] data = new String[3];
+        data[0] = "МУП ПОВВ отключения:";
+        data[1] = "";
+        if (newsItems == null || newsItems.length == 0) {
+            data[1] = "По улице: " + searchVodaText.getText().toString() + "\nотключений не найдено.";
+        } else {
+            for (NewsItem item : newsItems) {
+                if (data[1].isEmpty())
+                    data[1] = data[1] + item.getName() + "\nОтключат: " + dateFormat.format(new Date(item.getDate())) + "\n";
+                else
+                    data[1] = data[1] + "\n" + item.getName() + "\nОтключат: " + dateFormat.format(new Date(item.getDate())) + "\n";
+            }
+            data[1] = data[1] + "\nБолее подробно в разделе НОВОСТИ.";
+        }
+        data[2] = String.valueOf(R.drawable.logo_voda);
+        bundle.putStringArray(ConstantManager.DIALOG_ARRAY, data);
+        kommunityServices.setArguments(bundle);
+        hideProgress();
+        kommunityServices.show(fragmentManager, "dialog");
     }
 
     public void showToast(String massage) {
@@ -179,7 +369,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @OnClick(R.id.image_voda)
-    public void showSite(){
+    public void showSite() {
         Log.d(TAG, "showVoda");
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(ConstantManager.VODA));
         startActivity(intent);
@@ -270,6 +460,8 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         Log.d(TAG, "onSaveInstanceState");
         outState.putString(ConstantManager.OTMENA, schoolText.getText().toString());
+        outState.putBoolean(ConstantManager.IS_SEARCH_LOCATION_PROCESS, isSearchLocationProcess);
+        outState.putParcelableArray(ConstantManager.VODA_NEWS, vodaNews);
     }
 
     public void showProgress() {

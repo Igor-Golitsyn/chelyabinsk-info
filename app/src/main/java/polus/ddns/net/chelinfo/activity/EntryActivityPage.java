@@ -1,12 +1,19 @@
 package polus.ddns.net.chelinfo.activity;
 
+import android.Manifest;
 import android.app.ProgressDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -15,6 +22,13 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
+import com.karumi.dexter.Dexter;
+import com.karumi.dexter.PermissionToken;
+import com.karumi.dexter.listener.PermissionDeniedResponse;
+import com.karumi.dexter.listener.PermissionGrantedResponse;
+import com.karumi.dexter.listener.PermissionRequest;
+import com.karumi.dexter.listener.single.PermissionListener;
 
 import java.util.ArrayList;
 
@@ -54,6 +68,7 @@ public class EntryActivityPage extends AppCompatActivity {
     PageRequest pageRequest;
     ProgressDialog mProgressDialog;
 
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,6 +92,7 @@ public class EntryActivityPage extends AppCompatActivity {
             newsPage = (NewsPage) savedInstanceState.getSerializable(ConstantManager.NEWS_PAGE);
             setDataToFields();
         }
+
     }
 
     private void getNewsPage() {

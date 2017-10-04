@@ -23,4 +23,8 @@
     <string name="cardSeeders">Раздающих:</string>
     <string name="cardSize">Размер:</string>
     <string name="search">Поиск</string>
+
+    <string name="provider_gps">GPS</string>
+    <string name="provider_network">Network</string>
+    <string name="location_settings">Location settings</string>
 </resources>
