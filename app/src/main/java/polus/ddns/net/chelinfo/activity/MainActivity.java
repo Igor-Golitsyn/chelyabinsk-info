@@ -307,7 +307,12 @@ public class MainActivity extends AppCompatActivity {
         data[0] = "МУП ПОВВ отключения:";
         data[1] = "";
         if (newsItems == null || newsItems.length == 0) {
-            data[1] = "По улице: " + searchVodaText.getText().toString() + "\nотключений не найдено.";
+            if (searchVodaText.getText().toString().isEmpty()) {
+                data[1] = "По вашему местоположению \nотключений не найдено.";
+            } else {
+                data[1] = "По улице: " + searchVodaText.getText().toString() + "\nотключений не найдено.";
+            }
+
         } else {
             for (NewsItem item : newsItems) {
                 if (data[1].isEmpty())
