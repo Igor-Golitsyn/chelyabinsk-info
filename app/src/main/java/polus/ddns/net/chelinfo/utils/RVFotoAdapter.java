@@ -62,7 +62,7 @@ public class RVFotoAdapter extends RecyclerView.Adapter<RVFotoAdapter.EntryViewH
         //Log.d(TAG, "onBindViewHolder");
         DisplayMetrics displayMetrics = context.getResources().getDisplayMetrics();
         int width =displayMetrics.widthPixels;
-        PicassoCache.getPicassoInstance(context).load(imageLink.get(i)).resize(width,width).centerInside().into(holder.imageView);
+        PicassoCache.getPicassoInstance(context).load(imageLink.get(i)).placeholder(R.drawable.blue_progress).resize(width,width).centerInside().into(holder.imageView);
     }
 
     @Override

@@ -5,8 +5,12 @@ import android.app.FragmentTransaction;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
+import android.graphics.drawable.ClipDrawable;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.LayerDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.TabItem;
@@ -20,6 +24,7 @@ import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,6 +33,7 @@ import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -60,6 +66,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
     static final String TAG = ConstantManager.TAG_PREFIX + "NewsActivity";
     SectionsPagerAdapter mSectionsPagerAdapter;
     ViewPager mViewPager;
+    static int color = setRandColor();
     static NewsListItem[] newsListItems;
     static ConcurrentHashMap<Integer, NewsItem[]> newsItemsMap = new ConcurrentHashMap<>();
 
@@ -102,7 +109,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
         Log.d(TAG, "onTabSelected" + tab.getPosition());
         mViewPager.setCurrentItem(tab.getPosition());
-        getActionBar().setStackedBackgroundDrawable(new ColorDrawable(getRandColor()));
+        getActionBar().setStackedBackgroundDrawable(new ColorDrawable(color));
     }
 
     @Override
@@ -146,7 +153,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         public static final String ARG_SECTION_NUMBER = "section_number";
         NewsItem[] newsItems = new NewsItem[0];
         RecyclerView recyclerView;
-        ProgressDialog mProgressDialog;
+        ProgressBar progressBar;
 
         LinearLayout searchLinearLayout;
         EditText searchText;
@@ -160,6 +167,7 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
                                  Bundle savedInstanceState) {
             Log.d(TAG, "onCreateView");
             View rootView = inflater.inflate(R.layout.fragment_main_dummy, container, false);
+            progressBar = (ProgressBar) rootView.findViewById(R.id.progressBar);
             recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
             recyclerView.setNestedScrollingEnabled(false);
             searchLinearLayout = (LinearLayout) rootView.findViewById(R.id.search_linear_layout);
@@ -296,20 +304,13 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
 
         public void showProgress() {
             Log.d(TAG, "showProgressDum-" + (getArguments().getInt(ARG_SECTION_NUMBER) - 1));
-            if (mProgressDialog == null) {
-                mProgressDialog = new ProgressDialog(this.getActivity());
-                mProgressDialog.setCancelable(true);
-                mProgressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-            }
-            mProgressDialog.show();
-            mProgressDialog.setContentView(R.layout.progress_splash);
+            progressBar.getIndeterminateDrawable().setColorFilter(setRandColor(), android.graphics.PorterDuff.Mode.SRC_IN);
+            progressBar.setVisibility(View.VISIBLE);
         }
 
         public void hideProgress() {
             Log.d(TAG, "hideProgress");
-            if (mProgressDialog != null && mProgressDialog.isShowing()) {
-                mProgressDialog.hide();
-            }
+            progressBar.setVisibility(View.GONE);
         }
     }
 
@@ -321,11 +322,13 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         outState.putSerializable(ConstantManager.NEWS_ITEM_LINK, newsItemsMap);
     }
 
-    private int getRandColor() {
+    private static int setRandColor() {
         Random rand = new Random();
         int r = rand.nextInt(255);
         int g = rand.nextInt(255);
         int b = rand.nextInt(255);
-        return Color.rgb(r, g, b);
+        color = Color.rgb(r, g, b);
+        Log.d(TAG, "setRandColor " +color);
+        return color;
     }
 }

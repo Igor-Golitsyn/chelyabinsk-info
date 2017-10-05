@@ -36,4 +36,6 @@ public interface ConstantManager {
     String GEO_DISABLED_WARNING = "Определение местоположения отключено";
     String ERROR_LOCATE = "Не удалось определить адрес";
     String VODA_NEWS = "VODA_NEWS";
+    String QUEST_DIALOG = "Искать по текущему местоположению?";
+    String ERROR_DOWNLOAD = "Ошибка загрузки данных";
 }

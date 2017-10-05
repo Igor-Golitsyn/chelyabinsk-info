@@ -18,6 +18,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.StrictMode;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -27,6 +28,7 @@ import android.view.inputmethod.EditorInfo;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -80,12 +82,13 @@ public class MainActivity extends AppCompatActivity {
     Button buttonNews;
     @BindView(R.id.search_voda_text)
     EditText searchVodaText;
+    @BindView(R.id.progressBar)
+    ProgressBar progressBar;
     private ProgressDialog mProgressDialog;
     private boolean isSearchLocationProcess = false;
     private NewsItem[] vodaNews;
     private LocationManager locationManager;
     private Context context;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -163,12 +166,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "onResume");
         super.onResume();
         if (isSearchLocationProcess) {
-            if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                showWarningPermDisabled();
-            } else {
-                locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 10, locationListener);
-                locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 10, locationListener);
-            }
+            okClicked();
         }
     }
 
@@ -185,8 +183,8 @@ public class MainActivity extends AppCompatActivity {
         public void onLocationChanged(Location location) {
             Log.d(TAG, "onLocationChanged");
             locationManager.removeUpdates(locationListener);
-            getAndShowVoda(location);
             isSearchLocationProcess = false;
+            getAndShowVoda(location);
         }
 
         @Override
@@ -202,8 +200,8 @@ public class MainActivity extends AppCompatActivity {
                 showWarningPermDisabled();
             } else {
                 locationManager.removeUpdates(locationListener);
-                getAndShowVoda(locationManager.getLastKnownLocation(provider));
                 isSearchLocationProcess = false;
+                getAndShowVoda(locationManager.getLastKnownLocation(provider));
             }
         }
 
@@ -252,7 +250,7 @@ public class MainActivity extends AppCompatActivity {
                         showVodaDialog(filterListHouse.toArray(new NewsItem[filterListHouse.size()]));
                     else if (filterListStreet.size() > 0)
                         showVodaDialog(filterListStreet.toArray(new NewsItem[filterListStreet.size()]));
-                    else showVodaDialog(vodaNews);
+                    else showVodaDialog(new NewsItem[]{});
                 } else {
                     showToast(ConstantManager.ERROR_LOCATE);
                     showVodaDialog(vodaNews);
@@ -284,16 +282,8 @@ public class MainActivity extends AppCompatActivity {
                         hideProgress();
                         showVodaDialog(vodaNews);
                     } else {
-                        hideProgress();
-                        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
-                        if (ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(context, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                            showWarningPermDisabled();
-                        } else {
-                            showProgress();
-                            isSearchLocationProcess = true;
-                            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 10, locationListener);
-                            locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 10, locationListener);
-                        }
+                        QuestDialog questDialog = new QuestDialog();
+                        questDialog.show(getSupportFragmentManager(), "dialog");
                     }
                 }
             }
@@ -302,6 +292,7 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(Call<NewsItem[]> call, Throwable t) {
                 Log.d(TAG, "onFailuregetAndShowVoda");
                 hideProgress();
+                showToast(ConstantManager.ERROR_DOWNLOAD);
             }
         });
     }
@@ -466,19 +457,29 @@ public class MainActivity extends AppCompatActivity {
 
     public void showProgress() {
         Log.d(TAG, "showProgress");
-        if (mProgressDialog == null) {
-            mProgressDialog = new ProgressDialog(this);
-            mProgressDialog.setCancelable(false);
-            mProgressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        }
-        mProgressDialog.show();
-        mProgressDialog.setContentView(R.layout.progress_splash);
+        progressBar.setVisibility(View.VISIBLE);
     }
 
     public void hideProgress() {
         Log.d(TAG, "hideProgress");
-        if (mProgressDialog != null && mProgressDialog.isShowing()) {
-            mProgressDialog.hide();
+        progressBar.setVisibility(View.GONE);
+    }
+
+    public void okClicked() {
+        Log.d(TAG, "okClicked");
+        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            showWarningPermDisabled();
+            return;
         }
+        showProgress();
+        isSearchLocationProcess = true;
+        locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 1, locationListener);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 1, locationListener);
+    }
+
+    public void noClicked() {
+        Log.d(TAG, "noClicked");
+        showVodaDialog(vodaNews);
     }
 }
