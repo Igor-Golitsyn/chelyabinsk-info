@@ -92,6 +92,32 @@ public class NewsItem implements Parcelable {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+
+        NewsItem item = (NewsItem) o;
+
+        if (seeders != item.seeders) return false;
+        if (date != item.date) return false;
+        if (name != null ? !name.equals(item.name) : item.name != null) return false;
+        if (link != null ? !link.equals(item.link) : item.link != null) return false;
+        return size != null ? size.equals(item.size) : item.size == null;
+
+    }
+
+    @Override
+    public int hashCode() {
+        int result = name != null ? name.hashCode() : 0;
+        result = 31 * result + (link != null ? link.hashCode() : 0);
+        result = 31 * result + seeders;
+        result = 31 * result + (size != null ? size.hashCode() : 0);
+        result = 31 * result + (int) (date ^ (date >>> 32));
+        return result;
+    }
+
+    @Override
+
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(name);
         dest.writeString(link);

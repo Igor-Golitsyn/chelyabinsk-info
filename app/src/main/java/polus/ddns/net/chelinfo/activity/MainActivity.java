@@ -46,8 +46,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
+import java.util.Set;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 
 import butterknife.BindView;
@@ -229,27 +233,30 @@ public class MainActivity extends AppCompatActivity {
                 hideProgress();
                 if (response.code() == 200) {
                     List<FeatureMember> featureMemberList = response.body().response.geoObjectCollection.featureMember;
-                    ArrayList<NewsItem> filterListStreet = new ArrayList<NewsItem>();
-                    ArrayList<NewsItem> filterListHouse = new ArrayList<NewsItem>();
+                    Set<NewsItem> filterListHouse = new HashSet<NewsItem>();
                     for (FeatureMember featureMember : featureMemberList) {
                         String[] currentAdr = featureMember.geoObject.metaDataProperty.geocoderMetaData.addressDetails.country.addressLine.split(",");
                         String[] street = currentAdr[1].trim().split(" ");
                         String house = currentAdr[2].trim().toLowerCase();
+                        Pattern pattern = Pattern.compile("^[0-9]+");
+                        Matcher matcher = pattern.matcher(house);
+                        if (matcher.find()) house = house.substring(matcher.start(), matcher.end());
                         for (NewsItem item : vodaNews) {
                             for (String str : street) {
-                                if (item.getName().toLowerCase().contains(str.trim().toLowerCase()))
-                                    filterListStreet.add(item);
+                                if (item.getName().toLowerCase().contains(str.trim().toLowerCase())) {
+                                    String[] adr = item.getName().toLowerCase().split(" ");
+                                    for (String ad : adr) {
+                                        matcher = pattern.matcher(ad);
+                                        if (matcher.find())
+                                            ad = ad.substring(matcher.start(), matcher.end());
+                                        if (ad.trim().equals(house)) filterListHouse.add(item);
+                                    }
+                                }
                             }
-                        }
-                        for (NewsItem item : filterListStreet) {
-                            if (item.getName().toLowerCase().contains(house))
-                                filterListHouse.add(item);
                         }
                     }
                     if (filterListHouse.size() > 0)
                         showVodaDialog(filterListHouse.toArray(new NewsItem[filterListHouse.size()]));
-                    else if (filterListStreet.size() > 0)
-                        showVodaDialog(filterListStreet.toArray(new NewsItem[filterListStreet.size()]));
                     else showVodaDialog(new NewsItem[]{});
                 } else {
                     showToast(ConstantManager.ERROR_LOCATE);
