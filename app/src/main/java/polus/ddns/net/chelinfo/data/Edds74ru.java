@@ -69,16 +69,28 @@ public class Edds74ru {
 
     private static String getSituation(String link) {
         Log.d(TAG, "getSituation");
-        try {
-            Document document = Jsoup.connect(link).timeout(10000).get();
-            String rezult = document.text();
-            rezult = rezult.replaceAll(":", ":\n");
-            rezult = rezult.replaceAll(";", ";\n");
-            rezult = rezult.replaceAll("Отключен", "\n\nОтключен");
-            rezult = rezult.replaceAll("Оператив", "\n\nОператив");
-            return rezult;
-        } catch (IOException e) {
-            return ConstantManager.DOWNLOAD_FAIL;
+        String rez = ConstantManager.DOWNLOAD_FAIL;
+        for (int i = 0; i < 10; i++) {
+            try {
+                Document document = Jsoup.connect(link).timeout(10000).get();
+                String rezult = document.text();
+                rezult = rezult.replaceAll(":", ":\n");
+                rezult = rezult.replaceAll(";", ";\n");
+                rezult = rezult.replaceAll("Отключен", "\n\nОтключен");
+                rezult = rezult.replaceAll("Оператив", "\n\nОператив");
+                rez = rezult;
+            } catch (IOException e) {
+                rez = ConstantManager.DOWNLOAD_FAIL;
+                try {
+                    Thread.sleep(500);
+                } catch (Exception e1) {
+                    Log.d(TAG, "getSituationSleepEx");
+                }
+            }
+            if (!rez.equals(ConstantManager.DOWNLOAD_FAIL)) {
+                return rez;
+            }
         }
+        return rez;
     }
 }
