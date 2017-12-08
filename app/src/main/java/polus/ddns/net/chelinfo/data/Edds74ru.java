@@ -70,7 +70,7 @@ public class Edds74ru {
     private static String getSituation(String link) {
         Log.d(TAG, "getSituation");
         try {
-            Document document = Jsoup.connect(link).userAgent("Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36").referrer("http://www.google.com").get();
+            Document document = Jsoup.connect(link).timeout(10000).get();
             String rezult = document.text();
             rezult = rezult.replaceAll(":", ":\n");
             rezult = rezult.replaceAll(";", ";\n");
