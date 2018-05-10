@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="polus.ddns.net.chelinfo"
-    android:versionCode="21"
-    android:versionName="1.21" >
+    android:versionCode="23"
+    android:versionName="1.23" >
 
     <uses-sdk
         android:minSdkVersion="14"
-        android:targetSdkVersion="25" />
+        android:targetSdkVersion="27" />
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
@@ -52,9 +52,10 @@
             android:launchMode="singleInstance"
             android:theme="@style/Theme.Transparent" />
 
-        <meta-data
-            android:name="android.support.VERSION"
-            android:value="25.4.0" />
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="polus.ddns.net.chelinfo.com.squareup.picasso"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -19,27 +19,27 @@ import polus.ddns.net.chelinfo.R;
 public class MainActivity_ViewBinding implements Unbinder {
   private MainActivity target;
 
-  private View view2131230756;
+  private View view2131230764;
 
-  private View view2131230866;
+  private View view2131230882;
 
-  private View view2131230811;
-
-  private View view2131230751;
-
-  private View view2131230752;
-
-  private View view2131230753;
-
-  private View view2131230754;
-
-  private View view2131230755;
-
-  private View view2131230758;
+  private View view2131230821;
 
   private View view2131230759;
 
-  private View view2131230757;
+  private View view2131230760;
+
+  private View view2131230761;
+
+  private View view2131230762;
+
+  private View view2131230763;
+
+  private View view2131230766;
+
+  private View view2131230767;
+
+  private View view2131230765;
 
   @UiThread
   public MainActivity_ViewBinding(MainActivity target) {
@@ -55,7 +55,7 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.schoolText = Utils.findRequiredViewAsType(source, R.id.school_text, "field 'schoolText'", TextView.class);
     view = Utils.findRequiredView(source, R.id.button_news, "field 'buttonNews' and method 'showNews'");
     target.buttonNews = Utils.castView(view, R.id.button_news, "field 'buttonNews'", Button.class);
-    view2131230756 = view;
+    view2131230764 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -65,7 +65,7 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.searchVodaText = Utils.findRequiredViewAsType(source, R.id.search_voda_text, "field 'searchVodaText'", EditText.class);
     target.progressBar = Utils.findRequiredViewAsType(source, R.id.progressBar, "field 'progressBar'", ProgressBar.class);
     view = Utils.findRequiredView(source, R.id.search_voda_image, "method 'showVoda'");
-    view2131230866 = view;
+    view2131230882 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -73,7 +73,7 @@ public class MainActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.image_voda, "method 'showSite'");
-    view2131230811 = view;
+    view2131230821 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -81,7 +81,7 @@ public class MainActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.button_centralny, "method 'showCentralny'");
-    view2131230751 = view;
+    view2131230759 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -89,7 +89,7 @@ public class MainActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.button_kalininsky, "method 'showKalininsky'");
-    view2131230752 = view;
+    view2131230760 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -97,7 +97,7 @@ public class MainActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.button_kurchatovsky, "method 'showKurchatovsky'");
-    view2131230753 = view;
+    view2131230761 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -105,7 +105,7 @@ public class MainActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.button_leninsky, "method 'showLeninsky'");
-    view2131230754 = view;
+    view2131230762 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -113,7 +113,7 @@ public class MainActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.button_metallurgichesky, "method 'showMetallurgichesky'");
-    view2131230755 = view;
+    view2131230763 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -121,7 +121,7 @@ public class MainActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.button_sovetsky, "method 'showSovetsky'");
-    view2131230758 = view;
+    view2131230766 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -129,7 +129,7 @@ public class MainActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.button_traktorozavodsky, "method 'showTraktorozavodsky'");
-    view2131230759 = view;
+    view2131230767 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -137,7 +137,7 @@ public class MainActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.button_request, "method 'request'");
-    view2131230757 = view;
+    view2131230765 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -159,27 +159,27 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.searchVodaText = null;
     target.progressBar = null;
 
-    view2131230756.setOnClickListener(null);
-    view2131230756 = null;
-    view2131230866.setOnClickListener(null);
-    view2131230866 = null;
-    view2131230811.setOnClickListener(null);
-    view2131230811 = null;
-    view2131230751.setOnClickListener(null);
-    view2131230751 = null;
-    view2131230752.setOnClickListener(null);
-    view2131230752 = null;
-    view2131230753.setOnClickListener(null);
-    view2131230753 = null;
-    view2131230754.setOnClickListener(null);
-    view2131230754 = null;
-    view2131230755.setOnClickListener(null);
-    view2131230755 = null;
-    view2131230758.setOnClickListener(null);
-    view2131230758 = null;
+    view2131230764.setOnClickListener(null);
+    view2131230764 = null;
+    view2131230882.setOnClickListener(null);
+    view2131230882 = null;
+    view2131230821.setOnClickListener(null);
+    view2131230821 = null;
     view2131230759.setOnClickListener(null);
     view2131230759 = null;
-    view2131230757.setOnClickListener(null);
-    view2131230757 = null;
+    view2131230760.setOnClickListener(null);
+    view2131230760 = null;
+    view2131230761.setOnClickListener(null);
+    view2131230761 = null;
+    view2131230762.setOnClickListener(null);
+    view2131230762 = null;
+    view2131230763.setOnClickListener(null);
+    view2131230763 = null;
+    view2131230766.setOnClickListener(null);
+    view2131230766 = null;
+    view2131230767.setOnClickListener(null);
+    view2131230767 = null;
+    view2131230765.setOnClickListener(null);
+    view2131230765 = null;
   }
 }

@@ -7,7 +7,8 @@ package polus.ddns.net.chelinfo.utils;
 import android.content.Context;
 
 import com.squareup.picasso.Downloader;
-import com.squareup.picasso.OkHttpDownloader;
+//import com.squareup.picasso.OkHttpDownloader;
+import com.squareup.picasso.OkHttp3Downloader;
 import com.squareup.picasso.Picasso;
 
 public class PicassoCache {
@@ -24,7 +25,7 @@ public class PicassoCache {
      */
     private PicassoCache(Context context) {
 
-        Downloader downloader = new OkHttpDownloader(context, Integer.MAX_VALUE);
+        Downloader downloader = new OkHttp3Downloader(context, Integer.MAX_VALUE);
         Picasso.Builder builder = new Picasso.Builder(context);
         builder.downloader(downloader);
 
