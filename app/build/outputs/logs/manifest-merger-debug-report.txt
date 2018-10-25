@@ -4,27 +4,27 @@ ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:2:1-44:12
 INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:2:1-44:12
 INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:2:1-44:12
 INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:2:1-44:12
-MERGED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\fcdb5290765c8483dc8019beccb54e88\AndroidManifest.xml:17:1-33:12
-MERGED from [com.android.support:design:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\564a863af4ae05b0d1923924b8482ef6\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3d509d247872cda2a960f666b03d0693\AndroidManifest.xml:17:1-22:12
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\be27ebb67a85b979baca3736692d2fa6\AndroidManifest.xml:2:1-14:12
-MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\407c9b0951d16a5defcf382393dce9ef\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\849e973481dd0ddec3f8ff761d773927\AndroidManifest.xml:17:1-22:12
-MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\a02a42e30480b01e3d944251ae58d4ee\AndroidManifest.xml:2:1-7:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d5f2379578af38400ec9f327f5ed142d\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\6044cdcd0b97bd94f5573129ffa1b023\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\3c74837110461516a64256c6ecfcb7f8\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c71b7f3950ae05c4ce4a7d8159455c0c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\1f28a684e8b1352c59819cccfafb05ec\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\406f56b7691a650edd8676ab00b1dabd\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\94c404dd89a55b9ee186c00f2e5825db\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\c55dfa25cb7d1f47139fb4d588538ca7\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\8591854fd2ce75fb209e150a49d15128\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\2d0868842973d5a2ac56032f6a106d78\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\0a8ceca44fb5a011d1a563255c333803\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\fb2324d728f75f75f0883508e78bc233\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4b385e541a6e0af389a014957f94c596\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1ac463fa2f1b5dab00bce297ff360d14\AndroidManifest.xml:17:1-22:12
+MERGED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\673cd36c04bef37f3c569badab4d3b13\AndroidManifest.xml:17:1-33:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\a59711e74d1a7d87a3f54b190831aea5\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\0c04b26a239645ffd622a667fee3cb05\AndroidManifest.xml:17:1-22:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\37c1e59017bd64a2a381e749f2d46016\AndroidManifest.xml:2:1-14:12
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\468964f7f9102d16878b65d4d9cecfd1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\66f91f2ce8795bf62427da894131759d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\e0450118f4365abefeb25d7764970abd\AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c6170c3cf79e885b389f8d09569f2799\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\8633207acd187da091b064c26506fc78\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\3b8d838cca946f481bd4e72a14d151fa\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\7c8950389400fa3cefdf847bc582e2a8\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\7d6d7750aaf5a380274bc00e80a26113\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\708d36c97e0c8fae06aaead51fe6d83e\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\0efa74f05cbdcfc60a13ae97b5bdda33\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\3f3eb242a4c1a9c0c6f77f148b10604f\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\061ce5f33fd4df8efc56b5db6fb6e07a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8c9275b2832a355988d48bd9badd4f0d\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\8b35d15028c280862a3008717f26fe97\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\7a0c0b5980ca81bf8c0c6cc2659f800f\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fd92db7df72ff619614863f0a5920374\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1952c6ddf430169b26e7527280288b4e\AndroidManifest.xml:17:1-22:12
 INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:2:1-44:12
 INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:2:1-44:12
 INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:2:1-44:12
@@ -60,10 +60,10 @@ ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:8:5-79
 		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:8:22-76
 application
 ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:10:5-42:19
-MERGED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\fcdb5290765c8483dc8019beccb54e88\AndroidManifest.xml:26:5-31:19
-MERGED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\fcdb5290765c8483dc8019beccb54e88\AndroidManifest.xml:26:5-31:19
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\be27ebb67a85b979baca3736692d2fa6\AndroidManifest.xml:7:5-12:19
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\be27ebb67a85b979baca3736692d2fa6\AndroidManifest.xml:7:5-12:19
+MERGED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\673cd36c04bef37f3c569badab4d3b13\AndroidManifest.xml:26:5-31:19
+MERGED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\673cd36c04bef37f3c569badab4d3b13\AndroidManifest.xml:26:5-31:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\37c1e59017bd64a2a381e749f2d46016\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\37c1e59017bd64a2a381e749f2d46016\AndroidManifest.xml:7:5-12:19
 	android:supportsRtl
 		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml:14:9-35
 	android:label
@@ -118,48 +118,48 @@ uses-sdk
 INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml
 INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml
-MERGED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\fcdb5290765c8483dc8019beccb54e88\AndroidManifest.xml:22:5-24:41
-MERGED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\fcdb5290765c8483dc8019beccb54e88\AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:design:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\564a863af4ae05b0d1923924b8482ef6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\564a863af4ae05b0d1923924b8482ef6\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3d509d247872cda2a960f666b03d0693\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\3d509d247872cda2a960f666b03d0693\AndroidManifest.xml:20:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\be27ebb67a85b979baca3736692d2fa6\AndroidManifest.xml:5:5-44
-MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\be27ebb67a85b979baca3736692d2fa6\AndroidManifest.xml:5:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\407c9b0951d16a5defcf382393dce9ef\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\407c9b0951d16a5defcf382393dce9ef\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\849e973481dd0ddec3f8ff761d773927\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\849e973481dd0ddec3f8ff761d773927\AndroidManifest.xml:20:5-44
-MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\a02a42e30480b01e3d944251ae58d4ee\AndroidManifest.xml:5:5-43
-MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\a02a42e30480b01e3d944251ae58d4ee\AndroidManifest.xml:5:5-43
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d5f2379578af38400ec9f327f5ed142d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\d5f2379578af38400ec9f327f5ed142d\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\6044cdcd0b97bd94f5573129ffa1b023\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\6044cdcd0b97bd94f5573129ffa1b023\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\3c74837110461516a64256c6ecfcb7f8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\3c74837110461516a64256c6ecfcb7f8\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c71b7f3950ae05c4ce4a7d8159455c0c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c71b7f3950ae05c4ce4a7d8159455c0c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\1f28a684e8b1352c59819cccfafb05ec\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\1f28a684e8b1352c59819cccfafb05ec\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\406f56b7691a650edd8676ab00b1dabd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\406f56b7691a650edd8676ab00b1dabd\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\94c404dd89a55b9ee186c00f2e5825db\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\94c404dd89a55b9ee186c00f2e5825db\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\c55dfa25cb7d1f47139fb4d588538ca7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\c55dfa25cb7d1f47139fb4d588538ca7\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\8591854fd2ce75fb209e150a49d15128\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\8591854fd2ce75fb209e150a49d15128\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\2d0868842973d5a2ac56032f6a106d78\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\2d0868842973d5a2ac56032f6a106d78\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\0a8ceca44fb5a011d1a563255c333803\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\0a8ceca44fb5a011d1a563255c333803\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\fb2324d728f75f75f0883508e78bc233\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\fb2324d728f75f75f0883508e78bc233\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4b385e541a6e0af389a014957f94c596\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\4b385e541a6e0af389a014957f94c596\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1ac463fa2f1b5dab00bce297ff360d14\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1ac463fa2f1b5dab00bce297ff360d14\AndroidManifest.xml:20:5-44
+MERGED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\673cd36c04bef37f3c569badab4d3b13\AndroidManifest.xml:22:5-24:41
+MERGED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\673cd36c04bef37f3c569badab4d3b13\AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:design:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\a59711e74d1a7d87a3f54b190831aea5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\a59711e74d1a7d87a3f54b190831aea5\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\0c04b26a239645ffd622a667fee3cb05\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\0c04b26a239645ffd622a667fee3cb05\AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\37c1e59017bd64a2a381e749f2d46016\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\37c1e59017bd64a2a381e749f2d46016\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\468964f7f9102d16878b65d4d9cecfd1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\cardview-v7-27.1.1.aar\468964f7f9102d16878b65d4d9cecfd1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\66f91f2ce8795bf62427da894131759d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\66f91f2ce8795bf62427da894131759d\AndroidManifest.xml:20:5-44
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\e0450118f4365abefeb25d7764970abd\AndroidManifest.xml:5:5-43
+MERGED from [com.jakewharton:butterknife:8.8.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\butterknife-8.8.1.aar\e0450118f4365abefeb25d7764970abd\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c6170c3cf79e885b389f8d09569f2799\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\c6170c3cf79e885b389f8d09569f2799\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\8633207acd187da091b064c26506fc78\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\8633207acd187da091b064c26506fc78\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\3b8d838cca946f481bd4e72a14d151fa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\3b8d838cca946f481bd4e72a14d151fa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\7c8950389400fa3cefdf847bc582e2a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\7c8950389400fa3cefdf847bc582e2a8\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\7d6d7750aaf5a380274bc00e80a26113\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\7d6d7750aaf5a380274bc00e80a26113\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\708d36c97e0c8fae06aaead51fe6d83e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\708d36c97e0c8fae06aaead51fe6d83e\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\0efa74f05cbdcfc60a13ae97b5bdda33\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\0efa74f05cbdcfc60a13ae97b5bdda33\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\3f3eb242a4c1a9c0c6f77f148b10604f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\3f3eb242a4c1a9c0c6f77f148b10604f\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\061ce5f33fd4df8efc56b5db6fb6e07a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\061ce5f33fd4df8efc56b5db6fb6e07a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8c9275b2832a355988d48bd9badd4f0d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\8c9275b2832a355988d48bd9badd4f0d\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\8b35d15028c280862a3008717f26fe97\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\8b35d15028c280862a3008717f26fe97\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\7a0c0b5980ca81bf8c0c6cc2659f800f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\7a0c0b5980ca81bf8c0c6cc2659f800f\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fd92db7df72ff619614863f0a5920374\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\fd92db7df72ff619614863f0a5920374\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1952c6ddf430169b26e7527280288b4e\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\1952c6ddf430169b26e7527280288b4e\AndroidManifest.xml:20:5-44
 INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml
 INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
@@ -171,18 +171,18 @@ INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml
 		ADDED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml
 		INJECTED from C:\JAVA\chelyabinsk-info\app\src\main\AndroidManifest.xml
 activity#com.karumi.dexter.DexterActivity
-ADDED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\fcdb5290765c8483dc8019beccb54e88\AndroidManifest.xml:27:9-30:56
+ADDED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\673cd36c04bef37f3c569badab4d3b13\AndroidManifest.xml:27:9-30:56
 	android:launchMode
-		ADDED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\fcdb5290765c8483dc8019beccb54e88\AndroidManifest.xml:29:13-48
+		ADDED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\673cd36c04bef37f3c569badab4d3b13\AndroidManifest.xml:29:13-48
 	android:theme
-		ADDED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\fcdb5290765c8483dc8019beccb54e88\AndroidManifest.xml:30:13-53
+		ADDED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\673cd36c04bef37f3c569badab4d3b13\AndroidManifest.xml:30:13-53
 	android:name
-		ADDED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\fcdb5290765c8483dc8019beccb54e88\AndroidManifest.xml:28:13-60
+		ADDED from [com.karumi:dexter:4.1.0] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\dexter-4.1.0.aar\673cd36c04bef37f3c569badab4d3b13\AndroidManifest.xml:28:13-60
 provider#com.squareup.picasso.PicassoProvider
-ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\be27ebb67a85b979baca3736692d2fa6\AndroidManifest.xml:8:9-11:40
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\37c1e59017bd64a2a381e749f2d46016\AndroidManifest.xml:8:9-11:40
 	android:authorities
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\be27ebb67a85b979baca3736692d2fa6\AndroidManifest.xml:10:13-72
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\37c1e59017bd64a2a381e749f2d46016\AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\be27ebb67a85b979baca3736692d2fa6\AndroidManifest.xml:11:13-37
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\37c1e59017bd64a2a381e749f2d46016\AndroidManifest.xml:11:13-37
 	android:name
-		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\be27ebb67a85b979baca3736692d2fa6\AndroidManifest.xml:9:13-64
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\golit\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\37c1e59017bd64a2a381e749f2d46016\AndroidManifest.xml:9:13-64

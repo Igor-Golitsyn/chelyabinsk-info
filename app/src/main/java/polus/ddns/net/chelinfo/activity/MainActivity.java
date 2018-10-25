@@ -353,6 +353,8 @@ public class MainActivity extends AppCompatActivity {
                     ArrayList<NewsListItem> arrayList = new ArrayList<>();
                     for (NewsListItem listItem : list) {
                         if (listItem.isShowNewsList()) arrayList.add(listItem);
+                        //TODO
+                        //arrayList.add(listItem);
                     }
                     newsListItems = arrayList.toArray(new NewsListItem[arrayList.size()]);
                     buttonNews.setVisibility(View.VISIBLE);

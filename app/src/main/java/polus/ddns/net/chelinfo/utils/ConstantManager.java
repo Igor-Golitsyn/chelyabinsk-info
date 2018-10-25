@@ -24,7 +24,7 @@ public interface ConstantManager {
     String TRAKTOROZAVODSKY = "ТРАКТОРОЗАВОДСКИЙ район";
     String CENTRALNY = "ЦЕНТРАЛЬНЫЙ район";
     String INTERNET_OUT = "Отсутствует интернет соединение";
-    String RESTURL = "http://polus.ddns.net/RESTservice/";
+    String RESTURL = "http://polus.ddns.is74.ru/RESTservice/";
     String NEWS_LINK = "NEWS_LINK";
     String NEWS_ITEM_LINK = "NEWS_ITEM_LINK";
     String PAGE_REQUEST = "PAGE_REQUEST";
