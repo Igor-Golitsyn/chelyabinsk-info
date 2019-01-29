@@ -23,6 +23,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.widget.NestedScrollView;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
@@ -54,6 +55,7 @@ import polus.ddns.net.chelinfo.beans.NewsListItem;
 import polus.ddns.net.chelinfo.beans.PageRequest;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
 import polus.ddns.net.chelinfo.utils.NetworkUtils;
+import polus.ddns.net.chelinfo.utils.PicassoCache;
 import polus.ddns.net.chelinfo.utils.RVAdapter;
 import polus.ddns.net.chelinfo.utils.RecyclerItemClickListener;
 import retrofit2.Call;
@@ -331,4 +333,5 @@ public class NewsActivity extends FragmentActivity implements ActionBar.TabListe
         Log.d(TAG, "setRandColor " +color);
         return color;
     }
+
 }

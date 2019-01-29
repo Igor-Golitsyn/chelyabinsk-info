@@ -32,6 +32,7 @@ public interface ConstantManager {
     String NEWS_PAGE = "NEWS_PAGE";
     String ADDING_TO_SEARCH = "Search";
     String OTMENA = "OTMENA";
+    String CHELADMINTEXT = "CHELADMINTEXT";
     String YANDEXGEOCODE = "https://geocode-maps.yandex.ru/";
     String IS_SEARCH_LOCATION_PROCESS = "IS_SEARCH_LOCATION_PROCESS";
     String GEO_DISABLED_WARNING = "Определение местоположения отключено";
@@ -39,6 +40,8 @@ public interface ConstantManager {
     String VODA_NEWS = "VODA_NEWS";
     String QUEST_DIALOG = "Искать по текущему местоположению?";
     String ERROR_DOWNLOAD = "Ошибка загрузки данных";
-
+    String USERAGENT_TEXT = "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36";
     String REFERRER= "https://play.google.com/store/apps/details?id=polus.ddns.net.chelinfo";
+    String CHELADMINPIC = "https://cheladmin.ru/sites/default/files/n/Baeeeer/otmzan-5.gif";
+    String CHELADMINURL = "https://cheladmin.ru/ru/news/vnimanie-otmena-zanyatiy-1";
 }

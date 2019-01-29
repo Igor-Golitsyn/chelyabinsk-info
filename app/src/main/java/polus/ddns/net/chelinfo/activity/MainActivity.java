@@ -21,6 +21,7 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.DialogFragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
@@ -28,6 +29,7 @@ import android.view.inputmethod.EditorInfo;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -65,10 +67,12 @@ import polus.ddns.net.chelinfo.beans.NewsListItem;
 import polus.ddns.net.chelinfo.beans.PageRequest;
 import polus.ddns.net.chelinfo.beans.yandexBeans.FeatureMember;
 import polus.ddns.net.chelinfo.beans.yandexBeans.YandexBean;
+import polus.ddns.net.chelinfo.data.ChelAdmin;
 import polus.ddns.net.chelinfo.data.Edds74ru;
 import polus.ddns.net.chelinfo.data.OblRu;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
 import polus.ddns.net.chelinfo.utils.NetworkUtils;
+import polus.ddns.net.chelinfo.utils.PicassoCache;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -83,12 +87,18 @@ public class MainActivity extends AppCompatActivity {
     WebView pogoda;
     @BindView(R.id.school_text)
     TextView schoolText;
+    @BindView(R.id.school_text_header)
+    TextView school_text_header;
+    @BindView(R.id.chelAdminText)
+    TextView chelAdminText;
     @BindView(R.id.button_news)
     Button buttonNews;
     @BindView(R.id.search_voda_text)
     EditText searchVodaText;
     @BindView(R.id.progressBar)
     ProgressBar progressBar;
+    @BindView(R.id.chelAdminPic)
+    ImageView chelAdminPic;
     private ProgressDialog mProgressDialog;
     private boolean isSearchLocationProcess = false;
     private NewsItem[] vodaNews;
@@ -115,10 +125,16 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             if (NetworkUtils.isNetworkAvailable(this)) {
                 pogoda.loadUrl("file:///android_asset/yandex.html");
+                loadImage(ConstantManager.CHELADMINPIC, chelAdminPic);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        schoolText.setText(OblRu.getSchool());
+                        chelAdminText.setText(ChelAdmin.getSchool());
+                        if (chelAdminText.toString().isEmpty()) {
+                            schoolText.setText(OblRu.getSchool());
+                            schoolText.setVisibility(View.VISIBLE);
+                            school_text_header.setVisibility(View.VISIBLE);
+                        }
                     }
                 }, 10);
             } else {
@@ -132,7 +148,13 @@ public class MainActivity extends AppCompatActivity {
             }
         } else {
             pogoda.loadUrl("file:///android_asset/yandex.html");
-            schoolText.setText(savedInstanceState.getString(ConstantManager.OTMENA));
+            loadImage(ConstantManager.CHELADMINPIC, chelAdminPic);
+            chelAdminText.setText(savedInstanceState.getString(ConstantManager.CHELADMINTEXT));
+            if (chelAdminText.toString().isEmpty()) {
+                schoolText.setText(savedInstanceState.getString(ConstantManager.OTMENA));
+                schoolText.setVisibility(View.VISIBLE);
+                school_text_header.setVisibility(View.VISIBLE);
+            }
             isSearchLocationProcess = savedInstanceState.getBoolean(ConstantManager.IS_SEARCH_LOCATION_PROCESS);
             vodaNews = (NewsItem[]) savedInstanceState.getParcelableArray(ConstantManager.VODA_NEWS);
             if (isSearchLocationProcess) {
@@ -466,6 +488,7 @@ public class MainActivity extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         Log.d(TAG, "onSaveInstanceState");
         outState.putString(ConstantManager.OTMENA, schoolText.getText().toString());
+        outState.putString(ConstantManager.CHELADMINTEXT, chelAdminText.getText().toString());
         outState.putBoolean(ConstantManager.IS_SEARCH_LOCATION_PROCESS, isSearchLocationProcess);
         outState.putParcelableArray(ConstantManager.VODA_NEWS, vodaNews);
     }
@@ -496,5 +519,21 @@ public class MainActivity extends AppCompatActivity {
     public void noClicked() {
         Log.d(TAG, "noClicked");
         showVodaDialog(vodaNews);
+    }
+
+    private void loadImage(String URLimage, ImageView imageView) {
+        Log.d(TAG, "loadImage");
+        DisplayMetrics displayMetrics = this.getResources().getDisplayMetrics();
+        int width = displayMetrics.widthPixels;
+        int height = displayMetrics.heightPixels;
+        int side = width > height ? height : width;
+        PicassoCache.getPicassoInstance(context).load(URLimage).placeholder(R.drawable.blue_progress).resize(side, side).centerInside().into(imageView);
+    }
+
+    @OnClick(R.id.chelAdminPic)
+    public void onClickChelAdminPic() {
+        Log.d(TAG, "onClickChelAdminPic");
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(ConstantManager.CHELADMINURL));
+        startActivity(intent);
     }
 }

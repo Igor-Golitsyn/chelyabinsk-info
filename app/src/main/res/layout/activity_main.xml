@@ -13,7 +13,6 @@
         android:padding="@dimen/padding_small_16"
         tools:context="polus.ddns.net.chelinfo.activity.MainActivity">
 
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -29,13 +28,30 @@
             android:layout_gravity="center"
             android:paddingBottom="@dimen/padding_small_16" />
 
+        <ImageView
+            android:id="@+id/chelAdminPic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" />
         <TextView
+            android:id="@+id/chelAdminText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_small_16"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_normal_15" />
+
+
+        <TextView
+            android:id="@+id/school_text_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/edds74_ru"
             android:textColor="@color/black"
-            android:textSize="@dimen/font_large_18" />
+            android:textSize="@dimen/font_large_18"
+            android:visibility="gone"/>
 
         <TextView
             android:id="@+id/school_text"
@@ -44,7 +60,8 @@
             android:gravity="center"
             android:paddingBottom="@dimen/padding_small_16"
             android:textColor="@color/black"
-            android:textSize="@dimen/font_normal_15" />
+            android:textSize="@dimen/font_normal_15"
+            android:visibility="gone"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -207,5 +224,6 @@
             android:text="@string/button_request_text"
             android:textColor="@color/white"
             android:textStyle="bold" />
+
     </LinearLayout>
 </ScrollView>

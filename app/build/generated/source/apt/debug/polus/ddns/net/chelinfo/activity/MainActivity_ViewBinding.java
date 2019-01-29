@@ -7,6 +7,7 @@ import android.view.View;
 import android.webkit.WebView;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import butterknife.Unbinder;
@@ -21,9 +22,11 @@ public class MainActivity_ViewBinding implements Unbinder {
 
   private View view2131230764;
 
-  private View view2131230882;
+  private View view2131230780;
 
-  private View view2131230821;
+  private View view2131230885;
+
+  private View view2131230823;
 
   private View view2131230759;
 
@@ -53,6 +56,8 @@ public class MainActivity_ViewBinding implements Unbinder {
     View view;
     target.pogoda = Utils.findRequiredViewAsType(source, R.id.pogoda, "field 'pogoda'", WebView.class);
     target.schoolText = Utils.findRequiredViewAsType(source, R.id.school_text, "field 'schoolText'", TextView.class);
+    target.school_text_header = Utils.findRequiredViewAsType(source, R.id.school_text_header, "field 'school_text_header'", TextView.class);
+    target.chelAdminText = Utils.findRequiredViewAsType(source, R.id.chelAdminText, "field 'chelAdminText'", TextView.class);
     view = Utils.findRequiredView(source, R.id.button_news, "field 'buttonNews' and method 'showNews'");
     target.buttonNews = Utils.castView(view, R.id.button_news, "field 'buttonNews'", Button.class);
     view2131230764 = view;
@@ -64,8 +69,17 @@ public class MainActivity_ViewBinding implements Unbinder {
     });
     target.searchVodaText = Utils.findRequiredViewAsType(source, R.id.search_voda_text, "field 'searchVodaText'", EditText.class);
     target.progressBar = Utils.findRequiredViewAsType(source, R.id.progressBar, "field 'progressBar'", ProgressBar.class);
+    view = Utils.findRequiredView(source, R.id.chelAdminPic, "field 'chelAdminPic' and method 'onClickChelAdminPic'");
+    target.chelAdminPic = Utils.castView(view, R.id.chelAdminPic, "field 'chelAdminPic'", ImageView.class);
+    view2131230780 = view;
+    view.setOnClickListener(new DebouncingOnClickListener() {
+      @Override
+      public void doClick(View p0) {
+        target.onClickChelAdminPic();
+      }
+    });
     view = Utils.findRequiredView(source, R.id.search_voda_image, "method 'showVoda'");
-    view2131230882 = view;
+    view2131230885 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -73,7 +87,7 @@ public class MainActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.image_voda, "method 'showSite'");
-    view2131230821 = view;
+    view2131230823 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -155,16 +169,21 @@ public class MainActivity_ViewBinding implements Unbinder {
 
     target.pogoda = null;
     target.schoolText = null;
+    target.school_text_header = null;
+    target.chelAdminText = null;
     target.buttonNews = null;
     target.searchVodaText = null;
     target.progressBar = null;
+    target.chelAdminPic = null;
 
     view2131230764.setOnClickListener(null);
     view2131230764 = null;
-    view2131230882.setOnClickListener(null);
-    view2131230882 = null;
-    view2131230821.setOnClickListener(null);
-    view2131230821 = null;
+    view2131230780.setOnClickListener(null);
+    view2131230780 = null;
+    view2131230885.setOnClickListener(null);
+    view2131230885 = null;
+    view2131230823.setOnClickListener(null);
+    view2131230823 = null;
     view2131230759.setOnClickListener(null);
     view2131230759 = null;
     view2131230760.setOnClickListener(null);
