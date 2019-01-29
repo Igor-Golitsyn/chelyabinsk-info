@@ -66,6 +66,7 @@ import polus.ddns.net.chelinfo.beans.PageRequest;
 import polus.ddns.net.chelinfo.beans.yandexBeans.FeatureMember;
 import polus.ddns.net.chelinfo.beans.yandexBeans.YandexBean;
 import polus.ddns.net.chelinfo.data.Edds74ru;
+import polus.ddns.net.chelinfo.data.OblRu;
 import polus.ddns.net.chelinfo.utils.ConstantManager;
 import polus.ddns.net.chelinfo.utils.NetworkUtils;
 import retrofit2.Call;
@@ -117,7 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
-                        schoolText.setText(Edds74ru.getSchool());
+                        schoolText.setText(OblRu.getSchool());
                     }
                 }, 10);
             } else {
@@ -352,9 +353,9 @@ public class MainActivity extends AppCompatActivity {
                     NewsListItem[] list = response.body();
                     ArrayList<NewsListItem> arrayList = new ArrayList<>();
                     for (NewsListItem listItem : list) {
-                        if (listItem.isShowNewsList()) arrayList.add(listItem);
+                        //if (listItem.isShowNewsList()) arrayList.add(listItem);
                         //TODO
-                        //arrayList.add(listItem);
+                        arrayList.add(listItem);
                     }
                     newsListItems = arrayList.toArray(new NewsListItem[arrayList.size()]);
                     buttonNews.setVisibility(View.VISIBLE);

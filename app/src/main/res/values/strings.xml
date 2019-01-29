@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Службы Челябинска</string>
     <string name="yandex">Яндекс Погода</string>
-    <string name="edds74_ru">edds74.ru\nЕдиная дежурно-диспетчерская служба города Челябинска:</string>
+    <string name="edds74_ru">1obl.ru\nЕдиная дежурно-диспетчерская служба города Челябинска:</string>
     <string name="metallurgichesky">МЕТАЛЛУРГИЧЕСКИЙ</string>
     <string name="leninsky">ЛЕНИНСКИЙ</string>
     <string name="traktorozavodskoy">ТРАКТОРОЗАВОДСКИЙ</string>

@@ -6,6 +6,7 @@ package polus.ddns.net.chelinfo.utils;
 public interface ConstantManager {
     String TAG_PREFIX = "CHEL ";
     String EDDS74RU_SCHOOL = "http://edds74.ru/Upload/files/otmena.html";
+    String OBLRU_SCHOOL = "https://www.1obl.ru/news/o-lyudyakh/otmena-shkolnyh-zanjatii";
     String EDDS74RU_KALININSKY = "http://edds74.ru/Upload/files/Svodka_1.htm";
     String EDDS74RU_KURCHATOVSKY = "http://edds74.ru/Upload/files/Svodka_2.htm";
     String EDDS74RU_LENINSKY = "http://edds74.ru/Upload/files/Svodka_3.htm";
@@ -38,4 +39,6 @@ public interface ConstantManager {
     String VODA_NEWS = "VODA_NEWS";
     String QUEST_DIALOG = "Искать по текущему местоположению?";
     String ERROR_DOWNLOAD = "Ошибка загрузки данных";
+
+    String REFERRER= "https://play.google.com/store/apps/details?id=polus.ddns.net.chelinfo";
 }
