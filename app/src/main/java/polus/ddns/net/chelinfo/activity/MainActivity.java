@@ -125,18 +125,18 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState == null) {
             if (NetworkUtils.isNetworkAvailable(this)) {
                 pogoda.loadUrl("file:///android_asset/yandex.html");
-                loadImage(ConstantManager.CHELADMINPIC, chelAdminPic);
+                /*loadImage(ConstantManager.CHELADMINPIC, chelAdminPic);
                 new Handler().postDelayed(new Runnable() {
                     @Override
                     public void run() {
                         chelAdminText.setText(ChelAdmin.getSchool());
-                        if (chelAdminText.toString().isEmpty()) {
+                        if (chelAdminText.getText().toString().isEmpty()) {
                             schoolText.setText(OblRu.getSchool());
                             schoolText.setVisibility(View.VISIBLE);
                             school_text_header.setVisibility(View.VISIBLE);
                         }
                     }
-                }, 10);
+                }, 10);*/
             } else {
                 showToast(ConstantManager.INTERNET_OUT);
                 new Handler().postDelayed(new Runnable() {
@@ -148,13 +148,13 @@ public class MainActivity extends AppCompatActivity {
             }
         } else {
             pogoda.loadUrl("file:///android_asset/yandex.html");
-            loadImage(ConstantManager.CHELADMINPIC, chelAdminPic);
+            /*loadImage(ConstantManager.CHELADMINPIC, chelAdminPic);
             chelAdminText.setText(savedInstanceState.getString(ConstantManager.CHELADMINTEXT));
-            if (chelAdminText.toString().isEmpty()) {
+            if (chelAdminText.getText().toString().isEmpty()) {
                 schoolText.setText(savedInstanceState.getString(ConstantManager.OTMENA));
                 schoolText.setVisibility(View.VISIBLE);
                 school_text_header.setVisibility(View.VISIBLE);
-            }
+            }*/
             isSearchLocationProcess = savedInstanceState.getBoolean(ConstantManager.IS_SEARCH_LOCATION_PROCESS);
             vodaNews = (NewsItem[]) savedInstanceState.getParcelableArray(ConstantManager.VODA_NEWS);
             if (isSearchLocationProcess) {
@@ -375,9 +375,9 @@ public class MainActivity extends AppCompatActivity {
                     NewsListItem[] list = response.body();
                     ArrayList<NewsListItem> arrayList = new ArrayList<>();
                     for (NewsListItem listItem : list) {
-                        //if (listItem.isShowNewsList()) arrayList.add(listItem);
+                        if (listItem.isShowNewsList()) arrayList.add(listItem);
                         //TODO
-                        arrayList.add(listItem);
+                        //arrayList.add(listItem);
                     }
                     newsListItems = arrayList.toArray(new NewsListItem[arrayList.size()]);
                     buttonNews.setVisibility(View.VISIBLE);
