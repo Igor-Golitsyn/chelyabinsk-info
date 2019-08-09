@@ -24,9 +24,9 @@ public class MainActivity_ViewBinding implements Unbinder {
 
   private View view2131230780;
 
-  private View view2131230885;
+  private View view2131230892;
 
-  private View view2131230823;
+  private View view2131230826;
 
   private View view2131230759;
 
@@ -79,7 +79,7 @@ public class MainActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.search_voda_image, "method 'showVoda'");
-    view2131230885 = view;
+    view2131230892 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -87,7 +87,7 @@ public class MainActivity_ViewBinding implements Unbinder {
       }
     });
     view = Utils.findRequiredView(source, R.id.image_voda, "method 'showSite'");
-    view2131230823 = view;
+    view2131230826 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -150,12 +150,18 @@ public class MainActivity_ViewBinding implements Unbinder {
         target.showTraktorozavodsky();
       }
     });
-    view = Utils.findRequiredView(source, R.id.button_request, "method 'request'");
+    view = Utils.findRequiredView(source, R.id.button_request, "method 'request' and method 'longRequest'");
     view2131230765 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
         target.request();
+      }
+    });
+    view.setOnLongClickListener(new View.OnLongClickListener() {
+      @Override
+      public boolean onLongClick(View p0) {
+        return target.longRequest();
       }
     });
   }
@@ -180,10 +186,10 @@ public class MainActivity_ViewBinding implements Unbinder {
     view2131230764 = null;
     view2131230780.setOnClickListener(null);
     view2131230780 = null;
-    view2131230885.setOnClickListener(null);
-    view2131230885 = null;
-    view2131230823.setOnClickListener(null);
-    view2131230823 = null;
+    view2131230892.setOnClickListener(null);
+    view2131230892 = null;
+    view2131230826.setOnClickListener(null);
+    view2131230826 = null;
     view2131230759.setOnClickListener(null);
     view2131230759 = null;
     view2131230760.setOnClickListener(null);
@@ -199,6 +205,7 @@ public class MainActivity_ViewBinding implements Unbinder {
     view2131230767.setOnClickListener(null);
     view2131230767 = null;
     view2131230765.setOnClickListener(null);
+    view2131230765.setOnLongClickListener(null);
     view2131230765 = null;
   }
 }

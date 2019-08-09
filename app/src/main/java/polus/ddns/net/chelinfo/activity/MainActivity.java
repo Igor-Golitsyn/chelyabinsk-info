@@ -60,6 +60,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+import butterknife.OnLongClick;
 import polus.ddns.net.chelinfo.R;
 import polus.ddns.net.chelinfo.beans.GetBeansFromRest;
 import polus.ddns.net.chelinfo.beans.NewsItem;
@@ -104,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
     private NewsItem[] vodaNews;
     private LocationManager locationManager;
     private Context context;
+    private boolean showAll = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -375,7 +377,8 @@ public class MainActivity extends AppCompatActivity {
                     NewsListItem[] list = response.body();
                     ArrayList<NewsListItem> arrayList = new ArrayList<>();
                     for (NewsListItem listItem : list) {
-                        if (listItem.isShowNewsList()) arrayList.add(listItem);
+                        if (showAll) arrayList.add(listItem);
+                        else if (listItem.isShowNewsList()) arrayList.add(listItem);
                         //TODO
                         //arrayList.add(listItem);
                     }
@@ -451,6 +454,13 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW);
         intent.setData(Uri.parse("market://details?id=polus.ddns.net.chelinfo"));
         startActivity(intent);
+    }
+    @OnLongClick(R.id.button_request)
+    public boolean longRequest () {
+        Log.d(TAG, "longRequest");
+        showAll = true;
+        getNews();
+        return true;
     }
 
     @OnClick(R.id.button_news)
