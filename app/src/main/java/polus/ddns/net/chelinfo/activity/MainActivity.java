@@ -379,8 +379,6 @@ public class MainActivity extends AppCompatActivity {
                     for (NewsListItem listItem : list) {
                         if (showAll) arrayList.add(listItem);
                         else if (listItem.isShowNewsList()) arrayList.add(listItem);
-                        //TODO
-                        //arrayList.add(listItem);
                     }
                     newsListItems = arrayList.toArray(new NewsListItem[arrayList.size()]);
                     buttonNews.setVisibility(View.VISIBLE);
@@ -389,6 +387,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onFailure(Call<NewsListItem[]> call, Throwable t) {
+                Log.d(TAG,"ERROR: ",t);
             }
         });
     }
@@ -460,6 +459,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "longRequest");
         showAll = true;
         getNews();
+        showToast("got it !");
         return true;
     }
 
