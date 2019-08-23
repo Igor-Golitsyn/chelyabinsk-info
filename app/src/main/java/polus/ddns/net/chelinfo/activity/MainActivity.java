@@ -366,6 +366,23 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(this, massage, Toast.LENGTH_LONG).show();
     }
 
+    private void showGoToSchool(boolean show) {
+        if (show){
+            loadImage(ConstantManager.CHELADMINPIC, chelAdminPic);
+            new Handler().postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    chelAdminText.setText(ChelAdmin.getSchool());
+                    //if (chelAdminText.getText().toString().isEmpty()) {
+                        schoolText.setText(OblRu.getSchool());
+                        schoolText.setVisibility(View.VISIBLE);
+                        school_text_header.setVisibility(View.VISIBLE);
+                    //}
+                }
+            }, 10);
+        }
+    }
+
     private void getNews() {
         Log.d(TAG, "getNews");
         Retrofit retrofit = new Retrofit.Builder().baseUrl(ConstantManager.RESTURL).addConverterFactory(GsonConverterFactory.create()).build();
@@ -379,6 +396,7 @@ public class MainActivity extends AppCompatActivity {
                     for (NewsListItem listItem : list) {
                         if (showAll) arrayList.add(listItem);
                         else if (listItem.isShowNewsList()) arrayList.add(listItem);
+                        if (listItem.getRestLink().equals("chelAdmin")) showGoToSchool(listItem.isTypeFinder());
                     }
                     newsListItems = arrayList.toArray(new NewsListItem[arrayList.size()]);
                     buttonNews.setVisibility(View.VISIBLE);
